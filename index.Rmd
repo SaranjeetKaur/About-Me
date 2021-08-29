@@ -1,8 +1,8 @@
 ---
 title: "Welcome!"
 image: "ID-photo.jpg"
-color1: "#5A59A3"
-color2: "#C66060"
+color1: "#C66060"
+color2: "#5A59A3"
 angle: 130
 links:
   - label: LinkedIn
