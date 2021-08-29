@@ -1,0 +1,18 @@
+---
+title: "Welcome!"
+image: "ID-photo.jpg"
+color1: "#5A59A3"
+color2: "#C66060"
+angle: 130
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/saranjeet-kaur-48ab769b"
+  - label: Twitter
+    url: "https://twitter.com/qwertyquesting"
+  - label: Email
+    url: "mailto:kaur.saranjeet3@gmail.com"
+output:
+  postcards::onofre
+---
+ 
+Saranjeet Kaur Bhogal is a Statistician by training. She has completed the Google Summer of Code 2020 with the Turing team of the Julia language organisation. Her recent most open source project is the "R Developer's Guide" which she has written with a funding support from the R Foundation.
