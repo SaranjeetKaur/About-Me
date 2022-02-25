@@ -1,5 +1,5 @@
 ---
-title: "Welcome!"
+title: "Saranjeet Kaur Bhogal"
 image: "ID-photo.jpg"
 color1: "#C66060"
 color2: "#5A59A3"
@@ -11,8 +11,58 @@ links:
     url: "https://twitter.com/qwertyquesting"
   - label: Email
     url: "mailto:kaur.saranjeet3@gmail.com"
+  - label: GitHub
+    url: "https://github.com/SaranjeetKaur"
 output:
-  postcards::onofre
+  postcards::trestles
 ---
  
-Saranjeet Kaur Bhogal is a Statistician by training. She has completed the Google Summer of Code 2020 with the Turing team of the Julia language organisation. Her recent most open source project is the "R Developer's Guide" which she has written with a funding support from the R Foundation. She has presented her open source work at useR! 2021 - The R Conference and at JuliaCon 2021.
+I'm a Statistician by training. I'm interested in learning about open source and open science.
+
+
+##### Open-source projects
+
+1. Completed the [Google Summer of Code 2020](https://gist.github.com/SaranjeetKaur/37086fea06076bd3ec76d052cc166378) with the Turing team of the Julia language organisation. Mentor: Hong Ge, Cameron Pfiffer, Miles Lucas.
+
+2. Written the [R Development Guide](https://contributor.r-project.org/rdevguide/) in 2021 as a project funded by the [R Foundation](https://www.r-project.org/foundation/). Mentor: Heather Turner, Michael Lawrence.
+
+3. Created Zine for CarpenPi organization with a funding from the Data Science by Design (DSxD) initiative. 
+
+
+##### Conference presentations
+
+1. [Regular talk at useR! 2021 - The R Conference](https://youtu.be/2B7H8WJOX40?t=2187https://youtu.be/2B7H8WJOX40?t=2187): In the ‘1A Community and Outreach 1’ session on the ‘R Developer’s Guide’ (now called as the 'R Development Guide'). During the conference, I also attended the tutorials on ‘Contributing to R’ (conducted by Gabriel Becker and Martin Maechler) and ‘Translating R to Your Language’ (conducted by Michael Chirico and Michael Lawrence). I was also the Zoom Host 
+for various tutorials and sessions of this international online conference.
+
+2. [Virtual poster presentation at JuliaCon 2021](https://www.youtube.com/watch?v=Q7SYF3wbXwk): I presented a virtual poster of my work based on ‘Algorithmic Variants of Nested Sampling’. I developed these algorithms while working for the Google Summer of Code 2020 with the Turing team of the Julia Language organization. I also moderated the single track sessions of JuliaCon 2021.
+
+3. [Invited talk at LatinR 2021](https://www.youtube.com/watch?v=VzPia_PAxvw): Presented a Invited talk on “R Development Guide: Motivation, First Draft, and the Way Forward”. This is a Latinamerican conference about the use of R in R&D.
+
+4. [Lightning talk at PackagingCon 2021](https://youtu.be/BpRef4U-4sI?t=121): Presented a lightning talk on “Turing.jl: An Overview”. The talk was an overview of Turing.jl which is a Julia library focusing on Bayesian inference with probabilistic programming. This was the first edition of PackagingCon 2021, which is a conference held with the aim to bring various software eco-systems together. 
+
+
+##### Interviews, Conference Moderator, Podcast
+
+1. [Why R? World Interview](https://www.youtube.com/watch?v=0u-aJhXbLAM)
+
+2. [Google Summer of Code AMA](https://www.youtube.com/watch?v=YPO9ew6EkkU)
+
+3. JuliaCon 2021 moderated sessions: [1](https://www.youtube.com/watch?v=IlFVwabDh6Q), [2](https://www.youtube.com/watch?v=LT4AP7CUMAw), [3](https://www.youtube.com/watch?v=sUyddZQaeyg), [4](https://www.youtube.com/watch?v=6V6jk_OdH-w)
+
+4. [The R-cast](https://r-podcast.org/034-collaborative-campfires/).
+
+
+##### Community contributions
+
+1. Chapter Activity Tracking, R-Ladies Global, February 2020 -- September 2020
+
+2. Project Lead, R-Ladies Global, October 2020 -- February 2022
+
+3. [Project Co-Lead, RSE Asia Association, Open Life Science Cohort-4](https://openlifesci.org/ols-4/projects-participants/). Mentor: Anne Fouilloux
+
+4. [Cohort participant, Digital Infrastructure Incubator](https://incubator.codeforscience.org/cohort), Code for Science & Society (CS&S). Mentor: Rayya El Zein
+
+5. Mentee, [Society of Research Software Engineering Pilot Mentorship Programme](https://society-rse.org/events/pilot-mentoring-programme/), November 2021 – Present: This is a 9-month non-technical mentoring program on topics such as personal development, communication, leadership, and career direction broadly in the field of Research Software Engineering. Working under the mentorship of Michelle Barker to further develop the community aspect of the RSE Asia Association of the RSE Asia Association.
+
+6. Founding Committee Member, NumFOCUS Project Incubator, February 2022 – Present: The NumFOCUS Project Incubator would provide support for the growth of Open Source Scientific projects and communities. At the end of the incubation period, projects will have the required tools for becoming 
+NumFOCUS Affiliated projects.
