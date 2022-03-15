@@ -1,6 +1,6 @@
 ---
 title: "Saranjeet Kaur Bhogal"
-image: "ID-photo.jpg"
+image: "images/ID-photo.jpg"
 color1: "#C66060"
 color2: "#5A59A3"
 angle: 130
@@ -13,56 +13,109 @@ links:
     url: "mailto:kaur.saranjeet3@gmail.com"
   - label: GitHub
     url: "https://github.com/SaranjeetKaur"
+  - label: ORCID
+    url: "https://orcid.org/0000-0002-7038-1457"
 output:
   postcards::trestles
 ---
  
-I'm a Statistician by training. I'm interested in learning about open source and open science.
+I'm a Statistician by training, based in India (Asia). I'm interested in learning about open source and open science.
 
+$~$
 
 ##### Open-source projects
 
-1. Written the [R Development Guide](https://contributor.r-project.org/rdevguide/) in 2021 as a project funded by the [R Foundation](https://www.r-project.org/foundation/). Mentor: Heather Turner, Michael Lawrence.
+[![R-devel Logo](images/Rlogo.png){width=10%}](https://contributor.r-project.org/)
+---
+Written the [R Development Guide](https://contributor.r-project.org/rdevguide/) in 2021 as a project funded by the [R Foundation](https://www.r-project.org/foundation/). Mentor: Heather Turner, Michael Lawrence.
 
-2. Completed the [Google Summer of Code 2020](https://gist.github.com/SaranjeetKaur/37086fea06076bd3ec76d052cc166378) with the Turing team of the Julia language organisation. Mentor: Hong Ge, Cameron Pfiffer, Miles Lucas.
+$~$
 
-3. Created Zine for CarpenPi organization with a funding from the Data Science by Design (DSxD) initiative. 
+[![GSoC Logo](images/gsoclogo.png){width=10%}](https://summerofcode.withgoogle.com/)
+---
+Completed the [Google Summer of Code 2020](https://gist.github.com/SaranjeetKaur/37086fea06076bd3ec76d052cc166378) with the Turing team of the Julia language organisation. Mentor: Hong Ge, Cameron Pfiffer, Miles Lucas.
 
+$~$
 
-##### Conference presentations
+[![CarpenPi Logo](images/CarpenPilogo.png){width=10%}](https://carpenpi.github.io/)
+---
+Created Zine for CarpenPi organization with a funding from the Data Science by Design (DSxD) initiative. 
 
-1. [Lightning talk at PackagingCon 2021](https://youtu.be/BpRef4U-4sI?t=121): Presented a lightning talk on “Turing.jl: An Overview”. The talk was an overview of Turing.jl which is a Julia library focusing on Bayesian inference with probabilistic programming. This was the first edition of PackagingCon 2021, which is a conference held with the aim to bring various software eco-systems together. 
+$~$
 
-2. [Invited talk at LatinR 2021](https://www.youtube.com/watch?v=VzPia_PAxvw): Presented a Invited talk on “R Development Guide: Motivation, First Draft, and the Way Forward”. This is a Latinamerican conference about the use of R in R&D.
+##### Upcoming Talks and Sessions
 
-3. [Virtual poster presentation at JuliaCon 2021](https://www.youtube.com/watch?v=Q7SYF3wbXwk): I presented a virtual poster of my work based on ‘Algorithmic Variants of Nested Sampling’. I developed these algorithms while working for the Google Summer of Code 2020 with the Turing team of the Julia Language organization. I also moderated the single track sessions of JuliaCon 2021.
+- [Collaboration Campfires: March 2022](https://contributor.r-project.org/events/collaboration-campfires)
+- [Lightning talk at CW22 (April 2022)](https://software.ac.uk/cw22/lightning-talks)
+- [Collaboration Campfires: April 2022](https://contributor.r-project.org/events/collaboration-campfires)
+- [Collaboration Campfires: May 2022](https://contributor.r-project.org/events/collaboration-campfires)
 
-4. [Regular talk at useR! 2021 - The R Conference](https://youtu.be/2B7H8WJOX40?t=2187https://youtu.be/2B7H8WJOX40?t=2187): In the ‘1A Community and Outreach 1’ session on the ‘R Developer’s Guide’ (now called as the 'R Development Guide'). During the conference, I also attended the tutorials on ‘Contributing to R’ (conducted by Gabriel Becker and Martin Maechler) and ‘Translating R to Your Language’ (conducted by Michael Chirico and Michael Lawrence). I was also the Zoom Host 
+$~$
+
+##### Previous Talks
+
+[![APAN53 Logo](images/apan53logo.png){width=10%}](https://apan53.apan.net/)
+---
+[Workshop talk at APAN53](https://github.com/SaranjeetKaur/APAN53_RSE_Asia): Presented a talk on "Research Software Engineering initiative in Asia region" at Asia Pacific Advanced Network (APAN53, Bangladesh). This talk was a part of the workshop on "Growing research software initiatives and communities in the Asia Pacific".
+
+$~$
+
+[![APAN53 Logo](images/apan53logo.png){width=10%}](https://apan53.apan.net/)
+---
+[Panel discussion at APAN53](https://github.com/SaranjeetKaur/APAN53_Slides_Panel_Discussion): Presented my talk at the Panel Discussion on "https://github.com/SaranjeetKaur/APAN53_Slides_Panel_Discussion" held at APAN53, Bangladesh.
+
+$~$
+
+[![PackagingCon 2021 Logo](images/packagingconlogo.png){width=10%}](https://packaging-con.org/)
+---
+[Lightning talk at PackagingCon 2021](https://youtu.be/BpRef4U-4sI?t=121): Presented a lightning talk on “Turing.jl: An Overview”. The talk was an overview of Turing.jl which is a Julia library focusing on Bayesian inference with probabilistic programming. This was the first edition of PackagingCon 2021, which is a conference held with the aim to bring various software eco-systems together. 
+
+$~$
+
+[![LatinR 2021 Logo](images/latinrlogo.png){width=10%}](https://latin-r.com/en)
+---
+[Invited talk at LatinR 2021](https://www.youtube.com/watch?v=VzPia_PAxvw): Presented a Invited talk on “R Development Guide: Motivation, First Draft, and the Way Forward”. This is a Latinamerican conference about the use of R in R&D.
+
+$~$
+
+[![JuliaCon 2021 Logo](images/juliaconlogo.svg){width=10%}](https://juliacon.org/2021/)
+---
+[Virtual poster presentation at JuliaCon 2021](https://www.youtube.com/watch?v=Q7SYF3wbXwk): I presented a virtual poster of my work based on ‘Algorithmic Variants of Nested Sampling’. I developed these algorithms while working for the Google Summer of Code 2020 with the Turing team of the Julia Language organization. I also moderated the single track sessions of JuliaCon 2021.
+
+$~$
+
+[![useR! 2021 Logo](images/user-logo.png){width=10%}](https://user2021.r-project.org/)
+---
+[Regular talk at useR! 2021 - The R Conference](https://youtu.be/2B7H8WJOX40?t=2187https://youtu.be/2B7H8WJOX40?t=2187): In the ‘1A Community and Outreach 1’ session on the ‘R Developer’s Guide’ (now called as the 'R Development Guide'). During the conference, I also attended the tutorials on ‘Contributing to R’ (conducted by Gabriel Becker and Martin Maechler) and ‘Translating R to Your Language’ (conducted by Michael Chirico and Michael Lawrence). I was also the Zoom Host 
 for various tutorials and sessions of this international online conference.
 
+$~$
 
 ##### Conference Moderator, Interviews, Podcast
 
-1. [The R-cast](https://r-podcast.org/034-collaborative-campfires/)
+- [The R Podcast](https://r-podcast.org/034-collaborative-campfires/)
 
-2. JuliaCon 2021 moderated sessions: [1](https://www.youtube.com/watch?v=IlFVwabDh6Q), [2](https://www.youtube.com/watch?v=LT4AP7CUMAw), [3](https://www.youtube.com/watch?v=sUyddZQaeyg), [4](https://www.youtube.com/watch?v=6V6jk_OdH-w)
+- JuliaCon 2021 moderated sessions: [1](https://www.youtube.com/watch?v=IlFVwabDh6Q), [2](https://www.youtube.com/watch?v=LT4AP7CUMAw), [3](https://www.youtube.com/watch?v=sUyddZQaeyg), [4](https://www.youtube.com/watch?v=6V6jk_OdH-w)
 
-3. [Google Summer of Code AMA](https://www.youtube.com/watch?v=YPO9ew6EkkU)
+- [Google Summer of Code AMA](https://www.youtube.com/watch?v=YPO9ew6EkkU)
 
-4. [Why R? World Interview](https://www.youtube.com/watch?v=0u-aJhXbLAM)
+- [Why R? World Interview](https://www.youtube.com/watch?v=0u-aJhXbLAM)
 
+$~$
 
 ##### Community contributions
 
-1. Founding Committee Member, NumFOCUS Project Incubator, February 2022 – Present: The NumFOCUS Project Incubator would provide support for the growth of Open Source Scientific projects and communities. At the end of the incubation period, projects will have the required tools for becoming 
+- Founding Committee Member, NumFOCUS Project Incubator, February 2022 – Present: The NumFOCUS Project Incubator would provide support for the growth of Open Source Scientific projects and communities. At the end of the incubation period, projects will have the required tools for becoming 
 NumFOCUS Affiliated projects.
 
-2. Mentee, [Society of Research Software Engineering Pilot Mentorship Programme](https://society-rse.org/events/pilot-mentoring-programme/), November 2021 – Present: This is a 9-month non-technical mentoring program on topics such as personal development, communication, leadership, and career direction broadly in the field of Research Software Engineering. Working under the mentorship of Michelle Barker to further develop the community aspect of the RSE Asia Association of the RSE Asia Association.
+- Mentee, [Society of Research Software Engineering Pilot Mentorship Programme](https://society-rse.org/events/pilot-mentoring-programme/), November 2021 – Present: This is a 9-month non-technical mentoring program on topics such as personal development, communication, leadership, and career direction broadly in the field of Research Software Engineering. Working under the mentorship of Michelle Barker to further develop the community aspect of the RSE Asia Association of the RSE Asia Association.
 
-3. [Cohort participant, Digital Infrastructure Incubator](https://incubator.codeforscience.org/cohort), Code for Science & Society (CS&S). Mentor: Rayya El Zein.
+- [Cohort participant, Digital Infrastructure Incubator](https://incubator.codeforscience.org/cohort), Code for Science & Society (CS&S). Mentor: Rayya El Zein.
 
-4. [Project Co-Lead, RSE Asia Association, Open Life Science Cohort-4](https://openlifesci.org/ols-4/projects-participants/). Mentor: Anne Fouilloux.
+- [Project Co-Lead, RSE Asia Association, Open Life Science Cohort-4](https://openlifesci.org/ols-4/projects-participants/). Mentor: Anne Fouilloux.
 
-5. Project Lead, R-Ladies Global, October 2020 -- February 2022.
+- Project Lead, R-Ladies Global, October 2020 -- February 2022.
 
-6. Chapter Activity Tracking, R-Ladies Global, February 2020 -- September 2020.
+- Chapter Activity Tracking, R-Ladies Global, February 2020 -- September 2020.
+
+- Diversity Scholar, RStudio::Global 2021 conference.
