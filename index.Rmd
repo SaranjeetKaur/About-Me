@@ -45,14 +45,18 @@ $~$
 
 ##### Upcoming Talks and Sessions
 
-- [Collaboration Campfires: March 2022](https://contributor.r-project.org/events/collaboration-campfires)
-- [Lightning talk at CW22 (April 2022)](https://software.ac.uk/cw22/lightning-talks)
 - [Collaboration Campfires: April 2022](https://contributor.r-project.org/events/collaboration-campfires)
 - [Collaboration Campfires: May 2022](https://contributor.r-project.org/events/collaboration-campfires)
 
 $~$
 
 ##### Previous Talks
+
+[![SSI Logo](images/SSIlogo.png){width=10%}](https://software.ac.uk/cw22/lightning-talks)
+---
+[Lightning talk & Hack Day participation at CollabW22](https://github.com/SaranjeetKaur/RSEAsiaCW22): Presented a lightning talk on "RSE Asia Association: In making" at the Collaborations Workshop 2022 hosted by the Software Sustainability Institute. Also presented a pitch to build a `Carpentries-style Lesson on R's Bug Tracking Process` which secured the 3rd position on the Hack Day. As a part of this task we converted the materials from the Collaboration Campfires (on learning how to contribute to R) into a reusable lesson using The Carpentries Workbench template and the R package `sandpaper`. The lesson created is hosted on the [r-devel GitHub organization](https://github.com/r-devel/r-bug-tracking-lesson).
+
+$~$
 
 [![APAN53 Logo](images/apan53logo.png){width=10%}](https://apan53.apan.net/)
 ---
