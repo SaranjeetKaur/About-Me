@@ -23,7 +23,13 @@ I'm a Statistician by training, based in India (Asia). I'm interested in learnin
 
 $~$
 
-##### Open-source projects
+##### Open source Contributions
+
+[![Google Season of Docs Logo](images/gsodlogo.png){width=10%}](https://developers.google.com/season-of-docs)
+---
+Using the learnings from the [Digital Infrastructure Incubator](https://incubator.codeforscience.org/) at Code for Science and Society in a project to [Expand and Reorganize the R Development Guide](https://github.com/rstats-gsod/gsod2022/wiki/GSOD-2022-Proposal). For this project I am working as a Technical Writer at [Google Season of Docs 2022](https://developers.google.com/season-of-docs) with [The R Foundation](https://www.r-project.org/foundation/).
+
+$~$
 
 [![R-devel Logo](images/Rlogo.png){width=10%}](https://contributor.r-project.org/)
 ---
@@ -45,16 +51,23 @@ $~$
 
 ##### Upcoming Talks and Sessions
 
-- [Collaboration Campfires: April 2022](https://contributor.r-project.org/events/collaboration-campfires)
 - [Collaboration Campfires: May 2022](https://contributor.r-project.org/events/collaboration-campfires)
 
 $~$
 
 ##### Previous Talks
 
-[![Lorentz Logo](images/lorentzlogo.png){width=10%}](https://www.researchsoft.org/events/2022-04/)
+[![Code for Science & Society Logo](images/CSSlogo.png){width=10%}](https://incubator.codeforscience.org/)
+---
+[Digital Infrastructure Incubator Graduation Talk](https://zenodo.org/record/6498656#.Ym1-yu1BxPZ): Presented the work and learnings from the Incubator for the project on "Building Community around the R Development Guide" at "The Practice of Digital Infrastructure" session organized by Code for Science and Society. This presentation was alongside five other projects that participated in the Incubator cohort.
 
+$~$
+
+[![Lorentz Logo](images/lorentzlogo.png){width=10%}](https://www.researchsoft.org/events/2022-04/)
+---
 [Invited talk](https://zenodo.org/record/6477536#.YmKWZ4VBxPY): Invited to present a talk on “Early career research viewpoint on future vision for DEI in RSE" presented at "Vive la différence - research software engineers" at the Lorentz Centre Workshop organized by the “Research Software Alliance”. It was an hybrid event with an in-person element from 19-22 April 2022 at the Lorentz Centre in the Netherlands; and online events from March-April 2022 across different time zones.
+
+$~$
 
 [![SSI Logo](images/SSIlogo.png){width=10%}](https://software.ac.uk/cw22/lightning-talks)
 ---
