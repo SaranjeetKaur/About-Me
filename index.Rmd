@@ -25,6 +25,12 @@ $~$
 
 ##### Open source Contributions
 
+[![Subject Matter Expert, NASA-AGU-TOPS](images/nasatopslogo.jpg){width=10%}](https://science.nasa.gov/open-science/transform-to-open-science)
+---
+Working as a Subject Matter Expert in the [Open Science Tools and Resources](https://github.com/nasa/Transform-to-Open-Science/blob/main/docs/Area2_Capacity_Sharing/OpenCore/OpenCore_leads.md#open-science-tools-and-resources) Module of the the NASA-AGU-TOPS initiative. Helping in developing the foundational content for the module with a group of experts.
+
+$~$
+
 [![Google Season of Docs Logo](images/gsodlogo.png){width=10%}](https://developers.google.com/season-of-docs)
 ---
 Using the learnings from the [Digital Infrastructure Incubator](https://incubator.codeforscience.org/) at Code for Science and Society in a project to [Expand and Reorganize the R Development Guide](https://github.com/rstats-gsod/gsod2022/wiki/GSOD-2022-Proposal). For this project I am working as a Technical Writer at [Google Season of Docs 2022](https://developers.google.com/season-of-docs) with [The R Foundation](https://www.r-project.org/foundation/).
@@ -51,7 +57,9 @@ $~$
 
 ##### Upcoming Talks and Sessions
 
-- [Collaboration Campfires: May 2022](https://contributor.r-project.org/events/collaboration-campfires)
+- JuliaCon 2022: Experience talk (dates coming soon)
+- CarpentryCon 2022: Lightning talk (dates coming soon)
+- RSECon 2022: Poster presentation (dates coming soon)
 
 $~$
 
