@@ -6,7 +6,7 @@ color2: "#5A59A3"
 angle: 130
 links:
   - label: LinkedIn
-    url: "https://www.linkedin.com/in/saranjeet-kaur-48ab769b"
+    url: "https://www.linkedin.com/in/saranjeet-k-48ab769b/"
   - label: Twitter
     url: "https://twitter.com/qwertyquesting"
   - label: Email
