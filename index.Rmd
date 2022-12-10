@@ -20,8 +20,9 @@ output:
 ---
 #### Hi there!
 
-Thank you for visiting my website! My name is Saranjeet Kaur Bhogal.
-I'm a Statistician by training, based in India (Asia) and an Open Source and Open Science Advocate. Occasionally I'm open to freelance opportunities. [Reach out to me](mailto:kaur.saranjeet3@gmail.com) if you have freelance or other suitable opportunities available.
+Thank you for visiting my website! My name is Saranjeet Kaur Bhogal and I'm based in India (Asia). I'm a Statistician by training, an Open Source and Open Science Advocate, and the Lead and Co-Founder of the [RSE Asia Association](https://rse-asia.github.io/RSE_Asia/). 
+
+Occasionally I'm open to freelance opportunities. [Reach out to me](mailto:kaur.saranjeet3@gmail.com) if you have freelance or other suitable opportunities available.
 
 $~$
 
@@ -73,6 +74,12 @@ I don't have any upcoming talks yet. [Reach out to me](mailto:kaur.saranjeet3@gm
 $~$
 
 ##### Previous Talks
+
+[![Center for Scientific Collaboration and Community Engagement Logo](images/csccelogo.jfif){width=20%}](https://www.cscce.org/)
+---
+[CSCCE Community Call November 2022 ](https://www.youtube.com/watch?v=5HG51sBG3Vs): Invited to participate as a panelist in the [CSCCE's November 2022 Community Call](https://www.cscce.org/2022/11/22/novembers-community-call-recap-community-managers-share-their-strategies-for-engaging-volunteers/) on "Creating fulfilling volunteer opportunities in open source software communities".
+
+$~$
 
 [![RSE Asia Australia Unconference 2022 Logo](images/rseaalogo2022.png){width=20%}](https://rse-aunz.github.io/2022-Asia-Australia-unconference/)
 ---
