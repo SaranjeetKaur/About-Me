@@ -16,7 +16,7 @@ links:
   - label: ORCID
     url: "https://orcid.org/0000-0002-7038-1457"
 output:
-  postcards::trestles
+  postcards::solana
 ---
 #### Hi there!
 
@@ -39,7 +39,7 @@ $~$
 
 [![Subject Matter Expert, NASA-AGU-TOPS](images/nasatopslogo.jpg){width=10%}](https://science.nasa.gov/open-science/transform-to-open-science)
 ---
-Working as a Subject Matter Expert in the [Open Science Tools and Resources](https://github.com/nasa/Transform-to-Open-Science/blob/main/docs/Area2_Capacity_Sharing/OpenCore/OpenCore_leads.md#open-science-tools-and-resources) Module of the the NASA-AGU-TOPS initiative. Helping in developing the foundational content for the module with a group of experts.
+Subject Matter Expert in the [Open Science Tools and Resources](https://github.com/nasa/Transform-to-Open-Science/blob/main/docs/Area2_Capacity_Sharing/OpenCore/OpenCore_leads.md#open-science-tools-and-resources) Module of the the NASA-AGU-TOPS initiative. Developed foundational content for the module with a group of experts.
 
 $~$
 
@@ -162,34 +162,23 @@ $~$
 
 ##### Conference Moderator, Interviews, Podcast
 
-[![Digital Infrastructure Podcast](images/digiinfra.png){width=20%}](https://dif.fireside.fm/)
+- [![Digital Infrastructure Podcast](images/digiinfra.png){width=20%}](https://dif.fireside.fm/)
 ---
 [The Digital Infrastructure Podcast](https://dif.fireside.fm/8)
 
-$~$
+- [Google Summer of Code 2022 with the Julia Language - Q/A](https://www.youtube.com/watch?v=yWEmAstJdQ8)
 
-
-[Google Summer of Code 2022 with the Julia Language - Q/A](https://www.youtube.com/watch?v=yWEmAstJdQ8)
-
-$~$
-
-[![The R Podcast](images/rpodcast.png){width=20%}](https://r-podcast.org/)
+- [![The R Podcast](images/rpodcast.png){width=20%}](https://r-podcast.org/)
 ---
 [The R Podcast](https://r-podcast.org/034-collaborative-campfires/)
 
-$~$
-
-[![JuliaCon 2021](images/juliconlogo2021.png){width=20%}](https://juliacon.org/2021/)
+- [![JuliaCon 2021](images/juliconlogo2021.png){width=20%}](https://juliacon.org/2021/)
 ---
 JuliaCon 2021 moderated sessions: [1](https://www.youtube.com/watch?v=IlFVwabDh6Q), [2](https://www.youtube.com/watch?v=LT4AP7CUMAw), [3](https://www.youtube.com/watch?v=sUyddZQaeyg), [4](https://www.youtube.com/watch?v=6V6jk_OdH-w)
 
-$~$
+- [Google Summer of Code AMA](https://www.youtube.com/watch?v=YPO9ew6EkkU)
 
-[Google Summer of Code AMA](https://www.youtube.com/watch?v=YPO9ew6EkkU)
-
-$~$
-
-[![Why R](images/whyr.jpg){width=20%}](https://whyr.pl/foundation/)
+- [![Why R](images/whyr.jpg){width=20%}](https://whyr.pl/foundation/)
 ---
 [Why R? World Interview](https://www.youtube.com/watch?v=0u-aJhXbLAM)
 
@@ -197,45 +186,37 @@ $~$
 
 ##### Community contributions
 
-[![Open Life Science](images/ols.png){width=20%}](https://openlifesci.org/)
+- [![Open Life Science](images/ols.png){width=20%}](https://openlifesci.org/)
 ---
 [Project Lead, Open Life Science Cohort-6](https://openlifesci.org/ols-6/projects-participants/).
 
-$~$
-
-[![NumFOCUS Incubator](images/numfocusincub.png){width=20%}](https://numfocus.medium.com/call-for-volunteers-numfocus-project-incubator-3ec7b4567846)
+- [![NumFOCUS Incubator](images/numfocusincub.png){width=20%}](https://numfocus.medium.com/call-for-volunteers-numfocus-project-incubator-3ec7b4567846)
 ---
 Founding Committee Member, NumFOCUS Project Incubator, February 2022 – Present: The NumFOCUS Project Incubator would provide support for the growth of Open Source Scientific projects and communities. At the end of the incubation period, projects will have the required tools for becoming 
 NumFOCUS Affiliated projects.
 
-$~$
-
-[![Society of RSE](images/socrse.png){width=20%}](https://society-rse.org/)
+- [![Society of RSE](images/socrse.png){width=20%}](https://society-rse.org/)
 ---
-Mentee, [Society of Research Software Engineering Pilot Mentorship Programme](https://society-rse.org/events/pilot-mentoring-programme/), November 2021 – Present: This is a 9-month non-technical mentoring program on topics such as personal development, communication, leadership, and career direction broadly in the field of Research Software Engineering. Working under the mentorship of Michelle Barker to further develop the community aspect of the RSE Asia Association of the RSE Asia Association.
+Mentee, [Society of Research Software Engineering Pilot Mentorship Programme](https://society-rse.org/events/pilot-mentoring-programme/), November 2021 – July 2022: This is a 9-month non-technical mentoring program on topics such as personal development, communication, leadership, and career direction broadly in the field of Research Software Engineering. Working under the mentorship of Michelle Barker to further develop the community aspect of the RSE Asia Association of the RSE Asia Association.
 
-$~$
-
-[![Digital Infrastructure Incubator](images/digicss.png){width=20%}](https://incubator.codeforscience.org/)
+- [![Digital Infrastructure Incubator](images/digicss.png){width=20%}](https://incubator.codeforscience.org/)
 ---
-[Cohort participant, Digital Infrastructure Incubator](https://incubator.codeforscience.org/cohort), Code for Science & Society (CS&S). Mentor: Rayya El Zein.
+[Cohort participant, Digital Infrastructure Incubator](https://incubator.codeforscience.org/cohort), November 2021 – April 2022, Code for Science & Society (CS&S). Mentor: Rayya El Zein.
 
-$~$
-
-[![Open Life Science](images/ols.png){width=20%}](https://openlifesci.org/)
+- [![Open Life Science](images/ols.png){width=20%}](https://openlifesci.org/)
 ---
 [Project Co-Lead, RSE Asia Association, Open Life Science Cohort-4](https://openlifesci.org/ols-4/projects-participants/). Mentor: Anne Fouilloux.
 
-$~$
-
 - Project Lead, R-Ladies Global, October 2020 -- February 2022.
 
-$~$
-
 - Chapter Activity Tracking, R-Ladies Global, February 2020 -- September 2020.
-
-$~$
 
 - Diversity Scholar, RStudio::Global 2021 conference.
 
 $~$
+
+#### Published Articles, Reports, Blogs, Research
+
+- [R Can Use Your Help: Translating R Messages](https://blog.r-project.org/2022/07/25/r-can-use-your-help-translating-r-messages/), Heather Turner and Saranjeet Kaur, Published: 2022
+
+- [Conditional Duration Models for High-Frequency Data: A Review on Recent Developments](https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12261), Saranjeet Kaur Bhogal and Ramanathan Thekke Variyam, Published: 2018
