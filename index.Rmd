@@ -22,7 +22,7 @@ output:
 
 Thank you for visiting my website! My name is Saranjeet Kaur Bhogal and I'm based in India (Asia). 
 
-I am ... 
+About me: 
 
 - A Statistician by training, 
 - An Open Source and Open Science Advocate,
@@ -79,11 +79,31 @@ $~$
 
 ##### Upcoming Talks and Sessions
 
-I don't have any upcoming talks yet. [Reach out to me](mailto:kaur.saranjeet3@gmail.com) if you want me to present a talk!
+<!-- I don't have any upcoming talks yet. -->
+
+[![APAN55 Logo](images/APAN55logo.png){width=20%}](https://apan55.apan.net)
+---
+[Asia Pacific Advanced Network, APAN55, Kathmandu, Nepal](https://apan55.apan.net): March 13-17, 2023
+
+$~$
+
+[![SSI Logo](images/SSIlogo.png){width=20%}](https://www.software.ac.uk/cw23)
+---
+[Collaborations Workshop 2023, Manchester, UK](https://www.software.ac.uk/cw23): May 2-4, 2023
+
+$~$
+
+[Reach out to me](mailto:kaur.saranjeet3@gmail.com) if you want me to present a talk!
 
 $~$
 
 ##### Previous Talks
+
+[![FOSDEM 2023 Logo](images/fosdem23logo.png){width=20%}](https://fosdem.org/2023/)
+---
+[FOSDEM'23](https://fosdem.org/2023/): Presented a talk on ["Establishing the Research Software Engineering (RSE) Asia Association with the Open Life Science programme"](https://fosdem.org/2023/schedule/event/openresearch_rse_asia_association/) in the Open Research Tools and Technology devroom at FOSDEM'23.
+
+$~$
 
 [![Center for Scientific Collaboration and Community Engagement Logo](images/csccelogo.jfif){width=20%}](https://www.cscce.org/)
 ---
@@ -198,7 +218,7 @@ $~$
 
 - [![Open Life Science](images/ols.png){width=20%}](https://openlifesci.org/)
 ---
-[Project Lead, Open Life Science Cohort-6](https://openlifesci.org/ols-6/projects-participants/).
+[Project Lead, Open Life Science Cohort-6](https://openlifesci.org/ols-6/projects-participants/). [Graduation Call](https://www.youtube.com/watch?v=VlWA7vygULc).
 
 - [![NumFOCUS Incubator](images/numfocusincub.png){width=20%}](https://numfocus.medium.com/call-for-volunteers-numfocus-project-incubator-3ec7b4567846)
 ---
@@ -225,8 +245,10 @@ Mentee, [Society of Research Software Engineering Pilot Mentorship Programme](ht
 
 $~$
 
-#### Published Articles, Reports, Blogs, Research
+#### Published Articles, Reports, Blogs
 
-- [R Can Use Your Help: Translating R Messages](https://blog.r-project.org/2022/07/25/r-can-use-your-help-translating-r-messages/), Heather Turner and Saranjeet Kaur, Published: 2022
+- [Hybrid working: how can we avoid the “worst of both worlds” for early-career researchers/academics?](https://www.software.ac.uk/blog/2023-01-16-hybrid-working-how-can-we-avoid-worst-both-worlds-early-career-researchersacademics), Saranjeet Kaur Bhogal, Ben Krikler, Lisanna Paladin, Dmitry Nikolaenko, Adam Jackson, and Simon Waldman. Publishes: 2023
 
-- [Conditional Duration Models for High-Frequency Data: A Review on Recent Developments](https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12261), Saranjeet Kaur Bhogal and Ramanathan Thekke Variyam, Published: 2018
+- [R Can Use Your Help: Translating R Messages](https://blog.r-project.org/2022/07/25/r-can-use-your-help-translating-r-messages/), Heather Turner and Saranjeet Kaur. Published: 2022
+
+- [Conditional Duration Models for High-Frequency Data: A Review on Recent Developments](https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12261), Saranjeet Kaur Bhogal and Ramanathan Thekke Variyam. Published: 2018
