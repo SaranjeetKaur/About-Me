@@ -18,7 +18,7 @@ links:
 output:
   postcards::solana
 ---
-#### Hi there!
+#### [Hi there!](#intro)
 
 Thank you for visiting my website! My name is Saranjeet Kaur Bhogal and I'm based in India (Asia). 
 
@@ -36,7 +36,7 @@ To have a discussion with me please [book a meeting](https://calendly.com/saranj
 
 $~$
 
-##### Recognition
+##### [Recognition](#recognition)
 
 I have been awarded the Research Software Engineering (RSE) Impact Award 2022, at the inaugural Community Awards by the [Society of Research Software Engineering](https://society-rse.org/).
 
@@ -45,7 +45,7 @@ I have been awarded the Research Software Engineering (RSE) Impact Award 2022, a
 
 $~$
 
-##### Open Source and Open Science Contributions
+##### [Open Source and Open Science Contributions](#oss-contributions)
 
 [![Subject Matter Expert, NASA-AGU-TOPS](images/nasatopslogo.jpg){width=10%}](https://science.nasa.gov/open-science/transform-to-open-science)
 ---
@@ -77,7 +77,7 @@ Created Zine for CarpenPi organization with a funding from the Data Science by D
 
 $~$
 
-##### Upcoming Talks and Sessions
+##### [Upcoming Talks and Sessions](#upcoming)
 
 <!-- I don't have any upcoming talks yet. -->
 
@@ -97,7 +97,7 @@ $~$
 
 $~$
 
-##### Previous Talks
+##### [Previous Talks](#previous-talks)
 
 [![FOSDEM 2023 Logo](images/fosdem23logo.png){width=20%}](https://fosdem.org/2023/)
 ---
@@ -173,7 +173,7 @@ $~$
 
 [![LatinR 2021 Logo](images/latinrlogo.png){width=20%}](https://latin-r.com/en)
 ---
-[Invited talk at LatinR 2021](https://www.youtube.com/watch?v=VzPia_PAxvw): Presented a Invited talk on “R Development Guide: Motivation, First Draft, and the Way Forward”. This is a Latin American conference about the use of R in R&D.
+[Invited talk at LatinR 2021](https://www.youtube.com/watch?v=VzPia_PAxvw): Presented an Invited talk on “R Development Guide: Motivation, First Draft, and the Way Forward”. This is a Latin American conference about the use of R in R&D.
 
 $~$
 
@@ -190,7 +190,7 @@ for various tutorials and sessions of this international online conference.
 
 $~$
 
-##### Conference Moderator, Interviews, Podcast
+##### [Conference Moderator, Interviews, Podcast](#podcasts-interviews)
 
 - [![Digital Infrastructure Podcast](images/digiinfra.png){width=20%}](https://dif.fireside.fm/)
 ---
@@ -214,7 +214,7 @@ JuliaCon 2021 moderated sessions: [1](https://www.youtube.com/watch?v=IlFVwabDh6
 
 $~$
 
-##### Community contributions
+##### [Community contributions](#community-contributions)
 
 - [![Open Life Science](images/ols.png){width=20%}](https://openlifesci.org/)
 ---
@@ -245,7 +245,7 @@ Mentee, [Society of Research Software Engineering Pilot Mentorship Programme](ht
 
 $~$
 
-#### Published Articles, Reports, Blogs
+#### [Published Articles, Reports, Blogs](#articles-reports-blogs)
 
 - [Hybrid working: how can we avoid the “worst of both worlds” for early-career researchers/academics?](https://www.software.ac.uk/blog/2023-01-16-hybrid-working-how-can-we-avoid-worst-both-worlds-early-career-researchersacademics), Saranjeet Kaur Bhogal, Ben Krikler, Lisanna Paladin, Dmitry Nikolaenko, Adam Jackson, and Simon Waldman. Publishes: 2023
 
