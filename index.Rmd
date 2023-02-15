@@ -167,13 +167,13 @@ $~$
 
 [![PackagingCon 2021 Logo](images/packagingconlogo.png){width=20%}](https://packaging-con.org/)
 ---
-[Lightning talk at PackagingCon 2021](https://youtu.be/BpRef4U-4sI?t=121): Presented a lightning talk on “Turing.jl: An Overview”. The talk was an overview of Turing.jl which is a Julia library focusing on Bayesian inference with probabilistic programming. This was the first edition of PackagingCon 2021, which is a conference held with the aim to bring various software eco-systems together. 
+[Lightning talk at PackagingCon 2021](https://youtu.be/BpRef4U-4sI?t=121): Presented a lightning talk on “Turing.jl: An Overview”. The talk was an overview of Turing.jl which is a Julia library focusing on Bayesian inference with probabilistic programming. This was the first edition of PackagingCon 2021, which is a conference held with the aim to bring various software ecosystems together. 
 
 $~$
 
 [![LatinR 2021 Logo](images/latinrlogo.png){width=20%}](https://latin-r.com/en)
 ---
-[Invited talk at LatinR 2021](https://www.youtube.com/watch?v=VzPia_PAxvw): Presented a Invited talk on “R Development Guide: Motivation, First Draft, and the Way Forward”. This is a Latinamerican conference about the use of R in R&D.
+[Invited talk at LatinR 2021](https://www.youtube.com/watch?v=VzPia_PAxvw): Presented a Invited talk on “R Development Guide: Motivation, First Draft, and the Way Forward”. This is a Latin American conference about the use of R in R&D.
 
 $~$
 
