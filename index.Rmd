@@ -113,13 +113,13 @@ $~$
 
 [![RSE Asia Australia Unconference 2022 Logo](images/rseaalogo2022.png){width=20%}](https://rse-aunz.github.io/2022-Asia-Australia-unconference/)
 ---
-[Strategy and Policy Panel at RSE Asia Australia Unconference 2022](https://www.youtube.com/watch?v=xySpuSifZFo&list=PLXLapl_LKb4cjs0740iWwxmZpN18EgPRl&index=13): Participated in the Strategy and Policy Panel of the Unconference and also hosted the Early Career RSE Keynote.
+[Strategy and Policy Panel at RSE Asia Australia Unconference 2022](https://rse-aunz.github.io/2022-Asia-Australia-unconference/): Participated in the Strategy and Policy Panel of the Unconference and also hosted the Early Career RSE Keynote.
 
 $~$
 
 [![RSECon 2022 Logo](images/rseconlogo2022.png){width=20%}](https://rsecon2022.society-rse.org/)
 ---
-[Poster Presentation, Lightning talk, RSE Worldwide Panel, Coding Confessions Panel at RSECon 2022](https://www.youtube.com/watch?v=xySpuSifZFo&list=PLXLapl_LKb4cjs0740iWwxmZpN18EgPRl&index=13): I presented a Poster and corresponding lightning talk of my work based on ‘RSE Asia Association: A year in making’. I was also invited to participate in the RSE Worldwide Panel and the Coding Confessions Panel at this conference.
+[Poster Presentation, Lightning talk, RSE Worldwide Panel, Coding Confessions Panel at RSECon 2022](https://rsecon2022.society-rse.org/): I presented a Poster and corresponding lightning talk of my work based on ‘RSE Asia Association: A year in making’. I was also invited to participate in the RSE Worldwide Panel and the Coding Confessions Panel at this conference.
 
 $~$
 
