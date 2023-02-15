@@ -161,7 +161,7 @@ $~$
 
 [![APAN53 Logo](images/apan53logo.png){width=20%}](https://apan53.apan.net/)
 ---
-[Panel discussion at APAN53](https://github.com/SaranjeetKaur/APAN53_Slides_Panel_Discussion): Presented my talk at the Panel Discussion on "https://github.com/SaranjeetKaur/APAN53_Slides_Panel_Discussion" held at APAN53, Bangladesh.
+[Panel discussion at APAN53](https://github.com/SaranjeetKaur/APAN53_Slides_Panel_Discussion): Presented my talk at the Panel Discussion on [“Accelerating the paradigm shift towards Open Science and Data Sharing in Pandemic times and Beyond”](https://github.com/SaranjeetKaur/APAN53_Slides_Panel_Discussion) held at APAN53, Bangladesh.
 
 $~$
 
