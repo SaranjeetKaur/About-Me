@@ -81,15 +81,21 @@ $~$
 
 <!-- I don't have any upcoming talks yet. -->
 
-[![APAN55 Logo](images/APAN55logo.png){width=20%}](https://apan55.apan.net)
+[![APAN56 Logo](images/APAN56logo.png){width=20%}](https://apan56.apan.net)
 ---
-[Asia Pacific Advanced Network, APAN55, Kathmandu, Nepal](https://apan55.apan.net): March 13-17, 2023
+[Asia Pacific Advanced Network, APAN56, Colombo, Sri Lanka](https://apan56.apan.net): August 21-25, 2023
 
 $~$
 
-[![SSI Logo](images/SSIlogo.png){width=20%}](https://www.software.ac.uk/cw23)
+[![RSECon23 Logo](images/RSECon23logo.png){width=20%}](https://rsecon23.society-rse.org)
 ---
-[Collaborations Workshop 2023, Manchester, UK](https://www.software.ac.uk/cw23): May 2-4, 2023
+[RSECon 2023, Swansea, UK](https://rsecon23.society-rse.org): September 5-7, 2023
+
+$~$
+
+[![RSEAA23 Logo](images/RSEAA23logo.png){width=20%}](https://rseaa.github.io)
+---
+[RSE Asia Australia Unconference 2023, Online](https://rseaa.github.io): September 13-15, 2023
 
 $~$
 
@@ -98,6 +104,18 @@ $~$
 $~$
 
 ##### [Previous Talks](#previous-talks)
+
+[![FAB23 Logo](images/Logofab23bhutan.png){width=20%}](https://fab23.fabevent.org)
+---
+[FAB23 Bhutan](https://fab23.fabevent.org): Presented a talk on ["Making research software reproducible and sustainable"](https://zenodo.org/record/8191155) at the FAB23 Conference, Jigme Namgyel Wangchuck Super FabLab, Thimphu, Bhutan (July 16-28, 2023).
+
+$~$
+
+[![APAN55 Logo](images/APAN55logo.png){width=20%}](https://apan55.apan.net)
+---
+[Asia Pacific Advanced Network, APAN55, Kathmandu, Nepal](https://apan55.apan.net): Presented a talk on ["Research Software Engineering (RSE) Asia Association: Journey and Future Plans"](https://zenodo.org/record/7817687) at APAN55, Kathmandu, Nepal, during March 13-17, 2023.
+
+$~$
 
 [![FOSDEM 2023 Logo](images/fosdem23logo.png){width=20%}](https://fosdem.org/2023/)
 ---
