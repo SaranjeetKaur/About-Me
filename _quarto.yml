@@ -1,0 +1,39 @@
+project:
+  type: website
+
+website:
+  title: "Saranjeet Kaur Bhogal"
+  navbar:
+    left:
+      - text: Home
+        file: index.qmd
+      - text: "About"
+        file: about.qmd
+      - text: "Talks"
+        file: talks/index.qmd
+    right: 
+      - icon: envelope
+        href: mailto:kaur.saranjeet3@gmail.com
+      - icon: github
+        href: https://github.com/SaranjeetKaur
+      - icon: linkedin
+        href: https://www.linkedin.com/in/saranjeet-k-48ab769b/
+      - icon: orcid
+        href: https://orcid.org/0000-0002-7038-1457
+        
+collections:
+  talks:
+    directory: talks
+    sort: "date:desc"
+    page:
+      format: html
+      type: default
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

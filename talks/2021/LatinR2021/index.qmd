@@ -1,0 +1,19 @@
+---
+title: "R Development Guide: Motivation, First Draft, and the Way Forward"
+image: "latinrlogo.png"
+author: 
+  - name: Saranjeet Kaur Bhogal
+date: 2021-11-12
+categories: [conference, R]
+description: "Invited talk at LatinR 2021."
+---
+
+This was presented at [LatinR 2021](https://latin-r.com/en).
+
+## Slides
+[View slides](https://github.com/SaranjeetKaur/LatinR2021_Slides_Invited_Talk)
+
+## Embedded video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VzPia_PAxvw?si=pEm-4qWlFul47adO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Presented an Invited talk on “R Development Guide: Motivation, First Draft, and the Way Forward”. This is a Latin American conference about the use of R in R&D.

@@ -1,0 +1,15 @@
+---
+title: "APAN53 meeting"
+image: "apan53logo.png"
+author: 
+  - name: Saranjeet Kaur Bhogal
+date: 2022-03-07
+categories: [panel, workshop]
+description: "Panel discussion and workshop talk at APAN53."
+---
+
+This was presented at [APAN53](https://apan53.apan.net/).
+
+[Panel discussion](https://github.com/SaranjeetKaur/APAN53_Slides_Panel_Discussion): Presented my talk at the Panel Discussion on [“Accelerating the paradigm shift towards Open Science and Data Sharing in Pandemic times and Beyond”](https://github.com/SaranjeetKaur/APAN53_Slides_Panel_Discussion) held at APAN53, Bangladesh.
+
+[Workshop talk](https://github.com/SaranjeetKaur/APAN53_RSE_Asia): Presented a talk on "Research Software Engineering initiative in Asia region" at Asia Pacific Advanced Network (APAN53, Bangladesh). This talk was a part of the workshop on "Growing research software initiatives and communities in the Asia Pacific".

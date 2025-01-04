@@ -1,0 +1,15 @@
+---
+title: "Talks"
+listing:
+  contents:
+    - "/!(drafts)*/*/index.qmd"
+  sort: "date:desc" # Sort talks by date
+  fields: [title, image, date, description]
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+title-block-banner: false
+code-tools: false
+---
+

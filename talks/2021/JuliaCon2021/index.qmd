@@ -1,0 +1,23 @@
+---
+title: "Algorithmic Variants of Nested Sampling"
+image: "juliconlogo2021.png"
+author: 
+  - name: Saranjeet Kaur Bhogal
+date: 2021-07-28
+categories: [conference, Julia]
+description: "Virtual poster presentation at JuliaCon 2021."
+---
+
+This was presented at [JuliaCon 2021](https://juliacon.org/2021/).
+
+## Abstract
+
+Nesting sampling is a methodology for computing the evidence (a high-dimensional integration of the likelihood over the prior density), and the posteriors simultaneously. Implementation in Julia of three algorithmic variants of nested sampling: Random Staggering, Slicing, and Random Slicing, are discussed in this work. Much of this work was inspired by the Python package, dynesty, and its modular approach to nested sampling which Julia’s multiple dispatch made even more effective.
+
+## Slides
+[View slides](https://github.com/SaranjeetKaur/Juliacon2021_Slides_Virtual_Poster)
+
+## Embedded video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q7SYF3wbXwk?si=8JU2zuHqQo16GHse" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+I presented a virtual poster of my work based on ‘Algorithmic Variants of Nested Sampling’. I developed these algorithms while working for the Google Summer of Code 2020 with the Turing team of the Julia Language organization. I also moderated the single track sessions of JuliaCon 2021. 
