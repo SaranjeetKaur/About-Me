@@ -1,0 +1,41 @@
+---
+title: "Enhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress"
+image: user2024.jpeg
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal, Lluís Revilla Sancho
+date: "2024-07-02"
+categories: [R, community building, open science, open source, technical writing]
+description: "Talk at useR! 2024"
+draft: false
+---
+
+[Slides](https://zenodo.org/records/12508510)
+
+[![](user2024slide.jpg)](https://zenodo.org/records/12508510)
+
+## Talk Recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vit06hXFw3M?si=txrXBSmsae-1Zk0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Talk on "Enhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress" presented at [useR! 2024 virtual](https://events.linuxfoundation.org/user/) on 2nd July 2024.
+
+## Description
+
+#### **Description**
+
+The R Development Guide (R Dev Guide) serves as a comprehensive resource to facilitate the onboarding process for new contributors to the R project. Its initial draft emerged in 2021 which was made possible through a funding from the R Foundation. Subsequently, a significant update took place during Google Season of Docs (GSoD) 2022. This update involved the inclusion of new chapters and sections, addressing important aspects such as translations, adopting a git workflow for proposed patches, and providing novice-friendly instructions on installing R from source. Work has continued post-GSoD 2022, to implement further updates and improvements, many in response to feedback on earlier versions. This talk reviews the current status of the guide, shedding light on the positive impact it has had on the R community, particularly among new contributors. With the enhancements to the Guide, contributing has become more accessible, especially for newcomers, compared to relying solely on the official documentation. The talk aims to showcase the evolving nature of the guide and underscore its role in fostering a more inclusive and supportive environment for those engaging with the R project.
+
+## Learning Outcomes
+
+The expected takeaways for the attendees of the session would be:\
+
+-   Understanding the scope of the R Dev Guide and the topics it covers.
+
+-   Understanding how to contribute to the guide by adding or reviewing content.
+
+-   Gaining insights into the impact the updates have had on the R community, especially on the new contributors.
+
+-   Gaining insights into the guide's evolving nature and its pivotal role in fostering inclusivity and support within the R project, forming an understanding of its contribution to the community.

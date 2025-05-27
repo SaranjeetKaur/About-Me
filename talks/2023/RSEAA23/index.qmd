@@ -1,0 +1,25 @@
+---
+title: "Strategy and Policy Panel Discussion"
+image: rseaa23.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2023-09-13"
+categories: [Asia, community building, open science, panel discussion, RSE Asia, Research Software Engineering]
+description: "Strategy and Policy Panel at RSE Asia Australia Unconference 2023"
+draft: false
+---
+
+## Talk Recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ay_aursiWpo?si=1kiIdqEzP5jfDQr9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Participated in the Strategy and Policy Panel of the [RSE Asia Australia Unconference 2023](https://rseaa.org/RSEAA23/) and was also the co-chair and host of the unconference.
+
+The second online Research Software Engineer (RSE) Asia Australia Unconference ran from the 13th to the 15th of September 2023. This was a joint partnership between the [RSE Asia Association](https://rse-asia.github.io/RSE_Asia/) and the [RSE Association of Australia and New Zealand](https://rse-aunz.github.io/).
+
+## All Recordings
+
+[Full playlist](https://www.youtube.com/playlist?list=PL3_y41vfc9Ggot7Ztp8USF481cHSNeXYN) of this unconference that I hosted.

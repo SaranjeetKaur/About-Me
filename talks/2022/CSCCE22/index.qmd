@@ -1,0 +1,19 @@
+---
+title: "Creating fulfilling volunteer opportunities in open source software communities"
+image: cscce22.jpg
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2022-11-22"
+categories: [community building, open source software, panel discussion, volunteering]
+description: "CSCCE Community Call November 2022"
+draft: false
+---
+
+Talk Recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5HG51sBG3Vs?si=m01uA34GccBu1G8y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Invited to participate as a panelist in the [CSCCE’s November 2022 Community Call](https://www.cscce.org/2022/11/22/novembers-community-call-recap-community-managers-share-their-strategies-for-engaging-volunteers/) on “Creating fulfilling volunteer opportunities in open source software communities”.

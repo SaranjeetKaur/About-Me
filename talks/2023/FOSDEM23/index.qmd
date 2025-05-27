@@ -1,0 +1,19 @@
+---
+title: "Establishing the Research Software Engineering (RSE) Asia Association with the Open Life Science programme"
+image: fosdem23.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2023-02-04"
+categories: [Asia, community building, open science, RSE Asia, Research Software Engineering]
+description: "Talk at FOSDEM 2023"
+draft: false
+---
+
+[Slides](https://zenodo.org/records/7595109#.Y9p5qy8Rp-U)
+
+[![](fosdem23.png)](https://zenodo.org/records/7595109#.Y9p5qy8Rp-U)
+
+[Talk Recording](https://ftp.belnet.be/mirror/FOSDEM/video/2023/D.research/openresearch_rse_asia_association.mp4)
+
+Presented a talk on “[Establishing the Research Software Engineering (RSE) Asia Association with the Open Life Science programme](https://archive.fosdem.org/2023/schedule/event/openresearch_rse_asia_association/)” in the Open Research Tools and Technology devroom at [FOSDEM 2023](https://archive.fosdem.org/2023/).

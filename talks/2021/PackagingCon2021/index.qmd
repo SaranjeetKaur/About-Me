@@ -1,0 +1,19 @@
+---
+title: "Turing.jl: An Overview"
+image: packagingcon2021.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2021-11-09"
+categories: [Julia, open source]
+description: "Lightning talk at PackagingCon 2021"
+draft: false
+---
+
+[Slides](https://github.com/SaranjeetKaur/PackagingCon2021_Slides_Lightning_Talk)
+
+[![](packagingcon2021.png)](https://github.com/SaranjeetKaur/PackagingCon2021_Slides_Lightning_Talk)
+
+[Talk recording](https://www.youtube.com/watch?v=BpRef4U-4sI)
+
+Presented a lightning talk on “Turing.jl: An Overview”. The talk was an overview of Turing.jl which is a Julia library focusing on Bayesian inference with probabilistic programming. This was the first edition of [PackagingCon 2021](https://packaging-con.org), which is a conference held with the aim to bring various software ecosystems together.

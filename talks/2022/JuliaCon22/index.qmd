@@ -1,0 +1,27 @@
+---
+title: "Community Building using Open Science Principles"
+image: juliacon22.jpg
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2022-07-11"
+categories: [Asia, community building, open science, Research Software Engineering, RSE Asia]
+description: "Experience talk at JuliaCon 2022"
+draft: false
+---
+
+Slides
+
+![](juliacon22.jpg)\
+
+## Abstract
+
+Open science helps in creating reproducible resources in a transparent manner, which further improves inclusion and fairness in the process. In this talk I share the benefits of following open science principles in community building work that I learnt during my participation in the Cohort-4 of the Open Life Science Programme (OLS-4). These principles can be applied to research and community work in many domains.
+
+## Talk Recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8SSutdRfQ4g?si=w9GuyCyIWZTe441L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Presented an experience talk of my work based on ‘Community Building using Open Science Principles’ at [JuliaCon 2022](https://juliacon.org/2022/) (online conference). This talk highlighted my work on building the [RSE Asia Association](https://rse-asia.github.io/RSE_Asia/).

@@ -1,0 +1,25 @@
+---
+title: "The R Development Guide: Enhancing Community Engagement and Contribution"
+image: slides.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2024-07-16"
+categories: [R, community building, open science, open source, poster presentation, technical writing]
+description: "Talk and poster presentation at RSLondonSouthEast 2024, Imperial College London, South Kensington Campus"
+draft: false
+---
+
+[Talk Slides](https://zenodo.org/records/12747675)
+
+[![](slides.png){width="555"}](https://zenodo.org/records/12747675)
+
+Talk titled "The R Development Guide: Enhancing Community Engagement and Contribution" presented at RSLondonSouthEast 2024, Imperial College London, South Kensington Campus on 16th July 2024.
+
+[Poster](https://zenodo.org/records/12731887)
+
+[![](poster.png){width="435" height="654"}](https://zenodo.org/records/12731887)
+
+## Abstract
+
+The R Development Guide (R Dev Guide) is a resource designed to onboard new contributors to the R project, making the transition smoother and more accessible. Initially drafted in 2021 with the support of the R Foundation, the guide has undergone significant revisions, notably during the Google Season of Docs 2022. The presentation will cover the guide's evolution and its role in fostering a more inclusive and collaborative environment. Attendees (seasoned or new contributors to R) will gain insights into leveraging the R Dev Guide for effectively contributing to the R project and/or for further enhancements to the guide itself. The session aims to develop attendees' skills in navigating the R project and collaborating with a global community. The evolution of the guide reflects a broader commitment to fostering an inclusive community and democratising the process of contributing to the R project. It would provide a pathway for attendees seeking to contribute to open-source and engage with the global R community. This presentation will help start discussions on continuous learning and community collaboration within software development.

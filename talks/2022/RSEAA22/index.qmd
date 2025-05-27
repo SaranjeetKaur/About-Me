@@ -1,0 +1,21 @@
+---
+title: "RSE Asia Australia Unconference 2022"
+image: rseaa22.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2022-09-14"
+categories: [Asia, community building, panel discussion, Research Software Engineering, RSE Asia]
+description: "Strategy and Policy Panel at RSE Asia Australia Unconference 2022"
+draft: false
+---
+
+## Talk Recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lN1GICnbohI?si=PsrOVFYHSC--XwvZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Participated in the Strategy and Policy Panel of the [RSE Asia Australia Unconference 2022](https://rse-aunz.org/2022-Asia-Australia-unconference/) and hosted the Early Career RSE Keynote. Was also the co-chair and host of the unconference.
+
+The first online Research Software Engineer (RSE) Asia Australia Unconference ran from the 14th to the 16th of September 2022. This was a joint partnership between the [RSE Asia Association](https://rse-asia.github.io/RSE_Asia/) and the [RSE Association of Australia and New Zealand](https://rse-aunz.github.io/).

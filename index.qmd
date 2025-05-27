@@ -1,0 +1,5 @@
+---
+title: "Saranjeet Kaur Bhogal"
+---
+
+A Statistician by training, advocating for open source and open science. Co-Lead and Co-Founder of the [Research Software Engineering Asia Association (RSE Asia)](https://rse-asia.github.io/RSE_Asia/), [International Fellow](https://software.ac.uk/about/fellows/saranjeet-kaur-bhogal) of the [2023 Inauguration of the Software Sustainability Institute](#0), and Research Software Engineer within the central Research Software Engineering team at Imperial College London.

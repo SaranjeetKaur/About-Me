@@ -1,0 +1,19 @@
+---
+title: "RSE Asia Association: In making"
+image: cw22.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2022-04-04"
+categories: [Asia, community building, Research Software Engineering, RSE Asia, lightning talk]
+description: "Lightning talk & Hack Day participation at CollabW22"
+draft: false
+---
+
+[Slides](https://github.com/SaranjeetKaur/RSEAsiaCW22)
+
+[![](cw22.png)](https://github.com/SaranjeetKaur/RSEAsiaCW22)
+
+Presented a lightning talk on “RSE Asia Association: In making” at the [Collaborations Workshop 2022](https://www.software.ac.uk/workshop/collaborations-workshop-2022-cw22-0) hosted by the Software Sustainability Institute.
+
+Also presented a pitch to build a Carpentries-style Lesson on R's Bug Tracking Process which secured the 3rd position on the Hack Day. As a part of this task we converted the materials from the Collaboration Campfires (on learning how to contribute to R) into a reusable lesson using The Carpentries Workbench template and the R package sandpaper. The lesson created is hosted on the [r-devel GitHub organisation](https://github.com/r-devel/r-bug-tracking-lesson).

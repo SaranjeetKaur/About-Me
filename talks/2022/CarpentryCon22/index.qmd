@@ -1,0 +1,29 @@
+---
+title: "Creating reusable lessons using the Carpentries Workbench template"
+image: carpentrycon22.jpg
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2022-08-07"
+categories: [R, Carpentries, open science, open source]
+description: "Lightning talk at CarpentryCon 2022"
+draft: false
+---
+
+Slides
+
+## Abstract
+
+This talk will provide a dive into how reusable R Markdown lessons can be created using the [Carpentries Workbench template](https://github.com/carpentries/workbench-template-rmd). Lessons on [R’s bug tracking process](https://github.com/r-devel/r-bug-tracking-lesson)) and [R’s translations process](https://github.com/r-devel/r-translations-lesson)), created using the Workbench template will be demonstrated during this talk. Both these lessons are inspired from the materials of the [Collaboration Campfires](https://contributor.r-project.org/events/collaboration-campfires). \
+\
+The intended audience for this talk would include Instructors and Learners who are interested in using the Carpentries Workbench template for teaching and/or learning purposes. Those who are interested in learning about beginner-level resources for “contributing to R” would also benefit from this talk.
+
+The expected outcome of this talk would be that the audience will get an idea of using the Carpentries Workbench template for their teaching and/or learning purposes. Instructors will also be introduced to a tool for creating neatly structured lesson template(s).
+
+## Talk Recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xySpuSifZFo?si=tBRkNM4g35w1Tol1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Presented a lightning talk of my work based on ‘Creating reusable lessons using the Carpentries Workbench template’ at [CarpentryCon 2022](https://2022.carpentrycon.org).

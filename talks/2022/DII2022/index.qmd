@@ -1,0 +1,17 @@
+---
+title: "Building Community around the R Development Guide"
+image: dii2022.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2022-04-27"
+categories: [R, community building, graduation]
+description: "Digital Infrastructure Incubator Graduation Talk"
+draft: false
+---
+
+[Slides](https://zenodo.org/records/6498656#.Ym1-yu1BxPZ)
+
+[![](dii2022.png)](https://zenodo.org/records/6498656#.Ym1-yu1BxPZ)
+
+Presented the work and learnings from the inaugural Digital Infrastructure Incubator for the project on “[Building Community around the R Development Guide](https://www.codeforsociety.org/incubator/projects/building-community-around-the-r-development-guide)” at “The Practice of Digital Infrastructure” session organised by Code for Science and Society. This presentation was alongside five other projects that participated in the Incubator cohort. This work was funded by the Code for Science and Society.

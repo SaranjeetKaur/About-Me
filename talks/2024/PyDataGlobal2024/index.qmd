@@ -1,0 +1,51 @@
+---
+title: "Empowering New Contributors: The Evolving Role of the R Development Guide"
+image: pydataglobal2024.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2024-12-04"
+categories: [R, community building, open science, open source, technical writing]
+description: "Talk at PyData Global 2024"
+draft: false
+---
+
+[Slides](https://zenodo.org/records/14274720)
+
+[![](pydataglobal2024.png)](https://zenodo.org/records/14274720)
+
+## Talk Recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l5BwwvQlwG0?si=UHGq9dlE_Kb6Zq6d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Talk titled "Empowering New Contributors: The Evolving Role of the R Development Guide" presented at [PyData Global 2024](https://pydata.org/global2024) hosted online from 3-5 December 2024.
+
+## **Abstract**
+
+The [R Development Guide (R Dev Guide)](https://contributor.r-project.org/rdevguide/) serves as a resource for onboarding new contributors to the R project. Initially drafted in 2021 and then expanded during the Google Season of Docs 2022, the guide has evolved to make contributing more accessible, especially for newcomers. This talk will explore the latest developments in the guide, its impact on the R community, and how it fosters inclusivity within the project by simplifying the contribution process.
+
+## **Description**
+
+The [R Development Guide (R Dev Guide)](#0) has transformed into an essential resource, designed to simplify the onboarding process for new contributors to the R project. Launched in 2021 with support from the R Foundation and expanded during Google Season of Docs (GSoD) 2022, the guide has undergone many improvements since. These updates have made the contribution process more approachable, addressing the challenges posed by relying solely on official documentation.
+
+This talk will share the current status of the R Dev Guide, discussing the ongoing work to implement further updates in response to community feedback. We'll highlight how the guide has positively impacted the R community, particularly by reducing barriers for new contributors, and by creating a more inclusive and welcoming environment for those engaging with the R project.
+
+The session will cover:
+
+-   Introduction to the R Development Guide (5 minutes): Overview of the guide’s creation and evolution, from its initial draft to its major updates in GSoD 2022.
+
+-   Impact on the R Community (5 minutes): How the guide has benefited new contributors, fostering inclusivity and lowering the barriers to entry in the R project.
+
+-   Current Overall Structure (10 minutes): Review of current structure of the guide.
+
+-   How to Contribute to the R Dev Guide (5 minutes): How you can contribute to the guide by reviewing or adding content, and helping to further its growth.
+
+## Takeaways
+
+Attendees will gain an understanding of the scope and content of the R Dev Guide, learn how they can contribute to its continuous improvement, and recognise the role the guide plays in fostering an inclusive and supportive R development community.
+
+## Audience
+
+This talk is ideal for R developers, open-source contributors, and anyone interested in supporting the growth of the R project, especially those who may be new to contributing. A basic understanding of R is recommended.

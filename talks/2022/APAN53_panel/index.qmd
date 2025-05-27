@@ -1,0 +1,17 @@
+---
+title: "Accelerating the paradigm shift towards Open Science and Data Sharing in Pandemic times and Beyond"
+image: apan53panel.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2022-03-09"
+categories: [Asia, community building, open science, panel discussion]
+description: "Panel discussion at APAN53"
+draft: false
+---
+
+[Slides](https://github.com/SaranjeetKaur/APAN53_Slides_Panel_Discussion)
+
+[![](apan53panel.png)](https://github.com/SaranjeetKaur/APAN53_Slides_Panel_Discussion)
+
+Presented the developments of the RSE Asia Association in a panel discussion on “Accelerating the paradigm shift towards Open Science and Data Sharing in Pandemic times and beyond” at the [Asia Pacific Advanced Network (APAN53)](https://apan53.apan.net) conference, during 7th-11th March 2022.

@@ -1,0 +1,25 @@
+---
+title: "R Developer’s Guide"
+image: useR2021.png
+image-alt: Opening slide
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2021-08-07"
+categories: [community building, R, technical writing]
+description: "Regular talk presented during useR! 2021 - The R Conference"
+draft: false
+---
+
+[Slides](https://userconf.github.io/talks-2021/session1A_talk2.html#1)
+
+[![](useR2021.png)](https://userconf.github.io/talks-2021/session1A_talk2.html#1)
+
+## Talk recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2B7H8WJOX40?si=i2NKTcAzrqRR-Ghe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Presented a regular talk in the ‘1A Community and Outreach 1’ session on the ‘R Developer’s Guide’ (now called as the ‘[R Development Guide](https://contributor.r-project.org/rdevguide/)’) at [useR! 2021](https://user2021.r-project.org) (online).
+
+During the conference, I also attended the tutorials on ‘Contributing to R’ (conducted by Gabriel Becker and Martin Maechler) and ‘Translating R to Your Language’ (conducted by Michael Chirico and Michael Lawrence). I was also the Zoom Host for various tutorials and sessions of this international online conference.

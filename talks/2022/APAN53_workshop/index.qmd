@@ -1,0 +1,17 @@
+---
+title: "Research Software Engineering initiative in Asia region"
+image: apan53workshop.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2022-03-11"
+categories: [Asia, community building, open science, Research Software Engineering, RSE Asia, workshop session]
+description: "Workshop session at APAN53"
+draft: false
+---
+
+[Slides](https://github.com/SaranjeetKaur/APAN53_RSE_Asia)
+
+[![](apan53workshop.png)](https://github.com/SaranjeetKaur/APAN53_RSE_Asia)
+
+Presented a talk on “Research Software Engineering initiative in Asia region” at a Workshop session on “Growing research software initiatives and communities in the Asia Pacific” organized by the [Asia Pacific Advanced Network (APAN53)](https://apan53.apan.net) conference (7th-11th March 2022).\

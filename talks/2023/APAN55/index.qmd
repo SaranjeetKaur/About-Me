@@ -1,0 +1,28 @@
+---
+title: "Research Software Engineering (RSE) Asia Association: Journey and Future Plans"
+image: apan55.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2023-03-15"
+categories: [Asia, community building, National Research and Education Network, open science, RSE Asia, Research Software Engineering]
+description: "Talk at APAN55, Kathmandu, Nepal"
+draft: false
+---
+
+[Slides](https://zenodo.org/records/7817687)
+
+[![](apan55.png)](https://zenodo.org/records/7817687)
+
+Presented a talk on “Research Software Engineering (RSE) Asia Association: Journey and Future Plans” at the 55th meeting of the [Asia Pacific Advanced Network (APAN55)](https://apan55.apan.net/) during the “Open and Sharing Data Working Group (OSDWG): Asia Pacific Open-Sharing Data and National Research and Education Network (NREN) Open Science” session in Kathmandu, Nepal from March 13-17, 2023.
+
+## Experience blog
+
+[Attending an in-person Asia Pacific Advanced Network (APAN) meeting for the first time](https://www.software.ac.uk/blog/attending-person-asia-pacific-advanced-network-apan-meeting-first-time)
+
+## APAN55 Fellow
+
+Selected to attend this meeting as a fellow delegate from India.
+
+![](fellowship_certificate.jpg)\
+\

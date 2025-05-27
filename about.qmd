@@ -1,0 +1,39 @@
+---
+title: "About"
+---
+
+Research Software Engineer, Imperial College London
+
+Co-Lead and Co-Founder of the [Research Software Engineering Asia Association (RSE Asia)](https://rse-asia.github.io/RSE_Asia/)
+
+[International Fellow](https://software.ac.uk/about/fellows/saranjeet-kaur-bhogal) of the [2023 Inauguration of the Software Sustainability Institute](#0)
+
+Awarded the Research Software Engineering (RSE) Impact Award 2022, at the inaugural Community Awards by the [Society of Research Software Engineering](https://society-rse.org/). *This award goes to an individual who has made a significant impact in any part of the RSE community. This could include work done on a particular project, field of research or as part of a group. Other examples could include impact on the wider community, such as increasing RSE visibility and diversity.*
+
+[Asia Pacific Advanced Network](https://apan.net) Fellow (Nepal APAN55, Sri Lanka APAN56)\
+\
+Subject Matter Expert in the Open Science Tools and Resources Module of the the NASA-AGU-TOPS initiative. Developed foundational content for the module with a group of experts
+
+Awarded a grant in the inaugural [Digital Infrastructure Incubator](https://www.codeforsociety.org/incubator/projects/building-community-around-the-r-development-guide) by Code for Science and Society to work on a project to build a community around the [R Development Guide](https://contributor.r-project.org/rdevguide/) (2021-2022)
+
+Technical Writer for the [R Development Guide](https://contributor.r-project.org/rdevguide/) (in 2021 as a project funded by the [R Foundation](https://www.r-project.org/foundation/) and in [Google Season of Docs 2022](https://developers.google.com/season-of-docs))
+
+rstudio::global Diversity Scholar 2021
+
+Selected for [Google Summer of Code 2020](https://gist.github.com/SaranjeetKaur/37086fea06076bd3ec76d052cc166378) with the Turing team of the Julia language organisation
+
+Certified [Carpentries Instructor Trainer](https://carpentries.org/community/instructors/)
+
+Awarded the **"[Innovation in Science Pursuit for Inspired Research (INSPIRE) - Scholarship for Higher Education](https://online-inspire.gov.in)"** by the Department of Science & Technology, Government of India (2009-2014)
+
+M.Phil. Statistics
+
+Qualified the National Eligibility Test for Lectureship in Mathematical Sciences securing an All India Rank of 41 among 545 candidates in the year 2016 and All India Rank of 24 in the year 2017
+
+Qualified national level Graduate Aptitude Test in Engineering (GATE) Examination in Mathematics securing All India Rank of 62 among 6305 candidates (2016)
+
+Qualified the Maharashtra State Eligibility Test for Lectureship in Mathematical Sciences (2013)
+
+M.Sc. Statistics (University level First Rank in the order of merit) (2012-2014)
+
+B.Sc. Statistics (University level First Rank in the order of merit in the subject Statistics as well as in the overall Science stream) (2009-2012)

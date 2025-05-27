@@ -1,0 +1,31 @@
+---
+title: "Shaping the Landscape: The Emerging Research Software Engineering Community in Asia"
+image: rsecon23.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2023-09-05"
+categories: [Asia, community building, lightning talk, open science, poster presentation, RSE Asia, Research Software Engineering]
+description: "Lightning talk and poster presentation at RSECon23, Swansea University"
+draft: false
+---
+
+[Slides](https://zenodo.org/records/8300052)\
+
+[![](rsecon23.png)](https://zenodo.org/records/8300052)
+
+## Talk Recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3i7bkcrdqjc?si=E2lhvuUxo7AP9hjL&amp;start=795" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Lightning talk presented alongside a poster session at [RSECon23](https://rsecon23.society-rse.org), Swansea University during 5-7 September 2023.
+
+Also volunteered for the conference, was part of the [conference committee](https://rsecon23.society-rse.org/conference-committee/) and organised and participated in the RSE Worldwide session too.
+
+![With RSECon23 in-person volunteers at Swansea University](conference_volunteers.png)
+
+## Experience blog
+
+[Exploring RSECon 2023: A Conference Recap](https://www.software.ac.uk/blog/exploring-rsecon-2023-conference-recap)

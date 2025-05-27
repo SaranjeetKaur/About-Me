@@ -1,0 +1,23 @@
+---
+title: "Making research software reproducible and sustainable"
+image: fab23.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2023-07-16"
+categories: [open science, RSE Asia, Research Software Engineering]
+description: "Talk at the FAB23 Conference, Jigme Namgyel Wangchuck Super FabLab, Thimphu, Bhutan"
+draft: false
+---
+
+[Slides](https://zenodo.org/records/8191155)
+
+[![](fab23.png)](https://zenodo.org/records/8191155)
+
+Presented a talk on “Making research software reproducible and sustainable” at the [FAB23 Conference](https://fab23.fabevent.org), Jigme Namgyel Wangchuck Super FabLab, Thimphu, Bhutan (July 16-28, 2023).
+
+## Experience blogs
+
+-   [FAB23: A Journey to Bhutan's Fab Lab Conference](https://www.software.ac.uk/blog/fab23-journey-bhutans-fab-lab-conference)
+
+-   [Exploring the Software Dimension at FAB23](https://www.software.ac.uk/blog/exploring-software-dimension-fab23)

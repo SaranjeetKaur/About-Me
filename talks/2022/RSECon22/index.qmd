@@ -1,0 +1,31 @@
+---
+title: "RSE Asia Association: A year in making"
+image: rsecon22.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2022-09-05"
+categories: [Asia, community building, lightning talk, open science, panel discussion, poster presentation, Research Software Engineering, RSE Asia]
+description: "Poster Presentation, Lightning talk, RSE Worldwide Panel, Coding Confessions Panel at RSECon 2022"
+draft: false
+---
+
+[Slides](https://zenodo.org/record/7044808#.YzvzMjRBxPY)\
+
+## Talk Recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PDEm8-y_DHM?si=yoJyShsInqJsEhH5&amp;start=891" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Presented a Poster and corresponding lightning talk of my work based on ‘RSE Asia Association: A year in making’ at [RSECon 2022](https://rsecon2022.society-rse.org). The poster received an honorary mention at the conference.
+
+Also invited to participate in the RSE Worldwide Panel and the Coding Confessions Panel at this conference.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0BGYOYj7OjQ?si=CTWXLC2uWx6KgwNP&amp;start=891" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Awarded the Research Software Engineering (RSE) Impact Award 2022, at the inaugural Community Awards by the [Society of Research Software Engineering](https://society-rse.org/). *This award goes to an individual who has made a significant impact in any part of the RSE community. This could include work done on a particular project, field of research or as part of a group. Other examples could include impact on the wider community, such as increasing RSE visibility and diversity.*
+
+![](RSE_impact_award.jfif){width="320"}

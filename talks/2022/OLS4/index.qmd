@@ -1,0 +1,27 @@
+---
+title: "Building the Research Software Engineering (RSE) Association in Asia region"
+image: ols4.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2022-01-19"
+categories: [Asia, community building, graduation, open science, Research Software Engineering, RSE Asia]
+description: "Graduation talk: Open Life Science Programme Cohort-4 (OLS-4)"
+draft: false
+---
+
+[Slides](https://github.com/rse-asia/OLS-4-graduation)
+
+[![](ols4.png)](https://github.com/rse-asia/OLS-4-graduation)
+
+## Talk Recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BCBRC3vyNYg?start=2769" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+
+Graduation from [OLS-4](https://we-are-ols.org/openseeds/ols-4/) for the project of "Building the Research Software Engineering (RSE) Association in Asia region".
+
+## Certificate of Graduation
+
+![](graduation_certificate.jpg)

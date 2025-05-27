@@ -1,0 +1,41 @@
+---
+title: "Navigating the Research Software Engineering Community Landscape in Asia"
+image: apan56.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2023-08-21"
+categories: [Asia, community building, National Research and Education Network, open science, RSE Asia, Research Software Engineering]
+description: "Talk at APAN56, Colombo, Sri Lanka"
+draft: false
+---
+
+[Slides](https://zenodo.org/records/8278704)
+
+[![](apan56.png)](https://zenodo.org/records/8278704)
+
+## Talk Recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wt9XPNIrSH4?si=nICN6DpyS6A4Xw6O&amp;start=1802" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Presented a talk at the 56th meeting of the [Asia Pacific Advanced Network (APAN56)](https://apan56.apan.net) during 21-25 August 2023 at Colombo, Sri Lanka.
+
+## Experience blog
+
+[Exploring the APAN56 Conference in Colombo, Sri Lanka](https://www.software.ac.uk/blog/exploring-apan56-conference-colombo-sri-lanka)
+
+## Discussion session
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ku7MDI3yNCk?si=vW0TwOuRVxUuv5og" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+Participated in the discussion session at APAN56 - Day 2 - Asia Pacific Open and Sharing Data - Session 2.
+
+## APAN56 Fellow
+
+Selected to attend this meeting as a fellow delegate from India.
+
+![](apan56certificate.jpg)
