@@ -63,102 +63,200 @@
     "text": "Abstract\nIn this session, we will explore Positron, an Integrated Development Environment (IDE). We will look at some of its features, how it works with R and Python, and how it compares to other editors like RStudio and VS Code. The session is aimed at beginners who want to explore the tool and see how it can be used for coding."
   },
   {
-    "objectID": "talks/2021/JuliaCon2021/index.html",
-    "href": "talks/2021/JuliaCon2021/index.html",
-    "title": "Algorithmic Variants of Nested Sampling",
+    "objectID": "talks/2025/BristolRUG25/index.html",
+    "href": "talks/2025/BristolRUG25/index.html",
+    "title": "Creating Parameterised Reports using Quarto",
+    "section": "",
+    "text": "Slides\nGitHub repository\nThis session was presented at the Bristol R User Group meetup in July 2025."
+  },
+  {
+    "objectID": "talks/2025/BristolRUG25/index.html#abstract",
+    "href": "talks/2025/BristolRUG25/index.html#abstract",
+    "title": "Creating Parameterised Reports using Quarto",
+    "section": "Abstract",
+    "text": "Abstract\nWhen working with data, it’s common to generate the same report multiple times, each with different parameters, such as dates, datasets, or regions. Manually updating and duplicating reports can be time-consuming and prone to error. In this session, I will introduce parameterised reporting using Quarto, an open-source system for scientific and technical publishing. You’ll learn how to automate the generation of multiple versions of the same report, without copying and pasting."
+  },
+  {
+    "objectID": "talks/2025/BristolRUG25/index.html#bonus",
+    "href": "talks/2025/BristolRUG25/index.html#bonus",
+    "title": "Creating Parameterised Reports using Quarto",
+    "section": "Bonus",
+    "text": "Bonus\nWe will also explore how to create branded reports using brand.yml, ensuring consistency across all your documents."
+  },
+  {
+    "objectID": "talks/2025/BristolRUG25/index.html#who-should-attend",
+    "href": "talks/2025/BristolRUG25/index.html#who-should-attend",
+    "title": "Creating Parameterised Reports using Quarto",
+    "section": "Who Should Attend?",
+    "text": "Who Should Attend?\nThis session is ideal for anyone who works with data and produces reports. Basic familiarity with R will be helpful, but is not required."
+  },
+  {
+    "objectID": "talks/2021/useR2021/index.html",
+    "href": "talks/2021/useR2021/index.html",
+    "title": "R Developer’s Guide",
     "section": "",
     "text": "Slides"
   },
   {
-    "objectID": "talks/2021/JuliaCon2021/index.html#abstract",
-    "href": "talks/2021/JuliaCon2021/index.html#abstract",
-    "title": "Algorithmic Variants of Nested Sampling",
-    "section": "Abstract",
-    "text": "Abstract\nNesting sampling is a methodology for computing the evidence (a high-dimensional integration of the likelihood over the prior density), and the posteriors simultaneously. Implementation in Julia of three algorithmic variants of nested sampling: Random Staggering, Slicing, and Random Slicing, are discussed in this work. Much of this work was inspired by the Python package, dynesty, and its modular approach to nested sampling which Julia’s multiple dispatch made even more effective."
-  },
-  {
-    "objectID": "talks/2021/JuliaCon2021/index.html#talk-recording",
-    "href": "talks/2021/JuliaCon2021/index.html#talk-recording",
-    "title": "Algorithmic Variants of Nested Sampling",
+    "objectID": "talks/2021/useR2021/index.html#talk-recording",
+    "href": "talks/2021/useR2021/index.html#talk-recording",
+    "title": "R Developer’s Guide",
     "section": "Talk recording",
-    "text": "Talk recording\n\n\nPresented a virtual poster of my work based on ‘Algorithmic Variants of Nested Sampling’ at JuliaCon 2021. I developed these algorithms while working for the Google Summer of Code 2020 with the Turing team of the Julia Language organization.\nAlso moderated the single track sessions of JuliaCon 2021."
+    "text": "Talk recording\n\n\nPresented a regular talk in the ‘1A Community and Outreach 1’ session on the ‘R Developer’s Guide’ (now called as the ‘R Development Guide’) at useR! 2021 (online).\nDuring the conference, I also attended the tutorials on ‘Contributing to R’ (conducted by Gabriel Becker and Martin Maechler) and ‘Translating R to Your Language’ (conducted by Michael Chirico and Michael Lawrence). I was also the Zoom Host for various tutorials and sessions of this international online conference."
   },
   {
-    "objectID": "talks/2021/PackagingCon2021/index.html",
-    "href": "talks/2021/PackagingCon2021/index.html",
-    "title": "Turing.jl: An Overview",
-    "section": "",
-    "text": "Slides\n\nTalk recording\nPresented a lightning talk on “Turing.jl: An Overview”. The talk was an overview of Turing.jl which is a Julia library focusing on Bayesian inference with probabilistic programming. This was the first edition of PackagingCon 2021, which is a conference held with the aim to bring various software ecosystems together."
-  },
-  {
-    "objectID": "talks/2022/CSCCE22/index.html",
-    "href": "talks/2022/CSCCE22/index.html",
-    "title": "Creating fulfilling volunteer opportunities in open source software communities",
-    "section": "",
-    "text": "Talk Recording\n\n\nInvited to participate as a panelist in the CSCCE’s November 2022 Community Call on “Creating fulfilling volunteer opportunities in open source software communities”."
-  },
-  {
-    "objectID": "talks/2022/DII2022/index.html",
-    "href": "talks/2022/DII2022/index.html",
-    "title": "Building Community around the R Development Guide",
-    "section": "",
-    "text": "Slides\n\nPresented the work and learnings from the inaugural Digital Infrastructure Incubator for the project on “Building Community around the R Development Guide” at “The Practice of Digital Infrastructure” session organised by Code for Science and Society. This presentation was alongside five other projects that participated in the Incubator cohort. This work was funded by the Code for Science and Society."
-  },
-  {
-    "objectID": "talks/2022/APAN53_workshop/index.html",
-    "href": "talks/2022/APAN53_workshop/index.html",
-    "title": "Research Software Engineering initiative in Asia region",
-    "section": "",
-    "text": "Slides\n\nPresented a talk on “Research Software Engineering initiative in Asia region” at a Workshop session on “Growing research software initiatives and communities in the Asia Pacific” organized by the Asia Pacific Advanced Network (APAN53) conference (7th-11th March 2022)."
-  },
-  {
-    "objectID": "talks/2022/RSECon22/index.html",
-    "href": "talks/2022/RSECon22/index.html",
-    "title": "RSE Asia Association: A year in making",
+    "objectID": "talks/2021/LatinR2021/index.html",
+    "href": "talks/2021/LatinR2021/index.html",
+    "title": "R Development Guide: Motivation, First Draft, and the Way Forward",
     "section": "",
     "text": "Slides"
   },
   {
-    "objectID": "talks/2022/RSECon22/index.html#talk-recording",
-    "href": "talks/2022/RSECon22/index.html#talk-recording",
-    "title": "RSE Asia Association: A year in making",
-    "section": "Talk Recording",
-    "text": "Talk Recording\n\n\nPresented a Poster and corresponding lightning talk of my work based on ‘RSE Asia Association: A year in making’ at RSECon 2022. The poster received an honorary mention at the conference.\nAlso invited to participate in the RSE Worldwide Panel and the Coding Confessions Panel at this conference.\n\n\nAwarded the Research Software Engineering (RSE) Impact Award 2022, at the inaugural Community Awards by the Society of Research Software Engineering. This award goes to an individual who has made a significant impact in any part of the RSE community. This could include work done on a particular project, field of research or as part of a group. Other examples could include impact on the wider community, such as increasing RSE visibility and diversity."
+    "objectID": "talks/2021/LatinR2021/index.html#talk-recording",
+    "href": "talks/2021/LatinR2021/index.html#talk-recording",
+    "title": "R Development Guide: Motivation, First Draft, and the Way Forward",
+    "section": "Talk recording",
+    "text": "Talk recording\n\n\nPresented an Invited talk on “R Development Guide: Motivation, First Draft, and the Way Forward” at LatinR 2021. This is a Latin American conference about the use of R in R&D."
   },
   {
-    "objectID": "talks/2022/RSEAA22/index.html",
-    "href": "talks/2022/RSEAA22/index.html",
-    "title": "RSE Asia Australia Unconference 2022",
+    "objectID": "talks/2022/CarpentryCon22/index.html",
+    "href": "talks/2022/CarpentryCon22/index.html",
+    "title": "Creating reusable lessons using the Carpentries Workbench template",
     "section": "",
-    "text": "Participated in the Strategy and Policy Panel of the RSE Asia Australia Unconference 2022 and hosted the Early Career RSE Keynote. Was also the co-chair and host of the unconference.\nThe first online Research Software Engineer (RSE) Asia Australia Unconference ran from the 14th to the 16th of September 2022. This was a joint partnership between the RSE Asia Association and the RSE Association of Australia and New Zealand."
+    "text": "Slides"
   },
   {
-    "objectID": "talks/2022/RSEAA22/index.html#talk-recording",
-    "href": "talks/2022/RSEAA22/index.html#talk-recording",
-    "title": "RSE Asia Australia Unconference 2022",
-    "section": "",
-    "text": "Participated in the Strategy and Policy Panel of the RSE Asia Australia Unconference 2022 and hosted the Early Career RSE Keynote. Was also the co-chair and host of the unconference.\nThe first online Research Software Engineer (RSE) Asia Australia Unconference ran from the 14th to the 16th of September 2022. This was a joint partnership between the RSE Asia Association and the RSE Association of Australia and New Zealand."
-  },
-  {
-    "objectID": "talks/2022/VldReSA22/index.html",
-    "href": "talks/2022/VldReSA22/index.html",
-    "title": "Early career research viewpoint on future vision for DEI in RSE",
-    "section": "",
-    "text": "Slides\n\nInvited talk on “Early career research viewpoint on future vision for DEI in RSE” presented at the Lorentz Centre (hybrid) Workshop on “Vive la différence - research software engineers” organized by the “Research Software Alliance”. It was an hybrid event with an in-person element from 19-22 April 2022 at the Lorentz Centre in the Netherlands; and online events from March-April 2022 across different time zones."
-  },
-  {
-    "objectID": "talks/2024/WarwickRUG24/index.html",
-    "href": "talks/2024/WarwickRUG24/index.html",
-    "title": "(More) reproducible data analysis in R using {targets}",
-    "section": "",
-    "text": "Slides\nGitHub repository\nThis session was presented at the Warwick R User Group meetup at the University of Warwick on Dec 5, 2024."
-  },
-  {
-    "objectID": "talks/2024/WarwickRUG24/index.html#abstract",
-    "href": "talks/2024/WarwickRUG24/index.html#abstract",
-    "title": "(More) reproducible data analysis in R using {targets}",
+    "objectID": "talks/2022/CarpentryCon22/index.html#abstract",
+    "href": "talks/2022/CarpentryCon22/index.html#abstract",
+    "title": "Creating reusable lessons using the Carpentries Workbench template",
     "section": "Abstract",
-    "text": "Abstract\nReproducibility of scientific research enables others including your future self to validate, extend, and build upon analytical results. This in turn, helps build confidence in the results of scientific analyses. However, reproducibility is not a binary concept, rather, there is a scale from less reproducible to more reproducible, where various tools and practices can help enhance it.\nThe R package {targets}, developed and maintained by Will Landau, is a workflow management package designed to increase reproducibility in R based data analysis. The major features of {targets} include automation of workflows, caching of intermediate steps, batch creation of workflow steps, and parallelisation at the level of the workflow. These features not only help to reproduce scientific analysis, but also help you to tackle several other challenges in your research workflows. For example, it supports you to return to a project after working on something else and still be able to immediately pick up where you left off without confusion or trying to remember what you were doing. If you change the workflow, then you only have to re-run the parts that are affected by the change. It is also possible to scale up the workflow, to say, handle large datasets, without changing the underlying individual functions.\nThis session will provide an introduction to using {targets} for reproducible data analysis in R. Participants will learn how to structure their workflows to make their data analysis more reproducible in R."
+    "text": "Abstract\nThis talk will provide a dive into how reusable R Markdown lessons can be created using the Carpentries Workbench template. Lessons on R’s bug tracking process) and R’s translations process), created using the Workbench template will be demonstrated during this talk. Both these lessons are inspired from the materials of the Collaboration Campfires.\n\nThe intended audience for this talk would include Instructors and Learners who are interested in using the Carpentries Workbench template for teaching and/or learning purposes. Those who are interested in learning about beginner-level resources for “contributing to R” would also benefit from this talk.\nThe expected outcome of this talk would be that the audience will get an idea of using the Carpentries Workbench template for their teaching and/or learning purposes. Instructors will also be introduced to a tool for creating neatly structured lesson template(s)."
+  },
+  {
+    "objectID": "talks/2022/CarpentryCon22/index.html#talk-recording",
+    "href": "talks/2022/CarpentryCon22/index.html#talk-recording",
+    "title": "Creating reusable lessons using the Carpentries Workbench template",
+    "section": "Talk Recording",
+    "text": "Talk Recording\n\n\nPresented a lightning talk of my work based on ‘Creating reusable lessons using the Carpentries Workbench template’ at CarpentryCon 2022."
+  },
+  {
+    "objectID": "talks/2022/APAN53_panel/index.html",
+    "href": "talks/2022/APAN53_panel/index.html",
+    "title": "Accelerating the paradigm shift towards Open Science and Data Sharing in Pandemic times and Beyond",
+    "section": "",
+    "text": "Slides\n\nPresented the developments of the RSE Asia Association in a panel discussion on “Accelerating the paradigm shift towards Open Science and Data Sharing in Pandemic times and beyond” at the Asia Pacific Advanced Network (APAN53) conference, during 7th-11th March 2022."
+  },
+  {
+    "objectID": "talks/2022/OLS4/index.html",
+    "href": "talks/2022/OLS4/index.html",
+    "title": "Building the Research Software Engineering (RSE) Association in Asia region",
+    "section": "",
+    "text": "Slides"
+  },
+  {
+    "objectID": "talks/2022/OLS4/index.html#talk-recording",
+    "href": "talks/2022/OLS4/index.html#talk-recording",
+    "title": "Building the Research Software Engineering (RSE) Association in Asia region",
+    "section": "Talk Recording",
+    "text": "Talk Recording\n\n\nGraduation from OLS-4 for the project of “Building the Research Software Engineering (RSE) Association in Asia region”."
+  },
+  {
+    "objectID": "talks/2022/OLS4/index.html#certificate-of-graduation",
+    "href": "talks/2022/OLS4/index.html#certificate-of-graduation",
+    "title": "Building the Research Software Engineering (RSE) Association in Asia region",
+    "section": "Certificate of Graduation",
+    "text": "Certificate of Graduation"
+  },
+  {
+    "objectID": "talks/2022/CW22/index.html",
+    "href": "talks/2022/CW22/index.html",
+    "title": "RSE Asia Association: In making",
+    "section": "",
+    "text": "Slides\n\nPresented a lightning talk on “RSE Asia Association: In making” at the Collaborations Workshop 2022 hosted by the Software Sustainability Institute.\nAlso presented a pitch to build a Carpentries-style Lesson on R’s Bug Tracking Process which secured the 3rd position on the Hack Day. As a part of this task we converted the materials from the Collaboration Campfires (on learning how to contribute to R) into a reusable lesson using The Carpentries Workbench template and the R package sandpaper. The lesson created is hosted on the r-devel GitHub organisation."
+  },
+  {
+    "objectID": "talks/2022/JuliaCon22/index.html",
+    "href": "talks/2022/JuliaCon22/index.html",
+    "title": "Community Building using Open Science Principles",
+    "section": "",
+    "text": "Slides"
+  },
+  {
+    "objectID": "talks/2022/JuliaCon22/index.html#abstract",
+    "href": "talks/2022/JuliaCon22/index.html#abstract",
+    "title": "Community Building using Open Science Principles",
+    "section": "Abstract",
+    "text": "Abstract\nOpen science helps in creating reproducible resources in a transparent manner, which further improves inclusion and fairness in the process. In this talk I share the benefits of following open science principles in community building work that I learnt during my participation in the Cohort-4 of the Open Life Science Programme (OLS-4). These principles can be applied to research and community work in many domains."
+  },
+  {
+    "objectID": "talks/2022/JuliaCon22/index.html#talk-recording",
+    "href": "talks/2022/JuliaCon22/index.html#talk-recording",
+    "title": "Community Building using Open Science Principles",
+    "section": "Talk Recording",
+    "text": "Talk Recording\n\n\nPresented an experience talk of my work based on ‘Community Building using Open Science Principles’ at JuliaCon 2022 (online conference). This talk highlighted my work on building the RSE Asia Association."
+  },
+  {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nLet’s talk about Positron!\n\n\n\nR\n\ncommunity building\n\nIDE\n\nR User Group\n\n\n\nSession at the Kolkata R User Group meetup, August 2025\n\n\n\n\n\nAug 27, 2025\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nCreating Parameterised Reports using Quarto\n\n\n\nR\n\ncommunity building\n\nQuarto\n\nR User Group\n\n\n\nSession at the Bristol R User Group meetup, July 2025\n\n\n\n\n\nJul 15, 2025\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nResearch Software Engineering and R\n\n\n\nR\n\ncommunity building\n\nRSE\n\nrOpenSci\n\n\n\nrOpenSci’s Social Coworking and Office Hours, July 2025\n\n\n\n\n\nJul 1, 2025\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\n(More) reproducible data analysis in R using {targets}\n\n\n\nR\n\ncommunity building\n\nreproducible\n\nR User Group\n\n\n\nSession at the Warwick R User Group meetup, University of Warwick Dec 2024\n\n\n\n\n\nDec 5, 2024\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nEmpowering New Contributors: The Evolving Role of the R Development Guide\n\n\n\nR\n\ncommunity building\n\nopen science\n\nopen source\n\ntechnical writing\n\n\n\nTalk at PyData Global 2024\n\n\n\n\n\nDec 4, 2024\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nThe R Development Guide: Enhancing Community Engagement and Contribution\n\n\n\nR\n\ncommunity building\n\nopen science\n\nopen source\n\nposter presentation\n\ntechnical writing\n\n\n\nTalk and poster presentation at RSLondonSouthEast 2024, Imperial College London, South Kensington Campus\n\n\n\n\n\nJul 16, 2024\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nEnhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress\n\n\n\nR\n\ncommunity building\n\nopen science\n\nopen source\n\ntechnical writing\n\n\n\nTalk at useR! 2024\n\n\n\n\n\nJul 2, 2024\n\n\nSaranjeet Kaur Bhogal, Lluís Revilla Sancho\n\n\n\n\n\n\n\n\n\n\n\n\nStrategy and Policy Panel Discussion\n\n\n\nAsia\n\ncommunity building\n\nopen science\n\npanel discussion\n\nRSE Asia\n\nResearch Software Engineering\n\n\n\nStrategy and Policy Panel at RSE Asia Australia Unconference 2023\n\n\n\n\n\nSep 13, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nShaping the Landscape: The Emerging Research Software Engineering Community in Asia\n\n\n\nAsia\n\ncommunity building\n\nlightning talk\n\nopen science\n\nposter presentation\n\nRSE Asia\n\nResearch Software Engineering\n\n\n\nLightning talk and poster presentation at RSECon23, Swansea University\n\n\n\n\n\nSep 5, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nNavigating the Research Software Engineering Community Landscape in Asia\n\n\n\nAsia\n\ncommunity building\n\nNational Research and Education Network\n\nopen science\n\nRSE Asia\n\nResearch Software Engineering\n\n\n\nTalk at APAN56, Colombo, Sri Lanka\n\n\n\n\n\nAug 21, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nMaking research software reproducible and sustainable\n\n\n\nopen science\n\nRSE Asia\n\nResearch Software Engineering\n\n\n\nTalk at the FAB23 Conference, Jigme Namgyel Wangchuck Super FabLab, Thimphu, Bhutan\n\n\n\n\n\nJul 16, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nResearch Software Engineering (RSE) Asia Association: Journey and Future Plans\n\n\n\nAsia\n\ncommunity building\n\nNational Research and Education Network\n\nopen science\n\nRSE Asia\n\nResearch Software Engineering\n\n\n\nTalk at APAN55, Kathmandu, Nepal\n\n\n\n\n\nMar 15, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nEstablishing the Research Software Engineering (RSE) Asia Association with the Open Life Science programme\n\n\n\nAsia\n\ncommunity building\n\nopen science\n\nRSE Asia\n\nResearch Software Engineering\n\n\n\nTalk at FOSDEM 2023\n\n\n\n\n\nFeb 4, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nCreating fulfilling volunteer opportunities in open source software communities\n\n\n\ncommunity building\n\nopen source software\n\npanel discussion\n\nvolunteering\n\n\n\nCSCCE Community Call November 2022\n\n\n\n\n\nNov 22, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nRSE Asia Australia Unconference 2022\n\n\n\nAsia\n\ncommunity building\n\npanel discussion\n\nResearch Software Engineering\n\nRSE Asia\n\n\n\nStrategy and Policy Panel at RSE Asia Australia Unconference 2022\n\n\n\n\n\nSep 14, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nRSE Asia Association: A year in making\n\n\n\nAsia\n\ncommunity building\n\nlightning talk\n\nopen science\n\npanel discussion\n\nposter presentation\n\nResearch Software Engineering\n\nRSE Asia\n\n\n\nPoster Presentation, Lightning talk, RSE Worldwide Panel, Coding Confessions Panel at RSECon 2022\n\n\n\n\n\nSep 5, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nCreating reusable lessons using the Carpentries Workbench template\n\n\n\nR\n\nCarpentries\n\nopen science\n\nopen source\n\n\n\nLightning talk at CarpentryCon 2022\n\n\n\n\n\nAug 7, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nCommunity Building using Open Science Principles\n\n\n\nAsia\n\ncommunity building\n\nopen science\n\nResearch Software Engineering\n\nRSE Asia\n\n\n\nExperience talk at JuliaCon 2022\n\n\n\n\n\nJul 11, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding Community around the R Development Guide\n\n\n\nR\n\ncommunity building\n\ngraduation\n\n\n\nDigital Infrastructure Incubator Graduation Talk\n\n\n\n\n\nApr 27, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nEarly career research viewpoint on future vision for DEI in RSE\n\n\n\nAsia\n\ncommunity building\n\nResearch Software Engineering\n\nRSE Asia\n\nworkshop session\n\n\n\nInvited Talk at workshop on ‘Vive la différence - research software engineers’\n\n\n\n\n\nApr 19, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nRSE Asia Association: In making\n\n\n\nAsia\n\ncommunity building\n\nResearch Software Engineering\n\nRSE Asia\n\nlightning talk\n\n\n\nLightning talk & Hack Day participation at CollabW22\n\n\n\n\n\nApr 4, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nResearch Software Engineering initiative in Asia region\n\n\n\nAsia\n\ncommunity building\n\nopen science\n\nResearch Software Engineering\n\nRSE Asia\n\nworkshop session\n\n\n\nWorkshop session at APAN53\n\n\n\n\n\nMar 11, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nAccelerating the paradigm shift towards Open Science and Data Sharing in Pandemic times and Beyond\n\n\n\nAsia\n\ncommunity building\n\nopen science\n\npanel discussion\n\n\n\nPanel discussion at APAN53\n\n\n\n\n\nMar 9, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding the Research Software Engineering (RSE) Association in Asia region\n\n\n\nAsia\n\ncommunity building\n\ngraduation\n\nopen science\n\nResearch Software Engineering\n\nRSE Asia\n\n\n\nGraduation talk: Open Life Science Programme Cohort-4 (OLS-4)\n\n\n\n\n\nJan 19, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nR Development Guide: Motivation, First Draft, and the Way Forward\n\n\n\nR\n\ncommunity building\n\nopen source\n\n\n\nInvited talk at LatinR 2021\n\n\n\n\n\nNov 12, 2021\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nTuring.jl: An Overview\n\n\n\nJulia\n\nopen source\n\n\n\nLightning talk at PackagingCon 2021\n\n\n\n\n\nNov 9, 2021\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nAlgorithmic Variants of Nested Sampling\n\n\n\nJulia\n\nopen source\n\nposter presentation\n\n\n\nVirtual poster presentation at JuliaCon 2021\n\n\n\n\n\nAug 9, 2021\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nR Developer’s Guide\n\n\n\ncommunity building\n\nR\n\ntechnical writing\n\n\n\nRegular talk presented during useR! 2021 - The R Conference\n\n\n\n\n\nAug 7, 2021\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/2024/RSLondonSE24/index.html",
+    "href": "talks/2024/RSLondonSE24/index.html",
+    "title": "The R Development Guide: Enhancing Community Engagement and Contribution",
+    "section": "",
+    "text": "Talk Slides\nTalk titled “The R Development Guide: Enhancing Community Engagement and Contribution” presented at RSLondonSouthEast 2024, Imperial College London, South Kensington Campus on 16th July 2024.\nPoster"
+  },
+  {
+    "objectID": "talks/2024/RSLondonSE24/index.html#abstract",
+    "href": "talks/2024/RSLondonSE24/index.html#abstract",
+    "title": "The R Development Guide: Enhancing Community Engagement and Contribution",
+    "section": "Abstract",
+    "text": "Abstract\nThe R Development Guide (R Dev Guide) is a resource designed to onboard new contributors to the R project, making the transition smoother and more accessible. Initially drafted in 2021 with the support of the R Foundation, the guide has undergone significant revisions, notably during the Google Season of Docs 2022. The presentation will cover the guide’s evolution and its role in fostering a more inclusive and collaborative environment. Attendees (seasoned or new contributors to R) will gain insights into leveraging the R Dev Guide for effectively contributing to the R project and/or for further enhancements to the guide itself. The session aims to develop attendees’ skills in navigating the R project and collaborating with a global community. The evolution of the guide reflects a broader commitment to fostering an inclusive community and democratising the process of contributing to the R project. It would provide a pathway for attendees seeking to contribute to open-source and engage with the global R community. This presentation will help start discussions on continuous learning and community collaboration within software development."
+  },
+  {
+    "objectID": "talks/2024/useR2024/index.html",
+    "href": "talks/2024/useR2024/index.html",
+    "title": "Enhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress",
+    "section": "",
+    "text": "Slides"
+  },
+  {
+    "objectID": "talks/2024/useR2024/index.html#talk-recording",
+    "href": "talks/2024/useR2024/index.html#talk-recording",
+    "title": "Enhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress",
+    "section": "Talk Recording",
+    "text": "Talk Recording\n\n\nTalk on “Enhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress” presented at useR! 2024 virtual on 2nd July 2024."
+  },
+  {
+    "objectID": "talks/2024/useR2024/index.html#description",
+    "href": "talks/2024/useR2024/index.html#description",
+    "title": "Enhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress",
+    "section": "Description",
+    "text": "Description\n\nDescription\nThe R Development Guide (R Dev Guide) serves as a comprehensive resource to facilitate the onboarding process for new contributors to the R project. Its initial draft emerged in 2021 which was made possible through a funding from the R Foundation. Subsequently, a significant update took place during Google Season of Docs (GSoD) 2022. This update involved the inclusion of new chapters and sections, addressing important aspects such as translations, adopting a git workflow for proposed patches, and providing novice-friendly instructions on installing R from source. Work has continued post-GSoD 2022, to implement further updates and improvements, many in response to feedback on earlier versions. This talk reviews the current status of the guide, shedding light on the positive impact it has had on the R community, particularly among new contributors. With the enhancements to the Guide, contributing has become more accessible, especially for newcomers, compared to relying solely on the official documentation. The talk aims to showcase the evolving nature of the guide and underscore its role in fostering a more inclusive and supportive environment for those engaging with the R project."
+  },
+  {
+    "objectID": "talks/2024/useR2024/index.html#learning-outcomes",
+    "href": "talks/2024/useR2024/index.html#learning-outcomes",
+    "title": "Enhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nThe expected takeaways for the attendees of the session would be:\n\n\nUnderstanding the scope of the R Dev Guide and the topics it covers.\nUnderstanding how to contribute to the guide by adding or reviewing content.\nGaining insights into the impact the updates have had on the R community, especially on the new contributors.\nGaining insights into the guide’s evolving nature and its pivotal role in fostering inclusivity and support within the R project, forming an understanding of its contribution to the community."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Saranjeet Kaur Bhogal",
+    "section": "",
+    "text": "A Statistician by training, advocating for open source and open science. Co-Lead and Co-Founder of the Research Software Engineering Asia Association (RSE Asia), International Fellow of the 2023 Inauguration of the Software Sustainability Institute, and Research Software Engineer within the central Research Software Engineering team at Imperial College London."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Research Software Engineer, Imperial College London\nCo-Lead and Co-Founder of the Research Software Engineering Asia Association (RSE Asia)\nInternational Fellow of the 2023 Inauguration of the Software Sustainability Institute\nAwarded the Research Software Engineering (RSE) Impact Award 2022, at the inaugural Community Awards by the Society of Research Software Engineering. This award goes to an individual who has made a significant impact in any part of the RSE community. This could include work done on a particular project, field of research or as part of a group. Other examples could include impact on the wider community, such as increasing RSE visibility and diversity.\nAsia Pacific Advanced Network Fellow (Nepal APAN55, Sri Lanka APAN56)\n\nSubject Matter Expert in the Open Science Tools and Resources Module of the the NASA-AGU-TOPS initiative. Developed foundational content for the module with a group of experts\nAwarded a grant in the inaugural Digital Infrastructure Incubator by Code for Science and Society to work on a project to build a community around the R Development Guide (2021-2022)\nTechnical Writer for the R Development Guide (in 2021 as a project funded by the R Foundation and in Google Season of Docs 2022)\nrstudio::global Diversity Scholar 2021\nSelected for Google Summer of Code 2020 with the Turing team of the Julia language organisation\nCertified Carpentries Instructor Trainer\nAwarded the “Innovation in Science Pursuit for Inspired Research (INSPIRE) - Scholarship for Higher Education” by the Department of Science & Technology, Government of India (2009-2014)\nM.Phil. Statistics\nQualified the National Eligibility Test for Lectureship in Mathematical Sciences securing an All India Rank of 41 (year 2016) and All India Rank of 24 (year 2017)\nQualified national level Graduate Aptitude Test in Engineering (GATE) Examination in Mathematics securing All India Rank of 62 (year 2016)\nQualified the Maharashtra State Eligibility Test for Lectureship in Mathematical Sciences (2013)\nM.Sc. Statistics (University level First Rank in the order of merit) (2012-2014)\nB.Sc. Statistics (University level First Rank in the order of merit in the subject Statistics as well as in the overall Science stream) (2009-2012)"
   },
   {
     "objectID": "talks/2024/PyDataGlobal2024/index.html",
@@ -203,200 +301,116 @@
     "text": "Audience\nThis talk is ideal for R developers, open-source contributors, and anyone interested in supporting the growth of the R project, especially those who may be new to contributing. A basic understanding of R is recommended."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "talks/2024/WarwickRUG24/index.html",
+    "href": "talks/2024/WarwickRUG24/index.html",
+    "title": "(More) reproducible data analysis in R using {targets}",
     "section": "",
-    "text": "Research Software Engineer, Imperial College London\nCo-Lead and Co-Founder of the Research Software Engineering Asia Association (RSE Asia)\nInternational Fellow of the 2023 Inauguration of the Software Sustainability Institute\nAwarded the Research Software Engineering (RSE) Impact Award 2022, at the inaugural Community Awards by the Society of Research Software Engineering. This award goes to an individual who has made a significant impact in any part of the RSE community. This could include work done on a particular project, field of research or as part of a group. Other examples could include impact on the wider community, such as increasing RSE visibility and diversity.\nAsia Pacific Advanced Network Fellow (Nepal APAN55, Sri Lanka APAN56)\n\nSubject Matter Expert in the Open Science Tools and Resources Module of the the NASA-AGU-TOPS initiative. Developed foundational content for the module with a group of experts\nAwarded a grant in the inaugural Digital Infrastructure Incubator by Code for Science and Society to work on a project to build a community around the R Development Guide (2021-2022)\nTechnical Writer for the R Development Guide (in 2021 as a project funded by the R Foundation and in Google Season of Docs 2022)\nrstudio::global Diversity Scholar 2021\nSelected for Google Summer of Code 2020 with the Turing team of the Julia language organisation\nCertified Carpentries Instructor Trainer\nAwarded the “Innovation in Science Pursuit for Inspired Research (INSPIRE) - Scholarship for Higher Education” by the Department of Science & Technology, Government of India (2009-2014)\nM.Phil. Statistics\nQualified the National Eligibility Test for Lectureship in Mathematical Sciences securing an All India Rank of 41 (year 2016) and All India Rank of 24 (year 2017)\nQualified national level Graduate Aptitude Test in Engineering (GATE) Examination in Mathematics securing All India Rank of 62 (year 2016)\nQualified the Maharashtra State Eligibility Test for Lectureship in Mathematical Sciences (2013)\nM.Sc. Statistics (University level First Rank in the order of merit) (2012-2014)\nB.Sc. Statistics (University level First Rank in the order of merit in the subject Statistics as well as in the overall Science stream) (2009-2012)"
+    "text": "Slides\nGitHub repository\nThis session was presented at the Warwick R User Group meetup at the University of Warwick on Dec 5, 2024."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Saranjeet Kaur Bhogal",
-    "section": "",
-    "text": "A Statistician by training, advocating for open source and open science. Co-Lead and Co-Founder of the Research Software Engineering Asia Association (RSE Asia), International Fellow of the 2023 Inauguration of the Software Sustainability Institute, and Research Software Engineer within the central Research Software Engineering team at Imperial College London."
-  },
-  {
-    "objectID": "talks/2024/useR2024/index.html",
-    "href": "talks/2024/useR2024/index.html",
-    "title": "Enhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress",
-    "section": "",
-    "text": "Slides"
-  },
-  {
-    "objectID": "talks/2024/useR2024/index.html#talk-recording",
-    "href": "talks/2024/useR2024/index.html#talk-recording",
-    "title": "Enhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress",
-    "section": "Talk Recording",
-    "text": "Talk Recording\n\n\nTalk on “Enhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress” presented at useR! 2024 virtual on 2nd July 2024."
-  },
-  {
-    "objectID": "talks/2024/useR2024/index.html#description",
-    "href": "talks/2024/useR2024/index.html#description",
-    "title": "Enhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress",
-    "section": "Description",
-    "text": "Description\n\nDescription\nThe R Development Guide (R Dev Guide) serves as a comprehensive resource to facilitate the onboarding process for new contributors to the R project. Its initial draft emerged in 2021 which was made possible through a funding from the R Foundation. Subsequently, a significant update took place during Google Season of Docs (GSoD) 2022. This update involved the inclusion of new chapters and sections, addressing important aspects such as translations, adopting a git workflow for proposed patches, and providing novice-friendly instructions on installing R from source. Work has continued post-GSoD 2022, to implement further updates and improvements, many in response to feedback on earlier versions. This talk reviews the current status of the guide, shedding light on the positive impact it has had on the R community, particularly among new contributors. With the enhancements to the Guide, contributing has become more accessible, especially for newcomers, compared to relying solely on the official documentation. The talk aims to showcase the evolving nature of the guide and underscore its role in fostering a more inclusive and supportive environment for those engaging with the R project."
-  },
-  {
-    "objectID": "talks/2024/useR2024/index.html#learning-outcomes",
-    "href": "talks/2024/useR2024/index.html#learning-outcomes",
-    "title": "Enhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nThe expected takeaways for the attendees of the session would be:\n\n\nUnderstanding the scope of the R Dev Guide and the topics it covers.\nUnderstanding how to contribute to the guide by adding or reviewing content.\nGaining insights into the impact the updates have had on the R community, especially on the new contributors.\nGaining insights into the guide’s evolving nature and its pivotal role in fostering inclusivity and support within the R project, forming an understanding of its contribution to the community."
-  },
-  {
-    "objectID": "talks/2024/RSLondonSE24/index.html",
-    "href": "talks/2024/RSLondonSE24/index.html",
-    "title": "The R Development Guide: Enhancing Community Engagement and Contribution",
-    "section": "",
-    "text": "Talk Slides\nTalk titled “The R Development Guide: Enhancing Community Engagement and Contribution” presented at RSLondonSouthEast 2024, Imperial College London, South Kensington Campus on 16th July 2024.\nPoster"
-  },
-  {
-    "objectID": "talks/2024/RSLondonSE24/index.html#abstract",
-    "href": "talks/2024/RSLondonSE24/index.html#abstract",
-    "title": "The R Development Guide: Enhancing Community Engagement and Contribution",
+    "objectID": "talks/2024/WarwickRUG24/index.html#abstract",
+    "href": "talks/2024/WarwickRUG24/index.html#abstract",
+    "title": "(More) reproducible data analysis in R using {targets}",
     "section": "Abstract",
-    "text": "Abstract\nThe R Development Guide (R Dev Guide) is a resource designed to onboard new contributors to the R project, making the transition smoother and more accessible. Initially drafted in 2021 with the support of the R Foundation, the guide has undergone significant revisions, notably during the Google Season of Docs 2022. The presentation will cover the guide’s evolution and its role in fostering a more inclusive and collaborative environment. Attendees (seasoned or new contributors to R) will gain insights into leveraging the R Dev Guide for effectively contributing to the R project and/or for further enhancements to the guide itself. The session aims to develop attendees’ skills in navigating the R project and collaborating with a global community. The evolution of the guide reflects a broader commitment to fostering an inclusive community and democratising the process of contributing to the R project. It would provide a pathway for attendees seeking to contribute to open-source and engage with the global R community. This presentation will help start discussions on continuous learning and community collaboration within software development."
+    "text": "Abstract\nReproducibility of scientific research enables others including your future self to validate, extend, and build upon analytical results. This in turn, helps build confidence in the results of scientific analyses. However, reproducibility is not a binary concept, rather, there is a scale from less reproducible to more reproducible, where various tools and practices can help enhance it.\nThe R package {targets}, developed and maintained by Will Landau, is a workflow management package designed to increase reproducibility in R based data analysis. The major features of {targets} include automation of workflows, caching of intermediate steps, batch creation of workflow steps, and parallelisation at the level of the workflow. These features not only help to reproduce scientific analysis, but also help you to tackle several other challenges in your research workflows. For example, it supports you to return to a project after working on something else and still be able to immediately pick up where you left off without confusion or trying to remember what you were doing. If you change the workflow, then you only have to re-run the parts that are affected by the change. It is also possible to scale up the workflow, to say, handle large datasets, without changing the underlying individual functions.\nThis session will provide an introduction to using {targets} for reproducible data analysis in R. Participants will learn how to structure their workflows to make their data analysis more reproducible in R."
   },
   {
-    "objectID": "talks/index.html",
-    "href": "talks/index.html",
-    "title": "Talks",
+    "objectID": "talks/2022/VldReSA22/index.html",
+    "href": "talks/2022/VldReSA22/index.html",
+    "title": "Early career research viewpoint on future vision for DEI in RSE",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nLet’s talk about Positron!\n\n\n\nR\n\ncommunity building\n\nIDE\n\nR User Group\n\n\n\nSession at the Kolkata R User Group meetup, August 2025\n\n\n\n\n\nAug 27, 2025\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nCreating Parameterised Reports using Quarto\n\n\n\nR\n\ncommunity building\n\nQuarto\n\nR User Group\n\n\n\nSession at the Bristol R User Group meetup, July 2025\n\n\n\n\n\nJul 15, 2025\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\n(More) reproducible data analysis in R using {targets}\n\n\n\nR\n\ncommunity building\n\nreproducible\n\nR User Group\n\n\n\nSession at the Warwick R User Group meetup, University of Warwick Dec 2024\n\n\n\n\n\nDec 5, 2024\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nEmpowering New Contributors: The Evolving Role of the R Development Guide\n\n\n\nR\n\ncommunity building\n\nopen science\n\nopen source\n\ntechnical writing\n\n\n\nTalk at PyData Global 2024\n\n\n\n\n\nDec 4, 2024\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nThe R Development Guide: Enhancing Community Engagement and Contribution\n\n\n\nR\n\ncommunity building\n\nopen science\n\nopen source\n\nposter presentation\n\ntechnical writing\n\n\n\nTalk and poster presentation at RSLondonSouthEast 2024, Imperial College London, South Kensington Campus\n\n\n\n\n\nJul 16, 2024\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nEnhancing the R Dev Guide: A GSoD 2022 Journey and Ongoing Progress\n\n\n\nR\n\ncommunity building\n\nopen science\n\nopen source\n\ntechnical writing\n\n\n\nTalk at useR! 2024\n\n\n\n\n\nJul 2, 2024\n\n\nSaranjeet Kaur Bhogal, Lluís Revilla Sancho\n\n\n\n\n\n\n\n\n\n\n\n\nStrategy and Policy Panel Discussion\n\n\n\nAsia\n\ncommunity building\n\nopen science\n\npanel discussion\n\nRSE Asia\n\nResearch Software Engineering\n\n\n\nStrategy and Policy Panel at RSE Asia Australia Unconference 2023\n\n\n\n\n\nSep 13, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nShaping the Landscape: The Emerging Research Software Engineering Community in Asia\n\n\n\nAsia\n\ncommunity building\n\nlightning talk\n\nopen science\n\nposter presentation\n\nRSE Asia\n\nResearch Software Engineering\n\n\n\nLightning talk and poster presentation at RSECon23, Swansea University\n\n\n\n\n\nSep 5, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nNavigating the Research Software Engineering Community Landscape in Asia\n\n\n\nAsia\n\ncommunity building\n\nNational Research and Education Network\n\nopen science\n\nRSE Asia\n\nResearch Software Engineering\n\n\n\nTalk at APAN56, Colombo, Sri Lanka\n\n\n\n\n\nAug 21, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nMaking research software reproducible and sustainable\n\n\n\nopen science\n\nRSE Asia\n\nResearch Software Engineering\n\n\n\nTalk at the FAB23 Conference, Jigme Namgyel Wangchuck Super FabLab, Thimphu, Bhutan\n\n\n\n\n\nJul 16, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nResearch Software Engineering (RSE) Asia Association: Journey and Future Plans\n\n\n\nAsia\n\ncommunity building\n\nNational Research and Education Network\n\nopen science\n\nRSE Asia\n\nResearch Software Engineering\n\n\n\nTalk at APAN55, Kathmandu, Nepal\n\n\n\n\n\nMar 15, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nEstablishing the Research Software Engineering (RSE) Asia Association with the Open Life Science programme\n\n\n\nAsia\n\ncommunity building\n\nopen science\n\nRSE Asia\n\nResearch Software Engineering\n\n\n\nTalk at FOSDEM 2023\n\n\n\n\n\nFeb 4, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nCreating fulfilling volunteer opportunities in open source software communities\n\n\n\ncommunity building\n\nopen source software\n\npanel discussion\n\nvolunteering\n\n\n\nCSCCE Community Call November 2022\n\n\n\n\n\nNov 22, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nRSE Asia Australia Unconference 2022\n\n\n\nAsia\n\ncommunity building\n\npanel discussion\n\nResearch Software Engineering\n\nRSE Asia\n\n\n\nStrategy and Policy Panel at RSE Asia Australia Unconference 2022\n\n\n\n\n\nSep 14, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nRSE Asia Association: A year in making\n\n\n\nAsia\n\ncommunity building\n\nlightning talk\n\nopen science\n\npanel discussion\n\nposter presentation\n\nResearch Software Engineering\n\nRSE Asia\n\n\n\nPoster Presentation, Lightning talk, RSE Worldwide Panel, Coding Confessions Panel at RSECon 2022\n\n\n\n\n\nSep 5, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nCreating reusable lessons using the Carpentries Workbench template\n\n\n\nR\n\nCarpentries\n\nopen science\n\nopen source\n\n\n\nLightning talk at CarpentryCon 2022\n\n\n\n\n\nAug 7, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nCommunity Building using Open Science Principles\n\n\n\nAsia\n\ncommunity building\n\nopen science\n\nResearch Software Engineering\n\nRSE Asia\n\n\n\nExperience talk at JuliaCon 2022\n\n\n\n\n\nJul 11, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding Community around the R Development Guide\n\n\n\nR\n\ncommunity building\n\ngraduation\n\n\n\nDigital Infrastructure Incubator Graduation Talk\n\n\n\n\n\nApr 27, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nEarly career research viewpoint on future vision for DEI in RSE\n\n\n\nAsia\n\ncommunity building\n\nResearch Software Engineering\n\nRSE Asia\n\nworkshop session\n\n\n\nInvited Talk at workshop on ‘Vive la différence - research software engineers’\n\n\n\n\n\nApr 19, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nRSE Asia Association: In making\n\n\n\nAsia\n\ncommunity building\n\nResearch Software Engineering\n\nRSE Asia\n\nlightning talk\n\n\n\nLightning talk & Hack Day participation at CollabW22\n\n\n\n\n\nApr 4, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nResearch Software Engineering initiative in Asia region\n\n\n\nAsia\n\ncommunity building\n\nopen science\n\nResearch Software Engineering\n\nRSE Asia\n\nworkshop session\n\n\n\nWorkshop session at APAN53\n\n\n\n\n\nMar 11, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nAccelerating the paradigm shift towards Open Science and Data Sharing in Pandemic times and Beyond\n\n\n\nAsia\n\ncommunity building\n\nopen science\n\npanel discussion\n\n\n\nPanel discussion at APAN53\n\n\n\n\n\nMar 9, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding the Research Software Engineering (RSE) Association in Asia region\n\n\n\nAsia\n\ncommunity building\n\ngraduation\n\nopen science\n\nResearch Software Engineering\n\nRSE Asia\n\n\n\nGraduation talk: Open Life Science Programme Cohort-4 (OLS-4)\n\n\n\n\n\nJan 19, 2022\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nR Development Guide: Motivation, First Draft, and the Way Forward\n\n\n\nR\n\ncommunity building\n\nopen source\n\n\n\nInvited talk at LatinR 2021\n\n\n\n\n\nNov 12, 2021\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nTuring.jl: An Overview\n\n\n\nJulia\n\nopen source\n\n\n\nLightning talk at PackagingCon 2021\n\n\n\n\n\nNov 9, 2021\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nAlgorithmic Variants of Nested Sampling\n\n\n\nJulia\n\nopen source\n\nposter presentation\n\n\n\nVirtual poster presentation at JuliaCon 2021\n\n\n\n\n\nAug 9, 2021\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nR Developer’s Guide\n\n\n\ncommunity building\n\nR\n\ntechnical writing\n\n\n\nRegular talk presented during useR! 2021 - The R Conference\n\n\n\n\n\nAug 7, 2021\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\nNo matching items"
+    "text": "Slides\n\nInvited talk on “Early career research viewpoint on future vision for DEI in RSE” presented at the Lorentz Centre (hybrid) Workshop on “Vive la différence - research software engineers” organized by the “Research Software Alliance”. It was an hybrid event with an in-person element from 19-22 April 2022 at the Lorentz Centre in the Netherlands; and online events from March-April 2022 across different time zones."
   },
   {
-    "objectID": "talks/2022/JuliaCon22/index.html",
-    "href": "talks/2022/JuliaCon22/index.html",
-    "title": "Community Building using Open Science Principles",
+    "objectID": "talks/2022/RSEAA22/index.html",
+    "href": "talks/2022/RSEAA22/index.html",
+    "title": "RSE Asia Australia Unconference 2022",
+    "section": "",
+    "text": "Participated in the Strategy and Policy Panel of the RSE Asia Australia Unconference 2022 and hosted the Early Career RSE Keynote. Was also the co-chair and host of the unconference.\nThe first online Research Software Engineer (RSE) Asia Australia Unconference ran from the 14th to the 16th of September 2022. This was a joint partnership between the RSE Asia Association and the RSE Association of Australia and New Zealand."
+  },
+  {
+    "objectID": "talks/2022/RSEAA22/index.html#talk-recording",
+    "href": "talks/2022/RSEAA22/index.html#talk-recording",
+    "title": "RSE Asia Australia Unconference 2022",
+    "section": "",
+    "text": "Participated in the Strategy and Policy Panel of the RSE Asia Australia Unconference 2022 and hosted the Early Career RSE Keynote. Was also the co-chair and host of the unconference.\nThe first online Research Software Engineer (RSE) Asia Australia Unconference ran from the 14th to the 16th of September 2022. This was a joint partnership between the RSE Asia Association and the RSE Association of Australia and New Zealand."
+  },
+  {
+    "objectID": "talks/2022/RSECon22/index.html",
+    "href": "talks/2022/RSECon22/index.html",
+    "title": "RSE Asia Association: A year in making",
     "section": "",
     "text": "Slides"
   },
   {
-    "objectID": "talks/2022/JuliaCon22/index.html#abstract",
-    "href": "talks/2022/JuliaCon22/index.html#abstract",
-    "title": "Community Building using Open Science Principles",
+    "objectID": "talks/2022/RSECon22/index.html#talk-recording",
+    "href": "talks/2022/RSECon22/index.html#talk-recording",
+    "title": "RSE Asia Association: A year in making",
+    "section": "Talk Recording",
+    "text": "Talk Recording\n\n\nPresented a Poster and corresponding lightning talk of my work based on ‘RSE Asia Association: A year in making’ at RSECon 2022. The poster received an honorary mention at the conference.\nAlso invited to participate in the RSE Worldwide Panel and the Coding Confessions Panel at this conference.\n\n\nAwarded the Research Software Engineering (RSE) Impact Award 2022, at the inaugural Community Awards by the Society of Research Software Engineering. This award goes to an individual who has made a significant impact in any part of the RSE community. This could include work done on a particular project, field of research or as part of a group. Other examples could include impact on the wider community, such as increasing RSE visibility and diversity."
+  },
+  {
+    "objectID": "talks/2022/APAN53_workshop/index.html",
+    "href": "talks/2022/APAN53_workshop/index.html",
+    "title": "Research Software Engineering initiative in Asia region",
+    "section": "",
+    "text": "Slides\n\nPresented a talk on “Research Software Engineering initiative in Asia region” at a Workshop session on “Growing research software initiatives and communities in the Asia Pacific” organized by the Asia Pacific Advanced Network (APAN53) conference (7th-11th March 2022)."
+  },
+  {
+    "objectID": "talks/2022/DII2022/index.html",
+    "href": "talks/2022/DII2022/index.html",
+    "title": "Building Community around the R Development Guide",
+    "section": "",
+    "text": "Slides\n\nPresented the work and learnings from the inaugural Digital Infrastructure Incubator for the project on “Building Community around the R Development Guide” at “The Practice of Digital Infrastructure” session organised by Code for Science and Society. This presentation was alongside five other projects that participated in the Incubator cohort. This work was funded by the Code for Science and Society."
+  },
+  {
+    "objectID": "talks/2022/CSCCE22/index.html",
+    "href": "talks/2022/CSCCE22/index.html",
+    "title": "Creating fulfilling volunteer opportunities in open source software communities",
+    "section": "",
+    "text": "Talk Recording\n\n\nInvited to participate as a panelist in the CSCCE’s November 2022 Community Call on “Creating fulfilling volunteer opportunities in open source software communities”."
+  },
+  {
+    "objectID": "talks/2021/PackagingCon2021/index.html",
+    "href": "talks/2021/PackagingCon2021/index.html",
+    "title": "Turing.jl: An Overview",
+    "section": "",
+    "text": "Slides\n\nTalk recording\nPresented a lightning talk on “Turing.jl: An Overview”. The talk was an overview of Turing.jl which is a Julia library focusing on Bayesian inference with probabilistic programming. This was the first edition of PackagingCon 2021, which is a conference held with the aim to bring various software ecosystems together."
+  },
+  {
+    "objectID": "talks/2021/JuliaCon2021/index.html",
+    "href": "talks/2021/JuliaCon2021/index.html",
+    "title": "Algorithmic Variants of Nested Sampling",
+    "section": "",
+    "text": "Slides"
+  },
+  {
+    "objectID": "talks/2021/JuliaCon2021/index.html#abstract",
+    "href": "talks/2021/JuliaCon2021/index.html#abstract",
+    "title": "Algorithmic Variants of Nested Sampling",
     "section": "Abstract",
-    "text": "Abstract\nOpen science helps in creating reproducible resources in a transparent manner, which further improves inclusion and fairness in the process. In this talk I share the benefits of following open science principles in community building work that I learnt during my participation in the Cohort-4 of the Open Life Science Programme (OLS-4). These principles can be applied to research and community work in many domains."
+    "text": "Abstract\nNesting sampling is a methodology for computing the evidence (a high-dimensional integration of the likelihood over the prior density), and the posteriors simultaneously. Implementation in Julia of three algorithmic variants of nested sampling: Random Staggering, Slicing, and Random Slicing, are discussed in this work. Much of this work was inspired by the Python package, dynesty, and its modular approach to nested sampling which Julia’s multiple dispatch made even more effective."
   },
   {
-    "objectID": "talks/2022/JuliaCon22/index.html#talk-recording",
-    "href": "talks/2022/JuliaCon22/index.html#talk-recording",
-    "title": "Community Building using Open Science Principles",
-    "section": "Talk Recording",
-    "text": "Talk Recording\n\n\nPresented an experience talk of my work based on ‘Community Building using Open Science Principles’ at JuliaCon 2022 (online conference). This talk highlighted my work on building the RSE Asia Association."
-  },
-  {
-    "objectID": "talks/2022/CW22/index.html",
-    "href": "talks/2022/CW22/index.html",
-    "title": "RSE Asia Association: In making",
-    "section": "",
-    "text": "Slides\n\nPresented a lightning talk on “RSE Asia Association: In making” at the Collaborations Workshop 2022 hosted by the Software Sustainability Institute.\nAlso presented a pitch to build a Carpentries-style Lesson on R’s Bug Tracking Process which secured the 3rd position on the Hack Day. As a part of this task we converted the materials from the Collaboration Campfires (on learning how to contribute to R) into a reusable lesson using The Carpentries Workbench template and the R package sandpaper. The lesson created is hosted on the r-devel GitHub organisation."
-  },
-  {
-    "objectID": "talks/2022/OLS4/index.html",
-    "href": "talks/2022/OLS4/index.html",
-    "title": "Building the Research Software Engineering (RSE) Association in Asia region",
-    "section": "",
-    "text": "Slides"
-  },
-  {
-    "objectID": "talks/2022/OLS4/index.html#talk-recording",
-    "href": "talks/2022/OLS4/index.html#talk-recording",
-    "title": "Building the Research Software Engineering (RSE) Association in Asia region",
-    "section": "Talk Recording",
-    "text": "Talk Recording\n\n\nGraduation from OLS-4 for the project of “Building the Research Software Engineering (RSE) Association in Asia region”."
-  },
-  {
-    "objectID": "talks/2022/OLS4/index.html#certificate-of-graduation",
-    "href": "talks/2022/OLS4/index.html#certificate-of-graduation",
-    "title": "Building the Research Software Engineering (RSE) Association in Asia region",
-    "section": "Certificate of Graduation",
-    "text": "Certificate of Graduation"
-  },
-  {
-    "objectID": "talks/2022/APAN53_panel/index.html",
-    "href": "talks/2022/APAN53_panel/index.html",
-    "title": "Accelerating the paradigm shift towards Open Science and Data Sharing in Pandemic times and Beyond",
-    "section": "",
-    "text": "Slides\n\nPresented the developments of the RSE Asia Association in a panel discussion on “Accelerating the paradigm shift towards Open Science and Data Sharing in Pandemic times and beyond” at the Asia Pacific Advanced Network (APAN53) conference, during 7th-11th March 2022."
-  },
-  {
-    "objectID": "talks/2022/CarpentryCon22/index.html",
-    "href": "talks/2022/CarpentryCon22/index.html",
-    "title": "Creating reusable lessons using the Carpentries Workbench template",
-    "section": "",
-    "text": "Slides"
-  },
-  {
-    "objectID": "talks/2022/CarpentryCon22/index.html#abstract",
-    "href": "talks/2022/CarpentryCon22/index.html#abstract",
-    "title": "Creating reusable lessons using the Carpentries Workbench template",
-    "section": "Abstract",
-    "text": "Abstract\nThis talk will provide a dive into how reusable R Markdown lessons can be created using the Carpentries Workbench template. Lessons on R’s bug tracking process) and R’s translations process), created using the Workbench template will be demonstrated during this talk. Both these lessons are inspired from the materials of the Collaboration Campfires.\n\nThe intended audience for this talk would include Instructors and Learners who are interested in using the Carpentries Workbench template for teaching and/or learning purposes. Those who are interested in learning about beginner-level resources for “contributing to R” would also benefit from this talk.\nThe expected outcome of this talk would be that the audience will get an idea of using the Carpentries Workbench template for their teaching and/or learning purposes. Instructors will also be introduced to a tool for creating neatly structured lesson template(s)."
-  },
-  {
-    "objectID": "talks/2022/CarpentryCon22/index.html#talk-recording",
-    "href": "talks/2022/CarpentryCon22/index.html#talk-recording",
-    "title": "Creating reusable lessons using the Carpentries Workbench template",
-    "section": "Talk Recording",
-    "text": "Talk Recording\n\n\nPresented a lightning talk of my work based on ‘Creating reusable lessons using the Carpentries Workbench template’ at CarpentryCon 2022."
-  },
-  {
-    "objectID": "talks/2021/LatinR2021/index.html",
-    "href": "talks/2021/LatinR2021/index.html",
-    "title": "R Development Guide: Motivation, First Draft, and the Way Forward",
-    "section": "",
-    "text": "Slides"
-  },
-  {
-    "objectID": "talks/2021/LatinR2021/index.html#talk-recording",
-    "href": "talks/2021/LatinR2021/index.html#talk-recording",
-    "title": "R Development Guide: Motivation, First Draft, and the Way Forward",
+    "objectID": "talks/2021/JuliaCon2021/index.html#talk-recording",
+    "href": "talks/2021/JuliaCon2021/index.html#talk-recording",
+    "title": "Algorithmic Variants of Nested Sampling",
     "section": "Talk recording",
-    "text": "Talk recording\n\n\nPresented an Invited talk on “R Development Guide: Motivation, First Draft, and the Way Forward” at LatinR 2021. This is a Latin American conference about the use of R in R&D."
+    "text": "Talk recording\n\n\nPresented a virtual poster of my work based on ‘Algorithmic Variants of Nested Sampling’ at JuliaCon 2021. I developed these algorithms while working for the Google Summer of Code 2020 with the Turing team of the Julia Language organization.\nAlso moderated the single track sessions of JuliaCon 2021."
   },
   {
-    "objectID": "talks/2021/useR2021/index.html",
-    "href": "talks/2021/useR2021/index.html",
-    "title": "R Developer’s Guide",
+    "objectID": "talks/2025/rOpenSciCowork25/index.html",
+    "href": "talks/2025/rOpenSciCowork25/index.html",
+    "title": "Research Software Engineering and R",
     "section": "",
-    "text": "Slides"
+    "text": "Slides\nGitHub repository\nInvited as a community host at rOpenSci’s Social Coworking and Office Hours in July 2025. The theme for the month was Research Software Engineering and R."
   },
   {
-    "objectID": "talks/2021/useR2021/index.html#talk-recording",
-    "href": "talks/2021/useR2021/index.html#talk-recording",
-    "title": "R Developer’s Guide",
-    "section": "Talk recording",
-    "text": "Talk recording\n\n\nPresented a regular talk in the ‘1A Community and Outreach 1’ session on the ‘R Developer’s Guide’ (now called as the ‘R Development Guide’) at useR! 2021 (online).\nDuring the conference, I also attended the tutorials on ‘Contributing to R’ (conducted by Gabriel Becker and Martin Maechler) and ‘Translating R to Your Language’ (conducted by Michael Chirico and Michael Lawrence). I was also the Zoom Host for various tutorials and sessions of this international online conference."
-  },
-  {
-    "objectID": "talks/2025/BristolRUG25/index.html",
-    "href": "talks/2025/BristolRUG25/index.html",
-    "title": "Creating Parameterised Reports using Quarto",
-    "section": "",
-    "text": "Slides\nGitHub repository\nThis session was presented at the Bristol R User Group meetup in July 2025."
-  },
-  {
-    "objectID": "talks/2025/BristolRUG25/index.html#abstract",
-    "href": "talks/2025/BristolRUG25/index.html#abstract",
-    "title": "Creating Parameterised Reports using Quarto",
+    "objectID": "talks/2025/rOpenSciCowork25/index.html#abstract",
+    "href": "talks/2025/rOpenSciCowork25/index.html#abstract",
+    "title": "Research Software Engineering and R",
     "section": "Abstract",
-    "text": "Abstract\nWhen working with data, it’s common to generate the same report multiple times, each with different parameters, such as dates, datasets, or regions. Manually updating and duplicating reports can be time-consuming and prone to error. In this session, I will introduce parameterised reporting using Quarto, an open-source system for scientific and technical publishing. You’ll learn how to automate the generation of multiple versions of the same report, without copying and pasting."
-  },
-  {
-    "objectID": "talks/2025/BristolRUG25/index.html#bonus",
-    "href": "talks/2025/BristolRUG25/index.html#bonus",
-    "title": "Creating Parameterised Reports using Quarto",
-    "section": "Bonus",
-    "text": "Bonus\nWe will also explore how to create branded reports using brand.yml, ensuring consistency across all your documents."
-  },
-  {
-    "objectID": "talks/2025/BristolRUG25/index.html#who-should-attend",
-    "href": "talks/2025/BristolRUG25/index.html#who-should-attend",
-    "title": "Creating Parameterised Reports using Quarto",
-    "section": "Who Should Attend?",
-    "text": "Who Should Attend?\nThis session is ideal for anyone who works with data and produces reports. Basic familiarity with R will be helpful, but is not required."
+    "text": "Abstract"
   },
   {
     "objectID": "talks/2023/RSECon23/index.html",
