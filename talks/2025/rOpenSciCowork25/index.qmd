@@ -1,0 +1,21 @@
+---
+title: "Research Software Engineering and R"
+image: slides.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2025-07-01"
+categories: [R, community building, RSE, rOpenSci]
+description: "rOpenSci's Social Coworking and Office Hours, July 2025"
+draft: false
+---
+
+[Slides]()
+
+[![](slides.png){width="478"}]()
+
+[GitHub repository]()
+
+Invited as a community host at [rOpenSci's Social Coworking and Office Hours](https://ropensci.org/events/coworking-2025-07/) in July 2025. The theme for the month was **Research Software Engineering and R**.
+
+## Abstract
