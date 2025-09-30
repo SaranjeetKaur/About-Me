@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d0eee84908effde45992ddd4914ebb36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1db3f541d99483cdc7a0d9cf38862b2c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +81,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
@@ -113,7 +115,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -139,6 +141,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Saranjeet Kaur Bhogal</span>
     </a>
@@ -192,7 +196,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(25)</span></div><div class="category" data-category="QXNpYQ==">Asia <span class="quarto-category-count">(13)</span></div><div class="category" data-category="Q2FycGVudHJpZXM=">Carpentries <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29tbXVuaXR5JTIwYnVpbGRpbmc=">community building <span class="quarto-category-count">(21)</span></div><div class="category" data-category="Z3JhZHVhdGlvbg==">graduation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SnVsaWE=">Julia <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bGlnaHRuaW5nJTIwdGFsaw==">lightning talk <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TmF0aW9uYWwlMjBSZXNlYXJjaCUyMGFuZCUyMEVkdWNhdGlvbiUyME5ldHdvcms=">National Research and Education Network <span class="quarto-category-count">(2)</span></div><div class="category" data-category="b3BlbiUyMHNjaWVuY2U=">open science <span class="quarto-category-count">(15)</span></div><div class="category" data-category="b3BlbiUyMHNvdXJjZQ==">open source <span class="quarto-category-count">(7)</span></div><div class="category" data-category="b3BlbiUyMHNvdXJjZSUyMHNvZnR3YXJl">open source software <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGFuZWwlMjBkaXNjdXNzaW9u">panel discussion <span class="quarto-category-count">(5)</span></div><div class="category" data-category="cG9zdGVyJTIwcHJlc2VudGF0aW9u">poster presentation <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(8)</span></div><div class="category" data-category="UiUyMFVzZXIlMjBHcm91cA==">R User Group <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmVwcm9kdWNpYmxl">reproducible <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5n">Research Software Engineering <span class="quarto-category-count">(13)</span></div><div class="category" data-category="UlNFJTIwQXNpYQ==">RSE Asia <span class="quarto-category-count">(13)</span></div><div class="category" data-category="dGVjaG5pY2FsJTIwd3JpdGluZw==">technical writing <span class="quarto-category-count">(4)</span></div><div class="category" data-category="dm9sdW50ZWVyaW5n">volunteering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d29ya3Nob3AlMjBzZXNzaW9u">workshop session <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(26)</span></div><div class="category" data-category="QXNpYQ==">Asia <span class="quarto-category-count">(13)</span></div><div class="category" data-category="Q2FycGVudHJpZXM=">Carpentries <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29tbXVuaXR5JTIwYnVpbGRpbmc=">community building <span class="quarto-category-count">(22)</span></div><div class="category" data-category="Z3JhZHVhdGlvbg==">graduation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SURF">IDE <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SnVsaWE=">Julia <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bGlnaHRuaW5nJTIwdGFsaw==">lightning talk <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TmF0aW9uYWwlMjBSZXNlYXJjaCUyMGFuZCUyMEVkdWNhdGlvbiUyME5ldHdvcms=">National Research and Education Network <span class="quarto-category-count">(2)</span></div><div class="category" data-category="b3BlbiUyMHNjaWVuY2U=">open science <span class="quarto-category-count">(15)</span></div><div class="category" data-category="b3BlbiUyMHNvdXJjZQ==">open source <span class="quarto-category-count">(7)</span></div><div class="category" data-category="b3BlbiUyMHNvdXJjZSUyMHNvZnR3YXJl">open source software <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGFuZWwlMjBkaXNjdXNzaW9u">panel discussion <span class="quarto-category-count">(5)</span></div><div class="category" data-category="cG9zdGVyJTIwcHJlc2VudGF0aW9u">poster presentation <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(9)</span></div><div class="category" data-category="UiUyMFVzZXIlMjBHcm91cA==">R User Group <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cmVwcm9kdWNpYmxl">reproducible <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5n">Research Software Engineering <span class="quarto-category-count">(13)</span></div><div class="category" data-category="UlNFJTIwQXNpYQ==">RSE Asia <span class="quarto-category-count">(13)</span></div><div class="category" data-category="dGVjaG5pY2FsJTIwd3JpdGluZw==">technical writing <span class="quarto-category-count">(4)</span></div><div class="category" data-category="dm9sdW50ZWVyaW5n">volunteering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d29ya3Nob3AlMjBzZXNzaW9u">workshop session <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -246,7 +250,43 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDcmVwcm9kdWNpYmxlJTJDUiUyMFVzZXIlMjBHcm91cA==" data-listing-date-sort="1733356800000" data-listing-file-modified-sort="1750593047455" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="255">
+<div class="quarto-post image-right" data-index="0" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDSURFJTJDUiUyMFVzZXIlMjBHcm91cA==" data-listing-date-sort="1756252800000" data-listing-file-modified-sort="1759216995574" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="91">
+<div class="thumbnail"><a href="../talks/2025/KolkataRUG25/index.html" class="no-external">
+
+<img loading="lazy" src="../talks/2025/KolkataRUG25/slides.png" class="thumbnail-image" alt="Opening page">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2025/KolkataRUG25/index.html" class="no-external">Let’s talk about Positron!</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tbXVuaXR5JTIwYnVpbGRpbmc='); return false;">community building</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SURF'); return false;">IDE</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UiUyMFVzZXIlMjBHcm91cA=='); return false;">R User Group</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2025/KolkataRUG25/index.html" class="no-external">
+<p>Session at the Kolkata R User Group meetup, August 2025</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../talks/2025/KolkataRUG25/index.html" class="no-external">
+<div class="listing-date">
+Aug 27, 2025
+</div>
+<div class="listing-author">
+Saranjeet Kaur Bhogal
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDcmVwcm9kdWNpYmxlJTJDUiUyMFVzZXIlMjBHcm91cA==" data-listing-date-sort="1733356800000" data-listing-file-modified-sort="1759216995571" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="255">
 <div class="thumbnail"><a href="../talks/2024/WarwickRUG24/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2024/WarwickRUG24/slides.png" class="thumbnail-image" alt="Opening page">
@@ -282,7 +322,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNvcGVuJTIwc291cmNlJTJDdGVjaG5pY2FsJTIwd3JpdGluZw==" data-listing-date-sort="1733270400000" data-listing-file-modified-sort="1750593047452" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="417">
+<div class="quarto-post image-right" data-index="2" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNvcGVuJTIwc291cmNlJTJDdGVjaG5pY2FsJTIwd3JpdGluZw==" data-listing-date-sort="1733270400000" data-listing-file-modified-sort="1759216995567" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="417">
 <div class="thumbnail"><a href="../talks/2024/PyDataGlobal2024/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2024/PyDataGlobal2024/pydataglobal2024.png" class="thumbnail-image" alt="Opening page">
@@ -320,7 +360,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNvcGVuJTIwc291cmNlJTJDcG9zdGVyJTIwcHJlc2VudGF0aW9uJTJDdGVjaG5pY2FsJTIwd3JpdGluZw==" data-listing-date-sort="1721088000000" data-listing-file-modified-sort="1750593047452" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
+<div class="quarto-post image-right" data-index="3" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNvcGVuJTIwc291cmNlJTJDcG9zdGVyJTIwcHJlc2VudGF0aW9uJTJDdGVjaG5pY2FsJTIwd3JpdGluZw==" data-listing-date-sort="1721088000000" data-listing-file-modified-sort="1759216995568" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
 <div class="thumbnail"><a href="../talks/2024/RSLondonSE24/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2024/RSLondonSE24/slides.png" class="thumbnail-image" alt="Opening page">
@@ -360,7 +400,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNvcGVuJTIwc291cmNlJTJDdGVjaG5pY2FsJTIwd3JpdGluZw==" data-listing-date-sort="1719878400000" data-listing-file-modified-sort="1750593047457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="315">
+<div class="quarto-post image-right" data-index="4" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNvcGVuJTIwc291cmNlJTJDdGVjaG5pY2FsJTIwd3JpdGluZw==" data-listing-date-sort="1719878400000" data-listing-file-modified-sort="1759216995572" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="315">
 <div class="thumbnail"><a href="../talks/2024/useR2024/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2024/useR2024/user2024.jpeg" class="thumbnail-image" alt="Opening page">
@@ -398,7 +438,7 @@ Saranjeet Kaur Bhogal, Lluís Revilla Sancho
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNwYW5lbCUyMGRpc2N1c3Npb24lMkNSU0UlMjBBc2lhJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5n" data-listing-date-sort="1694563200000" data-listing-file-modified-sort="1750593047447" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="87">
+<div class="quarto-post image-right" data-index="5" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNwYW5lbCUyMGRpc2N1c3Npb24lMkNSU0UlMjBBc2lhJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5n" data-listing-date-sort="1694563200000" data-listing-file-modified-sort="1759216995562" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="87">
 <div class="thumbnail"><a href="../talks/2023/RSEAA23/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2023/RSEAA23/rseaa23.png" class="thumbnail-image" alt="Opening page">
@@ -438,7 +478,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDbGlnaHRuaW5nJTIwdGFsayUyQ29wZW4lMjBzY2llbmNlJTJDcG9zdGVyJTIwcHJlc2VudGF0aW9uJTJDUlNFJTIwQXNpYSUyQ1Jlc2VhcmNoJTIwU29mdHdhcmUlMjBFbmdpbmVlcmluZw==" data-listing-date-sort="1693872000000" data-listing-file-modified-sort="1750593047450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
+<div class="quarto-post image-right" data-index="6" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDbGlnaHRuaW5nJTIwdGFsayUyQ29wZW4lMjBzY2llbmNlJTJDcG9zdGVyJTIwcHJlc2VudGF0aW9uJTJDUlNFJTIwQXNpYSUyQ1Jlc2VhcmNoJTIwU29mdHdhcmUlMjBFbmdpbmVlcmluZw==" data-listing-date-sort="1693872000000" data-listing-file-modified-sort="1759216995566" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
 <div class="thumbnail"><a href="../talks/2023/RSECon23/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2023/RSECon23/rsecon23.png" class="thumbnail-image" alt="Opening page">
@@ -480,7 +520,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDTmF0aW9uYWwlMjBSZXNlYXJjaCUyMGFuZCUyMEVkdWNhdGlvbiUyME5ldHdvcmslMkNvcGVuJTIwc2NpZW5jZSUyQ1JTRSUyMEFzaWElMkNSZXNlYXJjaCUyMFNvZnR3YXJlJTIwRW5naW5lZXJpbmc=" data-listing-date-sort="1692576000000" data-listing-file-modified-sort="1750593047438" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="96">
+<div class="quarto-post image-right" data-index="7" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDTmF0aW9uYWwlMjBSZXNlYXJjaCUyMGFuZCUyMEVkdWNhdGlvbiUyME5ldHdvcmslMkNvcGVuJTIwc2NpZW5jZSUyQ1JTRSUyMEFzaWElMkNSZXNlYXJjaCUyMFNvZnR3YXJlJTIwRW5naW5lZXJpbmc=" data-listing-date-sort="1692576000000" data-listing-file-modified-sort="1759216995553" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="96">
 <div class="thumbnail"><a href="../talks/2023/APAN56/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2023/APAN56/apan56.png" class="thumbnail-image" alt="Opening page">
@@ -520,7 +560,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="b3BlbiUyMHNjaWVuY2UlMkNSU0UlMjBBc2lhJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5n" data-listing-date-sort="1689465600000" data-listing-file-modified-sort="1750593047441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<div class="quarto-post image-right" data-index="8" data-categories="b3BlbiUyMHNjaWVuY2UlMkNSU0UlMjBBc2lhJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5n" data-listing-date-sort="1689465600000" data-listing-file-modified-sort="1759216995557" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
 <div class="thumbnail"><a href="../talks/2023/FAB23/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2023/FAB23/fab23.png" class="thumbnail-image" alt="Opening page">
@@ -554,7 +594,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDTmF0aW9uYWwlMjBSZXNlYXJjaCUyMGFuZCUyMEVkdWNhdGlvbiUyME5ldHdvcmslMkNvcGVuJTIwc2NpZW5jZSUyQ1JTRSUyMEFzaWElMkNSZXNlYXJjaCUyMFNvZnR3YXJlJTIwRW5naW5lZXJpbmc=" data-listing-date-sort="1678838400000" data-listing-file-modified-sort="1750593047432" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="79">
+<div class="quarto-post image-right" data-index="9" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDTmF0aW9uYWwlMjBSZXNlYXJjaCUyMGFuZCUyMEVkdWNhdGlvbiUyME5ldHdvcmslMkNvcGVuJTIwc2NpZW5jZSUyQ1JTRSUyMEFzaWElMkNSZXNlYXJjaCUyMFNvZnR3YXJlJTIwRW5naW5lZXJpbmc=" data-listing-date-sort="1678838400000" data-listing-file-modified-sort="1759216995547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="79">
 <div class="thumbnail"><a href="../talks/2023/APAN55/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2023/APAN55/apan55.png" class="thumbnail-image" alt="Opening page">
@@ -594,7 +634,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNSU0UlMjBBc2lhJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5n" data-listing-date-sort="1675468800000" data-listing-file-modified-sort="1750593047446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="quarto-post image-right" data-index="10" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNSU0UlMjBBc2lhJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5n" data-listing-date-sort="1675468800000" data-listing-file-modified-sort="1759216995562" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
 <div class="thumbnail"><a href="../talks/2023/FOSDEM23/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2023/FOSDEM23/fosdem23.png" class="thumbnail-image" alt="Opening page">
@@ -632,7 +672,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="Y29tbXVuaXR5JTIwYnVpbGRpbmclMkNvcGVuJTIwc291cmNlJTIwc29mdHdhcmUlMkNwYW5lbCUyMGRpc2N1c3Npb24lMkN2b2x1bnRlZXJpbmc=" data-listing-date-sort="1669075200000" data-listing-file-modified-sort="1750593047405" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
+<div class="quarto-post image-right" data-index="11" data-categories="Y29tbXVuaXR5JTIwYnVpbGRpbmclMkNvcGVuJTIwc291cmNlJTIwc29mdHdhcmUlMkNwYW5lbCUyMGRpc2N1c3Npb24lMkN2b2x1bnRlZXJpbmc=" data-listing-date-sort="1669075200000" data-listing-file-modified-sort="1759216995520" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
 <div class="thumbnail"><a href="../talks/2022/CSCCE22/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2022/CSCCE22/cscce22.jpg" class="thumbnail-image" alt="Opening page">
@@ -668,7 +708,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDcGFuZWwlMjBkaXNjdXNzaW9uJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nJTJDUlNFJTIwQXNpYQ==" data-listing-date-sort="1663113600000" data-listing-file-modified-sort="1750593047409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="84">
+<div class="quarto-post image-right" data-index="12" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDcGFuZWwlMjBkaXNjdXNzaW9uJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nJTJDUlNFJTIwQXNpYQ==" data-listing-date-sort="1663113600000" data-listing-file-modified-sort="1759216995525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="84">
 <div class="thumbnail"><a href="../talks/2022/RSEAA22/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2022/RSEAA22/rseaa22.png" class="thumbnail-image" alt="Opening page">
@@ -706,7 +746,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDbGlnaHRuaW5nJTIwdGFsayUyQ29wZW4lMjBzY2llbmNlJTJDcGFuZWwlMjBkaXNjdXNzaW9uJTJDcG9zdGVyJTIwcHJlc2VudGF0aW9uJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nJTJDUlNFJTIwQXNpYQ==" data-listing-date-sort="1662336000000" data-listing-file-modified-sort="1750593047414" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="151">
+<div class="quarto-post image-right" data-index="13" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDbGlnaHRuaW5nJTIwdGFsayUyQ29wZW4lMjBzY2llbmNlJTJDcGFuZWwlMjBkaXNjdXNzaW9uJTJDcG9zdGVyJTIwcHJlc2VudGF0aW9uJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nJTJDUlNFJTIwQXNpYQ==" data-listing-date-sort="1662336000000" data-listing-file-modified-sort="1759216995530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="151">
 <div class="thumbnail"><a href="../talks/2022/RSECon22/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2022/RSECon22/rsecon22.png" class="thumbnail-image" alt="Opening page">
@@ -750,7 +790,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="UiUyQ0NhcnBlbnRyaWVzJTJDb3BlbiUyMHNjaWVuY2UlMkNvcGVuJTIwc291cmNl" data-listing-date-sort="1659830400000" data-listing-file-modified-sort="1750593047406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
+<div class="quarto-post image-right" data-index="14" data-categories="UiUyQ0NhcnBlbnRyaWVzJTJDb3BlbiUyMHNjaWVuY2UlMkNvcGVuJTIwc291cmNl" data-listing-date-sort="1659830400000" data-listing-file-modified-sort="1759216995522" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
 <div class="thumbnail"><a href="../talks/2022/CarpentryCon22/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2022/CarpentryCon22/carpentrycon22.jpg" class="thumbnail-image" alt="Opening page">
@@ -786,7 +826,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNSZXNlYXJjaCUyMFNvZnR3YXJlJTIwRW5naW5lZXJpbmclMkNSU0UlMjBBc2lh" data-listing-date-sort="1657497600000" data-listing-file-modified-sort="1750593047407" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
+<div class="quarto-post image-right" data-index="15" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNSZXNlYXJjaCUyMFNvZnR3YXJlJTIwRW5naW5lZXJpbmclMkNSU0UlMjBBc2lh" data-listing-date-sort="1657497600000" data-listing-file-modified-sort="1759216995523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
 <div class="thumbnail"><a href="../talks/2022/JuliaCon22/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2022/JuliaCon22/juliacon22.jpg" class="thumbnail-image" alt="Opening page">
@@ -824,7 +864,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDZ3JhZHVhdGlvbg==" data-listing-date-sort="1651017600000" data-listing-file-modified-sort="1750593047407" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
+<div class="quarto-post image-right" data-index="16" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDZ3JhZHVhdGlvbg==" data-listing-date-sort="1651017600000" data-listing-file-modified-sort="1759216995523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
 <div class="thumbnail"><a href="../talks/2022/DII2022/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2022/DII2022/dii2022.png" class="thumbnail-image" alt="Opening page">
@@ -858,7 +898,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nJTJDUlNFJTIwQXNpYSUyQ3dvcmtzaG9wJTIwc2Vzc2lvbg==" data-listing-date-sort="1650326400000" data-listing-file-modified-sort="1750593047414" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="65">
+<div class="quarto-post image-right" data-index="17" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nJTJDUlNFJTIwQXNpYSUyQ3dvcmtzaG9wJTIwc2Vzc2lvbg==" data-listing-date-sort="1650326400000" data-listing-file-modified-sort="1759216995530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="65">
 <div class="thumbnail"><a href="../talks/2022/VldReSA22/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2022/VldReSA22/vld2022.png" class="thumbnail-image" alt="Opening page">
@@ -896,7 +936,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nJTJDUlNFJTIwQXNpYSUyQ2xpZ2h0bmluZyUyMHRhbGs=" data-listing-date-sort="1649030400000" data-listing-file-modified-sort="1750593047406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="88">
+<div class="quarto-post image-right" data-index="18" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nJTJDUlNFJTIwQXNpYSUyQ2xpZ2h0bmluZyUyMHRhbGs=" data-listing-date-sort="1649030400000" data-listing-file-modified-sort="1759216995522" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="88">
 <div class="thumbnail"><a href="../talks/2022/CW22/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2022/CW22/cw22.png" class="thumbnail-image" alt="Opening page">
@@ -934,7 +974,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNSZXNlYXJjaCUyMFNvZnR3YXJlJTIwRW5naW5lZXJpbmclMkNSU0UlMjBBc2lhJTJDd29ya3Nob3AlMjBzZXNzaW9u" data-listing-date-sort="1646956800000" data-listing-file-modified-sort="1750593047405" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
+<div class="quarto-post image-right" data-index="19" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNSZXNlYXJjaCUyMFNvZnR3YXJlJTIwRW5naW5lZXJpbmclMkNSU0UlMjBBc2lhJTJDd29ya3Nob3AlMjBzZXNzaW9u" data-listing-date-sort="1646956800000" data-listing-file-modified-sort="1759216995520" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
 <div class="thumbnail"><a href="../talks/2022/APAN53_workshop/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2022/APAN53_workshop/apan53workshop.png" class="thumbnail-image" alt="Opening page">
@@ -974,7 +1014,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNwYW5lbCUyMGRpc2N1c3Npb24=" data-listing-date-sort="1646784000000" data-listing-file-modified-sort="1750593047403" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
+<div class="quarto-post image-right" data-index="20" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNjaWVuY2UlMkNwYW5lbCUyMGRpc2N1c3Npb24=" data-listing-date-sort="1646784000000" data-listing-file-modified-sort="1759216995518" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
 <div class="thumbnail"><a href="../talks/2022/APAN53_panel/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2022/APAN53_panel/apan53panel.png" class="thumbnail-image" alt="Opening page">
@@ -1010,7 +1050,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDZ3JhZHVhdGlvbiUyQ29wZW4lMjBzY2llbmNlJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nJTJDUlNFJTIwQXNpYQ==" data-listing-date-sort="1642550400000" data-listing-file-modified-sort="1750593047408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+<div class="quarto-post image-right" data-index="21" data-categories="QXNpYSUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDZ3JhZHVhdGlvbiUyQ29wZW4lMjBzY2llbmNlJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyMEVuZ2luZWVyaW5nJTJDUlNFJTIwQXNpYQ==" data-listing-date-sort="1642550400000" data-listing-file-modified-sort="1759216995524" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
 <div class="thumbnail"><a href="../talks/2022/OLS4/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2022/OLS4/ols4.png" class="thumbnail-image" alt="Opening page">
@@ -1050,7 +1090,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNvdXJjZQ==" data-listing-date-sort="1636675200000" data-listing-file-modified-sort="1750593047394" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
+<div class="quarto-post image-right" data-index="22" data-categories="UiUyQ2NvbW11bml0eSUyMGJ1aWxkaW5nJTJDb3BlbiUyMHNvdXJjZQ==" data-listing-date-sort="1636675200000" data-listing-file-modified-sort="1759216995509" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
 <div class="thumbnail"><a href="../talks/2021/LatinR2021/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2021/LatinR2021/latinr2021.jpg" class="thumbnail-image" alt="Opening page">
@@ -1084,7 +1124,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-categories="SnVsaWElMkNvcGVuJTIwc291cmNl" data-listing-date-sort="1636416000000" data-listing-file-modified-sort="1750593047395" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<div class="quarto-post image-right" data-index="23" data-categories="SnVsaWElMkNvcGVuJTIwc291cmNl" data-listing-date-sort="1636416000000" data-listing-file-modified-sort="1759216995511" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
 <div class="thumbnail"><a href="../talks/2021/PackagingCon2021/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2021/PackagingCon2021/packagingcon2021.png" class="thumbnail-image" alt="Opening page">
@@ -1116,7 +1156,7 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-categories="SnVsaWElMkNvcGVuJTIwc291cmNlJTJDcG9zdGVyJTIwcHJlc2VudGF0aW9u" data-listing-date-sort="1628467200000" data-listing-file-modified-sort="1750593047393" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
+<div class="quarto-post image-right" data-index="24" data-categories="SnVsaWElMkNvcGVuJTIwc291cmNlJTJDcG9zdGVyJTIwcHJlc2VudGF0aW9u" data-listing-date-sort="1628467200000" data-listing-file-modified-sort="1759216995509" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
 <div class="thumbnail"><a href="../talks/2021/JuliaCon2021/index.html" class="no-external">
 
 <img loading="lazy" src="../talks/2021/JuliaCon2021/juliacon2021.jpg" class="thumbnail-image" alt="Opening page">
@@ -1150,10 +1190,10 @@ Saranjeet Kaur Bhogal
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="24" data-categories="Y29tbXVuaXR5JTIwYnVpbGRpbmclMkNSJTJDdGVjaG5pY2FsJTIwd3JpdGluZw==" data-listing-date-sort="1628294400000" data-listing-file-modified-sort="1750593047399" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="91">
+<div class="quarto-post image-right" data-index="25" data-categories="Y29tbXVuaXR5JTIwYnVpbGRpbmclMkNSJTJDdGVjaG5pY2FsJTIwd3JpdGluZw==" data-listing-date-sort="1628294400000" data-listing-file-modified-sort="1759216995514" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="91">
 <div class="thumbnail"><a href="../talks/2021/useR2021/index.html" class="no-external">
 
-<img loading="lazy" src="../talks/2021/useR2021/useR2021.png" class="thumbnail-image" alt="Opening slide">
+<img loading="lazy" data-src="../talks/2021/useR2021/useR2021.png" class="thumbnail-image" alt="Opening slide">
 
 </a></div>
 <div class="body">
@@ -1186,6 +1226,9 @@ Saranjeet Kaur Bhogal
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1238,13 +1281,14 @@ Saranjeet Kaur Bhogal
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
