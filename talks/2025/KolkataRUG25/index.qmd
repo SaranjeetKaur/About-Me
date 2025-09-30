@@ -1,0 +1,27 @@
+---
+title: "Let's talk about Positron!"
+image: slides.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2025-08-27"
+categories: [R, community building, IDE, R User Group]
+description: "Session at the Kolkata R User Group meetup, August 2025"
+draft: false
+---
+
+[Slides](https://saranjeetkaur.github.io/intro_positron/#/title-slide)
+
+[![](slides.png){width="478"}](https://saranjeetkaur.github.io/intro_positron/#/title-slide)
+
+[GitHub repository](https://github.com/SaranjeetKaur/intro_positron)
+
+## Talk Recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6ZSSuaMvU6Q?si=DoiMiMA3heQj5NYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+This session was presented at the [Kolkata R User Group meetup](https://www.meetup.com/kolkata-r-user-group/events/310539980/?utm_medium=email&utm_campaign=one_day_v7&dispatch_id=68ad6abe48e13847e371353a5b5db71c) in August 2025.
+
+## Abstract
+
+In this session, we will explore Positron, an Integrated Development Environment (IDE). We will look at some of its features, how it works with R and Python, and how it compares to other editors like RStudio and VS Code. The session is aimed at beginners who want to explore the tool and see how it can be used for coding.
