@@ -245,6 +245,76 @@
     "text": "Learning Outcomes\nThe expected takeaways for the attendees of the session would be:\n\n\nUnderstanding the scope of the R Dev Guide and the topics it covers.\nUnderstanding how to contribute to the guide by adding or reviewing content.\nGaining insights into the impact the updates have had on the R community, especially on the new contributors.\nGaining insights into the guide’s evolving nature and its pivotal role in fostering inclusivity and support within the R project, forming an understanding of its contribution to the community."
   },
   {
+    "objectID": "blogs/2023/RSECon23/index.html",
+    "href": "blogs/2023/RSECon23/index.html",
+    "title": "Exploring RSECon 2023: A Conference Recap",
+    "section": "",
+    "text": "Also posted on Software Sustainability Institute’s blog.\nBetween September 5 and 7, 2023, I had the chance to participate in the seventh annual research software engineering conference hosted at Swansea University’s Bay Campus, UK. My involvement included volunteering at the conference, serving on the conference committee as the co-chair of the RSE Worldwide team, and presenting a poster. This blog post aims to recount and share my experiences from this conference."
+  },
+  {
+    "objectID": "blogs/2023/RSECon23/index.html#conference-committee-and-volunteering",
+    "href": "blogs/2023/RSECon23/index.html#conference-committee-and-volunteering",
+    "title": "Exploring RSECon 2023: A Conference Recap",
+    "section": "Conference Committee and Volunteering",
+    "text": "Conference Committee and Volunteering\nBeing a part of the Conference Committee, I was involved in the planning phase of RSECon23 from the very initial phase. For planning the conference, the Conference Committee met remotely and developed different parts of the conference. I was the co-chair of the RSE Worldwide team along with Jannetta Steyn and Angel de Vicente. After several discussions and iterations, we invited Claire Wyatt to help us design and facilitate the RSE Worldwide session.\nI also had the opportunity to be an in-person volunteer at RSECon23. The volunteer team was managed by Becky Smith. All the volunteers were assigned different tasks that ensured the smooth running of the event."
+  },
+  {
+    "objectID": "blogs/2023/RSECon23/index.html#sessions-during-the-conference",
+    "href": "blogs/2023/RSECon23/index.html#sessions-during-the-conference",
+    "title": "Exploring RSECon 2023: A Conference Recap",
+    "section": "Sessions during the conference",
+    "text": "Sessions during the conference\nA number of different sessions were conducted during the conference like training, workshops, unconference tracks, birds of a feather, posters, lightning talks, hackathon, walkthroughs, etc.. The keynote by Dr Gaël Varoquaux titled “Saving the world one line at a time?!” was a reflection on the successes and failures of open computational science to make a better society. Another Keynote by Daniel S. Katz was on the “State of the US-RSE”. There were several training sessions and workshops conducted during the conference. The talk “Is RSE coming of age” given by Neil Chue Hong focused on how research software engineering can be meaningful and relevant to society. The plenary panel session brought together members of the RSEng community to share their experiences of RSE work across industry, national laboratories, charity, and the public sector. This panel explored the similarities and differences between the sectors, particularly in comparison to a university setting. The underlying aim of this panel was to showcase alternative careers to the more traditional RSE roles within an RSE team or embedded within a university research group."
+  },
+  {
+    "objectID": "blogs/2023/RSECon23/index.html#my-poster-presentation",
+    "href": "blogs/2023/RSECon23/index.html#my-poster-presentation",
+    "title": "Exploring RSECon 2023: A Conference Recap",
+    "section": "My poster presentation",
+    "text": "My poster presentation\nAt RSECon23, I had the opportunity to present a lightning talk and a poster titled “Shaping the Landscape: The Emerging Research Software Engineering Community in Asia.” This poster highlighted the journey of RSE Asia in 2023 and my work as a Community Manager (Asia) for the Research Software Alliance.\n\n\n\nMy poster at RSECon23, Swansea, UK"
+  },
+  {
+    "objectID": "blogs/2023/RSECon23/index.html#rse-worldwide-session",
+    "href": "blogs/2023/RSECon23/index.html#rse-worldwide-session",
+    "title": "Exploring RSECon 2023: A Conference Recap",
+    "section": "RSE Worldwide session",
+    "text": "RSE Worldwide session\nThere was a hybrid RSE Worldwide session during the RSECon23 which was organised and co-chaired by Jannetta Steyn, Angel de Vicente, and myself. This session was facilitated by Claire Wyatt. The purpose of this session was to update the RSE community about the advancement of international RSE Groups and the advancement of the recognition and importance of Research Software in different countries. This session was divided into two parts. In the first part speakers from different regions (Africa, UK, South Africa, Germany, Asia, US, Netherlands and eScience Center) provided their updates. The second part focused on international RSE community building. During this session, Lou Woodley from the CSCCE talked us through some of the fundamentals of building a community of practice, and what works and what doesn’t! The agenda for this session also included the launch of a “How-to handbook on international RSE community building” (Collaborative community notes for the handbook). However, due to time constraints, it was not launched during this session."
+  },
+  {
+    "objectID": "blogs/2023/RSECon23/index.html#conclusion",
+    "href": "blogs/2023/RSECon23/index.html#conclusion",
+    "title": "Exploring RSECon 2023: A Conference Recap",
+    "section": "Conclusion",
+    "text": "Conclusion\nIn summary, attending RSECon23 was a wonderful experience which provided many learning opportunities. It was enriching to learn about the developments in the RSE community from across the globe!\n\n\n\nGroup photo at RSECon23, Swansea, UK"
+  },
+  {
+    "objectID": "blogs/2023/FAB23software/index.html",
+    "href": "blogs/2023/FAB23software/index.html",
+    "title": "Exploring the Software Dimension at FAB23",
+    "section": "",
+    "text": "Also posted on Software Sustainability Institute’s blog.\nFounded in 2009, the Fab Foundation emerged to promote and support the growth of the worldwide fab lab network and the creation of regional capacity-building organisations. Originating from MIT’s Center for Bits and Atoms Fab Lab programme, the foundation’s mission is centred on providing access to tools, knowledge, and financial resources to facilitate education, innovation, and invention through technology and digital fabrication. This empowers individuals to create (almost) anything, opening up opportunities to improve lives and livelihoods on a global scale. The primary recipients of the Fab Foundation’s support are community organisations, educational institutions, and non-profit entities.\nTo raise awareness about the Fab community, the Fab Foundation organises various events worldwide, and in July 2023, I had the chance to participate in one such event: FAB23 in Thimphu, Bhutan. Besides exploring the Fab community, my purpose in attending this event was to gain insights into the intersections between the Fab community and the Research Software community. Throughout the conference, I attended three workshops in the Technology (R&D) track which helped me understand how (research) software plays an important role in the Fab community.\nThe first hands-on workshop was titled “The quest for the data workbench; a journey from Bhutan to Jupyter (and back), challenged by Pythons and Pandas” led by Pieter van der Hijden. The motivation for this workshop originated from the insights gained at the “Fablabs and the UN Sustainable Development Goals (SDGs)” Working Group, focusing on the role of data in driving machines, managing fablabs, overseeing the Fab Lab network, and examining the environment to identify areas where a positive impact can be achieved. During the session, participants from a variety of fablabs and backgrounds engaged in collaborative learning, each working on their Jupyter Notebook to explore interactive Python, Pandas, Markdown documentation, and develop a simple application. The session concluded with the sharing of thoughts, findings, and discussions on how to offer mutual support in the future.\nFollowing this session, we invited Pieter as a guest for RSE Asia’s community call where he led a discussion on “The Quest for the Data Workbench: How to bridge the gap between the Sustainable Development Goals (SDGs) and the Fablab/Maker Movement?”\nThe second workshop at FAB23 that centred on software implementation was titled “Building smart projects with TinyML using EdgeImpulse and Blues Wireless,” organised by Salman Faris for those interested in the intersection of machine learning and electronics. This workshop delved into the concepts of TinyML, focusing on deploying machine learning models on microcontrollers with limited resources. The session included a discussion on how TinyML can enhance intelligence and autonomy in various electronic devices, spanning wearables, smart sensors, IoT devices, and more. Exploring the EdgeImpulse platform, participants were introduced to its user-friendly interface for designing and training TinyML models. The workshop covered aspects such as collecting and preprocessing sensor data, creating machine learning models using popular algorithms, and evaluating their performance. Techniques for optimising TinyML models for deployment on resource-constrained microcontrollers were also discussed. Practical examples illustrated how TinyML and electronics can be combined for projects like gesture recognition, voice-controlled devices, environmental sensing, and others. Step-by-step demonstrations were provided to showcase the integration of TinyML models trained with EdgeImpulse into electronic prototypes, showcasing the potential of this combination.\nThe third hands-on workshop titled “How to add machine learning to almost anything?” was organised by Eric Pan and Violet Su. During this workshop, participants delved into machine learning applications on the widely used embedded AI device, Seeed Studio XIAO ESP32S3 Sense. This compact yet powerful tool serves as an ideal entry point for those venturing into intelligent voice and vision AI. Attendees received a unit of XIAO ESP32S3 Sense, enabling them to explore the world of embedded AI. The workshop offered an introduction to various projects leveraging embedded AI, hands-on experiences to test different functionalities, and provided inspiration, insights, and resources to empower participants to construct their own models for future embedded AI projects."
+  },
+  {
+    "objectID": "blogs/2023/FAB23software/index.html#conclusion",
+    "href": "blogs/2023/FAB23software/index.html#conclusion",
+    "title": "Exploring the Software Dimension at FAB23",
+    "section": "Conclusion",
+    "text": "Conclusion\nOverall, my experience at FAB23 provided insights into the important role of software in the Fab community. The workshops showcased how (research) software contributes to innovation and sustainability within the Fab ecosystem, creating an intersection of technology, digital fabrication, and software development. The collaborative spirit and exchange of ideas during the sessions emphasised the potential for further synergies between the Fab and Research Software communities, opening doors to new possibilities and avenues for collaboration.\n\n\n\nA sunflower in Bhutan"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Saranjeet Kaur Bhogal",
+    "section": "",
+    "text": "A Statistician by training, advocating for open source and open science. Co-Lead and Co-Founder of the Research Software Engineering Asia Association (RSE Asia), International Fellow of the 2023 Inauguration of the Software Sustainability Institute, and Research Software Engineer within the central Research Software Engineering team at Imperial College London."
+  },
+  {
+    "objectID": "blogs/index.html",
+    "href": "blogs/index.html",
+    "title": "Blogs",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nExploring RSECon 2023: A Conference Recap\n\n\n\nRSECon\n\ncommunity building\n\nBhutan\n\n\n\nBlog post about attending RSECon23 in Swansea University’s Bay Campus, United Kingdom\n\n\n\n\n\nOct 15, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nExploring the Software Dimension at FAB23\n\n\n\nFAB\n\ncommunity building\n\nBhutan\n\nResearch Software Engineering\n\n\n\nBlog post about attending FAB23 in Thimphu, Bhutan\n\n\n\n\n\nAug 16, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nFAB23: A Journey to Bhutan’s Fab Lab Conference\n\n\n\nFAB\n\ncommunity building\n\nBhutan\n\n\n\nBlog post about attending FAB23 in Thimphu, Bhutan\n\n\n\n\n\nAug 10, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "blogs/2023/FAB23intro/index.html",
     "href": "blogs/2023/FAB23intro/index.html",
     "title": "FAB23: A Journey to Bhutan’s Fab Lab Conference",
@@ -292,34 +362,6 @@
     "title": "FAB23: A Journey to Bhutan’s Fab Lab Conference",
     "section": "Conclusion",
     "text": "Conclusion\nHaving the chance to attend FAB23 was invaluable. The event provided a platform for learning and exploring new ideas and also presented an exceptional networking opportunity. Connecting with professionals, enthusiasts, and experts in the field allowed me to expand my network, exchange insights, and build relationships that can potentially lead to collaborations and future opportunities.\nKnow more:\n\nGetting started with Fab Labs\nGlobal directory of Fab Labs"
-  },
-  {
-    "objectID": "blogs/index.html",
-    "href": "blogs/index.html",
-    "title": "Blogs",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nExploring the Software Dimension at FAB23\n\n\n\nFAB\n\ncommunity building\n\nBhutan\n\nResearch Software Engineering\n\n\n\nBlog post about attending FAB23 in Thimphu, Bhutan\n\n\n\n\n\nAug 16, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nFAB23: A Journey to Bhutan’s Fab Lab Conference\n\n\n\nFAB\n\ncommunity building\n\nBhutan\n\n\n\nBlog post about attending FAB23 in Thimphu, Bhutan\n\n\n\n\n\nAug 10, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Saranjeet Kaur Bhogal",
-    "section": "",
-    "text": "A Statistician by training, advocating for open source and open science. Co-Lead and Co-Founder of the Research Software Engineering Asia Association (RSE Asia), International Fellow of the 2023 Inauguration of the Software Sustainability Institute, and Research Software Engineer within the central Research Software Engineering team at Imperial College London."
-  },
-  {
-    "objectID": "blogs/2023/FAB23software/index.html",
-    "href": "blogs/2023/FAB23software/index.html",
-    "title": "Exploring the Software Dimension at FAB23",
-    "section": "",
-    "text": "Also posted on Software Sustainability Institute’s blog.\nFounded in 2009, the Fab Foundation emerged to promote and support the growth of the worldwide fab lab network and the creation of regional capacity-building organisations. Originating from MIT’s Center for Bits and Atoms Fab Lab programme, the foundation’s mission is centred on providing access to tools, knowledge, and financial resources to facilitate education, innovation, and invention through technology and digital fabrication. This empowers individuals to create (almost) anything, opening up opportunities to improve lives and livelihoods on a global scale. The primary recipients of the Fab Foundation’s support are community organisations, educational institutions, and non-profit entities.\nTo raise awareness about the Fab community, the Fab Foundation organises various events worldwide, and in July 2023, I had the chance to participate in one such event: FAB23 in Thimphu, Bhutan. Besides exploring the Fab community, my purpose in attending this event was to gain insights into the intersections between the Fab community and the Research Software community. Throughout the conference, I attended three workshops in the Technology (R&D) track which helped me understand how (research) software plays an important role in the Fab community.\nThe first hands-on workshop was titled “The quest for the data workbench; a journey from Bhutan to Jupyter (and back), challenged by Pythons and Pandas” led by Pieter van der Hijden. The motivation for this workshop originated from the insights gained at the “Fablabs and the UN Sustainable Development Goals (SDGs)” Working Group, focusing on the role of data in driving machines, managing fablabs, overseeing the Fab Lab network, and examining the environment to identify areas where a positive impact can be achieved. During the session, participants from a variety of fablabs and backgrounds engaged in collaborative learning, each working on their Jupyter Notebook to explore interactive Python, Pandas, Markdown documentation, and develop a simple application. The session concluded with the sharing of thoughts, findings, and discussions on how to offer mutual support in the future.\nFollowing this session, we invited Pieter as a guest for RSE Asia’s community call where he led a discussion on “The Quest for the Data Workbench: How to bridge the gap between the Sustainable Development Goals (SDGs) and the Fablab/Maker Movement?”\nThe second workshop at FAB23 that centred on software implementation was titled “Building smart projects with TinyML using EdgeImpulse and Blues Wireless,” organised by Salman Faris for those interested in the intersection of machine learning and electronics. This workshop delved into the concepts of TinyML, focusing on deploying machine learning models on microcontrollers with limited resources. The session included a discussion on how TinyML can enhance intelligence and autonomy in various electronic devices, spanning wearables, smart sensors, IoT devices, and more. Exploring the EdgeImpulse platform, participants were introduced to its user-friendly interface for designing and training TinyML models. The workshop covered aspects such as collecting and preprocessing sensor data, creating machine learning models using popular algorithms, and evaluating their performance. Techniques for optimising TinyML models for deployment on resource-constrained microcontrollers were also discussed. Practical examples illustrated how TinyML and electronics can be combined for projects like gesture recognition, voice-controlled devices, environmental sensing, and others. Step-by-step demonstrations were provided to showcase the integration of TinyML models trained with EdgeImpulse into electronic prototypes, showcasing the potential of this combination.\nThe third hands-on workshop titled “How to add machine learning to almost anything?” was organised by Eric Pan and Violet Su. During this workshop, participants delved into machine learning applications on the widely used embedded AI device, Seeed Studio XIAO ESP32S3 Sense. This compact yet powerful tool serves as an ideal entry point for those venturing into intelligent voice and vision AI. Attendees received a unit of XIAO ESP32S3 Sense, enabling them to explore the world of embedded AI. The workshop offered an introduction to various projects leveraging embedded AI, hands-on experiences to test different functionalities, and provided inspiration, insights, and resources to empower participants to construct their own models for future embedded AI projects."
-  },
-  {
-    "objectID": "blogs/2023/FAB23software/index.html#conclusion",
-    "href": "blogs/2023/FAB23software/index.html#conclusion",
-    "title": "Exploring the Software Dimension at FAB23",
-    "section": "Conclusion",
-    "text": "Conclusion\nOverall, my experience at FAB23 provided insights into the important role of software in the Fab community. The workshops showcased how (research) software contributes to innovation and sustainability within the Fab ecosystem, creating an intersection of technology, digital fabrication, and software development. The collaborative spirit and exchange of ideas during the sessions emphasised the potential for further synergies between the Fab and Research Software communities, opening doors to new possibilities and avenues for collaboration.\n\n\n\nA sunflower in Bhutan"
   },
   {
     "objectID": "about.html",
