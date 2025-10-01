@@ -336,6 +336,41 @@
     "text": "Conclusion\nOverall, my experience at FAB23 provided insights into the important role of software in the Fab community. The workshops showcased how (research) software contributes to innovation and sustainability within the Fab ecosystem, creating an intersection of technology, digital fabrication, and software development. The collaborative spirit and exchange of ideas during the sessions emphasised the potential for further synergies between the Fab and Research Software communities, opening doors to new possibilities and avenues for collaboration.\n\n\n\nA sunflower in Bhutan"
   },
   {
+    "objectID": "blogs/2024/RDevGuide/index.html",
+    "href": "blogs/2024/RDevGuide/index.html",
+    "title": "A Book Dash for the R Development Guide",
+    "section": "",
+    "text": "Originally posted on Forwards blog\nThis last month of 2024 started with a lot of updates to the R Development (Dev) Guide. It has been almost 4 years since the discussions about having such a guide started during useR! 2020. The guide has come a long way since then, and there are some exciting updates to share!\nIn the first week of December 2024, Saranjeet Kaur Bhogal visited Heather Turner at the University of Warwick, UK. We spent the week co-working on the R Dev Guide and managed to close quite a few old issues 🎉"
+  },
+  {
+    "objectID": "blogs/2024/RDevGuide/index.html#witnessing-december-turning-into-closember",
+    "href": "blogs/2024/RDevGuide/index.html#witnessing-december-turning-into-closember",
+    "title": "A Book Dash for the R Development Guide",
+    "section": "Witnessing December turning into Closember!",
+    "text": "Witnessing December turning into Closember!\nWe started the week walking through the oldest open issues and pull requests on the Dev Guide’s repository and decided to tackle them as a priority. Over the week, we managed to close approximately 21 issues and 10 pull requests (not made by a bot). This included some new issues and pull requests that were opened during the week. The oldest issue that we managed to close was from 2020 and Heather did a comprehensive review of an outstanding pull request from 2022 (still not merged, but we are happy that it has been reviewed and is up to date).\nHere’s a peek into the insights from the Dev Guide’s GitHub repository for the week of the book dash:\n\n\n\nR Dev Guide GitHub repository insights"
+  },
+  {
+    "objectID": "blogs/2024/RDevGuide/index.html#a-new-cover-image-for-the-r-dev-guide",
+    "href": "blogs/2024/RDevGuide/index.html#a-new-cover-image-for-the-r-dev-guide",
+    "title": "A Book Dash for the R Development Guide",
+    "section": "A new cover image for the R Dev Guide",
+    "text": "A new cover image for the R Dev Guide\nWe have always wanted to have a cover image for the R Dev Guide and we finally have one! The cover image is inspired from an illustration that Saranjeet co-created with a Scriberia artist during The Turing Way book dash in June 2024. The illustration attempts to capture the essence of the R Dev Guide and the community around it. It depicts how the guide welcomes contributors to the R project from all levels, beginners, intermediate, and seasoned. The image shows contributors at beginner level putting the building blocks together, the contributors at intermediate level who have more familiarity with the tools using them to build the project further, and those at the seasoned levels constructing more advanced work.\n\n\n\nR Dev Guide’s new cover image"
+  },
+  {
+    "objectID": "blogs/2024/RDevGuide/index.html#hello-quarto",
+    "href": "blogs/2024/RDevGuide/index.html#hello-quarto",
+    "title": "A Book Dash for the R Development Guide",
+    "section": "Hello, Quarto!",
+    "text": "Hello, Quarto!\nWe thought that at some point it would be good to migrate the R Dev Guide from Bookdown to Quarto. We achieved this faster than expected with Ella Kaye bringing her energy and enthusiasm to the task. She managed to migrate the guide to Quarto and yes, we are now live on Quarto!\nExplore the Quarto version of the guide embedded below (it’s scrollable and clickable - try it!) 👀\n\n\n\nThe full scale version is available at https://contributor.r-project.org/rdevguide/."
+  },
+  {
+    "objectID": "blogs/2024/RDevGuide/index.html#community-contributions",
+    "href": "blogs/2024/RDevGuide/index.html#community-contributions",
+    "title": "A Book Dash for the R Development Guide",
+    "section": "Community contributions",
+    "text": "Community contributions\nDuring the week, we also had some notable contributions from the community. In particular, Cam Race and Carlos Cámara contributed to the guide remotely. Cam Race continued on the work he started during the R Dev Day at SIP 2024 which was inspired from the contributions by Mahmoud Abdelrazek and Sarah Jaffa during the R Hackathon at RSECon24.\nOverall, it was a very productive week! We are excited to see the R Dev Guide evolve further and welcome more contributors to the project. If you are interested in contributing, check out the contributing guidelines and the good first issues on the GitHub repository 🚀"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Saranjeet Kaur Bhogal",
@@ -347,7 +382,7 @@
     "href": "blogs/index.html",
     "title": "Blogs",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nExploring the APAN56 Conference in Colombo, Sri Lanka\n\n\n\nAPAN\n\ncommunity building\n\nSri Lanka\n\nResearch Software Engineering\n\nAsia\n\n\n\nBlog post about attending APAN56 in Colombo, Sri Lanka\n\n\n\n\n\nOct 15, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nExploring RSECon 2023: A Conference Recap\n\n\n\nRSECon\n\ncommunity building\n\nResearch Software Engineering\n\nUnited Kingdom\n\n\n\nBlog post about attending RSECon23 in Swansea University’s Bay Campus, United Kingdom\n\n\n\n\n\nOct 15, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nExploring the Software Dimension at FAB23\n\n\n\nFAB\n\ncommunity building\n\nBhutan\n\nResearch Software Engineering\n\nAsia\n\n\n\nBlog post about attending FAB23 in Thimphu, Bhutan\n\n\n\n\n\nAug 16, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nWitnessing the Launch Ceremony of the Malaysia Open Science Platform (MOSP)\n\n\n\nCommunity building\n\nMalaysia\n\nOpen Science\n\nAsia\n\n\n\nBlog post about the Malaysia Open Science Platform (MOSP) launch ceremony.\n\n\n\n\n\nAug 11, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nFAB23: A Journey to Bhutan’s Fab Lab Conference\n\n\n\nFAB\n\ncommunity building\n\nBhutan\n\nResearch Software Engineering\n\nAsia\n\n\n\nBlog post about attending FAB23 in Thimphu, Bhutan\n\n\n\n\n\nAug 10, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nA Book Dash for the R Development Guide\n\n\n\nR\n\nR Development Guide\n\nQuarto\n\nCommunity Building\n\n\n\nA summary of the book dash for the R Development Guide that took place from 2-6 December 2024.\n\n\n\n\n\nDec 6, 2024\n\n\nSaranjeet Kaur Bhogal, Heather Turner\n\n\n\n\n\n\n\n\n\n\n\n\nExploring the APAN56 Conference in Colombo, Sri Lanka\n\n\n\nAPAN\n\ncommunity building\n\nSri Lanka\n\nResearch Software Engineering\n\nAsia\n\n\n\nBlog post about attending APAN56 in Colombo, Sri Lanka\n\n\n\n\n\nOct 15, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nExploring RSECon 2023: A Conference Recap\n\n\n\nRSECon\n\ncommunity building\n\nResearch Software Engineering\n\nUnited Kingdom\n\n\n\nBlog post about attending RSECon23 in Swansea University’s Bay Campus, United Kingdom\n\n\n\n\n\nOct 15, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nExploring the Software Dimension at FAB23\n\n\n\nFAB\n\ncommunity building\n\nBhutan\n\nResearch Software Engineering\n\nAsia\n\n\n\nBlog post about attending FAB23 in Thimphu, Bhutan\n\n\n\n\n\nAug 16, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nWitnessing the Launch Ceremony of the Malaysia Open Science Platform (MOSP)\n\n\n\nCommunity building\n\nMalaysia\n\nOpen Science\n\nAsia\n\n\n\nBlog post about the Malaysia Open Science Platform (MOSP) launch ceremony.\n\n\n\n\n\nAug 11, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\n\n\n\n\n\n\n\nFAB23: A Journey to Bhutan’s Fab Lab Conference\n\n\n\nFAB\n\ncommunity building\n\nBhutan\n\nResearch Software Engineering\n\nAsia\n\n\n\nBlog post about attending FAB23 in Thimphu, Bhutan\n\n\n\n\n\nAug 10, 2023\n\n\nSaranjeet Kaur Bhogal\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blogs/2023/FAB23intro/index.html",
