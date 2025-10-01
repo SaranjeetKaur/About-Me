@@ -31,5 +31,11 @@
       "/talks/2021/JuliaCon2021/index.html",
       "/talks/2021/useR2021/index.html"
     ]
+  },
+  {
+    "listing": "/blogs/index.html",
+    "items": [
+      "/blogs/2023/FAB23software/index.html"
+    ]
   }
 ]
