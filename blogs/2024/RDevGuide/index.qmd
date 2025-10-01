@@ -10,7 +10,7 @@ description: 'A summary of the book dash for the R Development Guide that took p
 draft: false
 ---
 
-_Originally posted on [Forwards blog](https://forwards.github.io/blog/2024/rdevguide/)_
+_Originally published on [Forwards blog](https://forwards.github.io/blog/2024/rdevguide/)_
 
 This last month of 2024 started with a lot of updates to the [R Development (Dev) Guide](https://contributor.r-project.org/rdevguide/). It has been almost 4 years since the discussions about having such a guide started during useR! 2020. The guide has come a long way since then, and there are some exciting updates to share!
 
