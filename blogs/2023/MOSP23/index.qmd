@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2023-08-11"
-categories: [Community building, Malaysia, Open Science, Asia]
+categories: [Community Building, Malaysia, Open Science, Asia]
 description: "Blog post about the Malaysia Open Science Platform (MOSP) launch ceremony."
 draft: false
 ---
