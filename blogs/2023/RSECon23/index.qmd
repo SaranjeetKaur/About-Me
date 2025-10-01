@@ -1,0 +1,43 @@
+---
+title: "Exploring RSECon 2023: A Conference Recap"
+image: preview.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2023-10-15"
+categories: [RSECon, community building, Bhutan]
+description: "Blog post about attending RSECon23 in Swansea University's Bay Campus, United Kingdom"
+draft: false
+---
+
+*Also posted on Software Sustainability Institute's [blog](https://www.software.ac.uk/blog/exploring-rsecon-2023-conference-recap)*.
+
+![](preview.png){width="600"}
+
+Between September 5 and 7, 2023, I had the chance to participate in the [seventh annual research software engineering conference](https://rsecon23.society-rse.org) hosted at Swansea University's Bay Campus, UK. My involvement included volunteering at the conference, serving on the conference committee as the co-chair of the RSE Worldwide team, and presenting a poster. This blog post aims to recount and share my experiences from this conference.
+
+## Conference Committee and Volunteering
+
+Being a part of the Conference Committee, I was involved in the planning phase of RSECon23 from the very initial phase. For planning the conference, the Conference Committee met remotely and developed different parts of the conference. I was the co-chair of the RSE Worldwide team along with Jannetta Steyn and Angel de Vicente. After several discussions and iterations, we invited Claire Wyatt to help us design and facilitate the RSE Worldwide session.
+
+I also had the opportunity to be an in-person volunteer at RSECon23. The volunteer team was managed by Becky Smith. All the volunteers were assigned different tasks that ensured the smooth running of the event.
+
+## Sessions during the conference
+
+A number of different sessions were conducted during the conference like training, workshops, unconference tracks, birds of a feather, posters, lightning talks, hackathon, walkthroughs, etc.. The keynote by Dr Gaël Varoquaux titled “Saving the world one line at a time?!” was a reflection on the successes and failures of open computational science to make a better society. Another Keynote by Daniel S. Katz was on the “State of the US-RSE”. There were several training sessions and workshops conducted during the conference. The talk “Is RSE coming of age” given by Neil Chue Hong focused on how research software engineering can be meaningful and relevant to society. The plenary panel session brought together members of the RSEng community to share their experiences of RSE work across industry, national laboratories, charity, and the public sector. This panel explored the similarities and differences between the sectors, particularly in comparison to a university setting. The underlying aim of this panel was to showcase alternative careers to the more traditional RSE roles within an RSE team or embedded within a university research group.
+
+## My poster presentation
+
+At RSECon23, I had the opportunity to present a lightning talk and a poster titled "[Shaping the Landscape: The Emerging Research Software Engineering Community in Asia]()." This poster highlighted the journey of RSE Asia in 2023 and my work as a Community Manager (Asia) for the Research Software Alliance.
+
+![My poster at RSECon23, Swansea, UK](poster.png){width="600"}
+
+## RSE Worldwide session
+
+There was a hybrid RSE Worldwide session during the RSECon23 which was organised and co-chaired by Jannetta Steyn, Angel de Vicente, and myself. This session was facilitated by Claire Wyatt. The purpose of this session was to update the RSE community about the advancement of international RSE Groups and the advancement of the recognition and importance of Research Software in different countries. This session was divided into two parts. In the first part speakers from different regions (Africa, UK, South Africa, Germany, Asia, US, Netherlands and eScience Center) provided their updates. The second part focused on international RSE community building. During this session, Lou Woodley from the CSCCE talked us through some of the fundamentals of building a community of practice, and what works and what doesn't! The agenda for this session also included the launch of a “[How-to handbook on international RSE community building](https://rse-worldwide.github.io/RSE-Community-Building/intro.html)” ([Collaborative community notes](https://hackmd.io/@rseteam-ncl/RSEWORLDWIDE) for the handbook). However, due to time constraints, it was not launched during this session.
+
+## Conclusion
+
+In summary, attending RSECon23 was a wonderful experience which provided many learning opportunities. It was enriching to learn about the developments in the RSE community from across the globe!
+
+![Group photo at RSECon23, Swansea, UK](group.png){width="600"}

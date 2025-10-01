@@ -12,6 +12,8 @@ draft: false
 
 *Also posted on Software Sustainability Institute's [blog](https://www.software.ac.uk/blog/fab23-journey-bhutans-fab-lab-conference)*.
 
+![](preview.png){width="600"}
+
 Established in 2009, the [Fab Foundation](https://fabfoundation.org) was created with the aim of fostering and nurturing the expansion of the global fab lab network and the establishment of regional capacity-building organisations. Originating from [MIT’s Center for Bits and Atoms Fab Lab programme](https://news.mit.edu/2023/how-mits-fab-labs-scaled-around-world-0605), the foundation's mission revolves around granting access to tools, knowledge, and financial resources to facilitate education, innovation, and invention through technology and digital fabrication. This enables individuals to create (almost) anything, generating opportunities to enhance lives and livelihoods globally. The primary beneficiaries of the Fab Foundation are community organisations, educational institutions, and non-profit entities.
 
 In July 2023, I had the opportunity to attend my first Fab Lab conference, [FAB23](https://fab23.fabevent.org) in Thimphu, Bhutan. This 19th edition of the international [Fab Lab Conference and Symposium](https://fabevent.org) encompassed the Fab Bhutan Challenge, the Fab Festival Thimphu, the FAB23 Conference, and the Fab City Summit. My participation extended across the Festival, Conference, and City Summit.
