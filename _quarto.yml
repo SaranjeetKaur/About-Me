@@ -9,8 +9,10 @@ website:
         file: about.qmd
       - text: "Talks"
         file: talks/index.qmd
-      
-    right: 
+      - text: "Blogs"
+        file: blogs/index.qmd
+
+    right:
       - icon: github
         href: https://github.com/SaranjeetKaur
       - icon: linkedin
@@ -19,7 +21,7 @@ website:
         href: https://orcid.org/0000-0002-7038-1457
       - icon: envelope
         href: mailto:kaur.saranjeet3@gmail.com
-      
+
 
 format:
   html:
