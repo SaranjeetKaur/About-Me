@@ -1,0 +1,35 @@
+---
+title: "Witnessing the Launch Ceremony of the Malaysia Open Science Platform (MOSP)"
+image: preview.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2023-08-11"
+categories: [Community building, Malaysia, Open Science, Asia]
+description: "Blog post about the Malaysia Open Science Platform (MOSP) launch ceremony."
+draft: false
+---
+
+*Also posted on Software Sustainability Institute's [blog](https://www.software.ac.uk/blog/witnessing-launch-ceremony-malaysia-open-science-platform-mosp)*.
+
+![](preview.png){width="600"}
+
+In this article, I share my experience of virtually attending the [Malaysia Open Science Platform (MOSP)](https://mosp.gov.my) launch ceremony that took place on May 16, 2023. It was a one-of-a-kind opportunity for me to witness the initiation of open science at a governmental level, which highlighted the role of Data Contributors, Data Stewards, FAIR principles (Findable, Accessible, Interoperable, and Reusable), and Open Science in evolving the digital research ecosystem of Malaysia.
+
+## Welcoming Remarks
+
+The Welcoming Remarks at the launch ceremony were delivered by YB Tuan Chang Lih Kang, Minister of Science, Technology and Innovation, Malaysia. YB Tuan Chang Lih Kang expressed his appreciation for the collaboration between the [Ministry of Science, Technology, and Innovation (MOSTI), Malaysia](https://www.mosti.gov.my/en/) and the [Academy of Sciences Malaysia (ASM)](https://www.akademisains.gov.my) in developing a platform that promotes transparency and accessibility in scientific knowledge. He shared that MOSP aims to encourage open innovation, data-driven policy making, development of an open science ecosystem along with establishing guidelines, capacity building, and infrastructure for research data sharing. He emphasised the importance of managing research data as a national asset and adopting the FAIR principles to maximise its value. He also acknowledged the challenges in implementing open science in Malaysia, such as research data sharing, infrastructure limitations within institutions, and a lack of awareness and concerns regarding data security among key stakeholders in the open science community. However, he assured the researchers that MOSP supports the practice of making research data as open as possible and as closed as necessary.
+
+## Officiating Speech
+
+The Deputy Prime Minister of Malaysia, YAB Dato’ Sri Haji Fadillah Haji Yusof, delivered the Officiating Speech at the launch ceremony. He highlighted the global movement of Open Science, emphasising equal access to scientific knowledge and promoting transparency and collaboration, and how Malaysia is embracing this global movement. He mentioned the efforts of neighbouring countries like Indonesia, which has produced a large number of open access journals, and Singapore, which is actively developing more academic libraries to promote open research ecosystems. He acknowledged the efforts of the [Malaysia Open Science Alliance (MOSA)](https://www.akademisains.gov.my/mosp/about/malaysia-open-science-alliance/) and shared that MOSP aims to expedite research, facilitate collaboration, and reduce duplication. He highlighted that MOSP plays a crucial role in enhancing Malaysia's research and innovation community, bridging the gap between research, innovation, and commercialization. He encouraged the adoption of open science guidelines, data sharing policies, and support for societal advancement. He expressed the ambition to connect with global open science platforms and increase the visibility of Malaysian researchers. He shared that currently the MOSP showcases ten research fields, including biological, chemical, and mathematical sciences; physics, engineering, and material science; agricultural, veterinary, and food sciences; computer science, information technology, and telecommunications; medical and health sciences; climate, environment, and biodiversity; energy; business, finance, and economics; language and education; and arts and social sciences. Finally, he officially launched the Malaysia Open Science Platform, expressing his pleasure and gratitude for the achievement.
+
+## Recognising Data Stewards and Data Contributors
+
+During the launch ceremony, nine participants received the “**Certificate of Merit for their exceptional data stewardship in Open Science**”. Their contributions were recognized and celebrated for playing a crucial role in promoting and advancing the principles of Open Science. Additionally, seven representatives were honoured with the “**Appreciation Award for their significant contributions as data contributors to the Malaysia Open Science Platform (MOSP)**”. Their participation in this national initiative demonstrated their commitment to fostering a culture of open data sharing and innovation. Their efforts were acknowledged and appreciated for playing a vital role in enriching the research ecosystem of Malaysia.
+
+## Special video and Forum on Open Science
+
+During the launch ceremony, a special video was shown to highlight the importance of science as a catalyst for progress and innovation. The video addressed the challenges faced by traditional scientific practices, including reproducibility issues, limited data sharing, and a lack of collaboration. It also highlighted that as a response to these challenges, the Open Science movement has emerged with the aim of revolutionising the scientific landscape. Furthermore, to foster discussions with the attendees, a “Forum on Open Science: democratising science to foster public trust towards an impactful collaboration” was also conducted during the launch ceremony.
+
+To know more about the Malaysia Open Science Platform please visit the [website](https://mosp.gov.my).
