@@ -5,12 +5,12 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2023-08-16"
-categories: [FAB, community building, Bhutan, Research Software Engineering, Asia]
+categories: [FAB, Community Building, Bhutan, Research Software Engineering, Asia]
 description: "Blog post about attending FAB23 in Thimphu, Bhutan"
 draft: false
 ---
 
-_Also posted on Software Sustainability Institute's [blog](https://www.software.ac.uk/blog/exploring-software-dimension-fab23)_.
+*Also posted on Software Sustainability Institute's [blog](https://www.software.ac.uk/blog/exploring-software-dimension-fab23)*.
 
 Founded in 2009, the [Fab Foundation](https://fabfoundation.org) emerged to promote and support the growth of the worldwide fab lab network and the creation of regional capacity-building organisations. Originating from [MIT’s Center for Bits and Atoms Fab Lab programme](https://news.mit.edu/2023/how-mits-fab-labs-scaled-around-world-0605), the foundation's mission is centred on providing access to tools, knowledge, and financial resources to facilitate education, innovation, and invention through technology and digital fabrication. This empowers individuals to create (almost) anything, opening up opportunities to improve lives and livelihoods on a global scale. The primary recipients of the Fab Foundation's support are community organisations, educational institutions, and non-profit entities.
 

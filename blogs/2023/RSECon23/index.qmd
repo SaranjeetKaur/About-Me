@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2023-10-15"
-categories: [RSECon, community building, Research Software Engineering, United Kingdom]
+categories: [RSECon, Community Building, Research Software Engineering, United Kingdom]
 description: "Blog post about attending RSECon23 in Swansea University's Bay Campus, United Kingdom"
 draft: false
 ---

@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2023-10-15"
-categories: [APAN, community building, Sri Lanka, Research Software Engineering, Asia]
+categories: [APAN, Community Building, Sri Lanka, Research Software Engineering, Asia]
 description: "Blog post about attending APAN56 in Colombo, Sri Lanka"
 draft: false
 ---
