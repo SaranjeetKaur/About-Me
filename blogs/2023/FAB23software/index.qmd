@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2023-08-16"
-categories: [FAB, community building, Bhutan, Research Software Engineering]
+categories: [FAB, community building, Bhutan, Research Software Engineering, Asia]
 description: "Blog post about attending FAB23 in Thimphu, Bhutan"
 draft: false
 ---

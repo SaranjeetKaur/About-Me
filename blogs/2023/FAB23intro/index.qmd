@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2023-08-10"
-categories: [FAB, community building, Bhutan]
+categories: [FAB, community building, Bhutan, Research Software Engineering, Asia]
 description: "Blog post about attending FAB23 in Thimphu, Bhutan"
 draft: false
 ---
@@ -54,5 +54,5 @@ Having the chance to attend FAB23 was invaluable. The event provided a platform 
 
 Know more:
 
-1. [Getting started with Fab Labs](https://fabfoundation.org/getting-started/)
-2. [Global directory of Fab Labs](https://www.fablabs.io/labs)
+1.  [Getting started with Fab Labs](https://fabfoundation.org/getting-started/)
+2.  [Global directory of Fab Labs](https://www.fablabs.io/labs)

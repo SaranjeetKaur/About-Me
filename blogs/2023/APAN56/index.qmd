@@ -1,0 +1,53 @@
+---
+title: "Exploring the APAN56 Conference in Colombo, Sri Lanka"
+image: preview.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2023-10-15"
+categories: [APAN, community building, Sri Lanka, Research Software Engineering, Asia]
+description: "Blog post about attending APAN56 in Colombo, Sri Lanka"
+draft: false
+---
+
+*Also posted on Software Sustainability Institute's [blog](https://www.software.ac.uk/blog/exploring-apan56-conference-colombo-sri-lanka)*.
+
+![](preview.png){width="600"}
+
+## Introduction
+
+From 21-25 August 2023, I had the privilege of attending the 56th Asia Pacific Advance Network (APAN56) meeting held in Colombo, Sri Lanka. This event allowed me to pick up where I left off after the APAN55 meeting in Nepal. In this report, I'll take you through my journey at APAN56, sharing valuable insights, experiences, and the exciting new developments that unfolded during this conference.
+
+## Day 1: Setting the Stage
+
+The opening day of APAN56 began with a session on 'Introduction to the Asia Pacific Advanced Network (APAN)' led by Liana Jacinta. This session laid the foundation for the entire conference, delving into critical topics such as reach, performance, collaboration, trust, innovation, and community within the National Research and Education Networks (NRENs). We explored the diverse models of NRENs, ranging from private companies to government agencies, and the unique challenges they face across various economies. APAN's pivotal role in uniting these networks through coordination, collaboration, continuity, and community involvement was a central theme. Additionally, the APAN Fellowship program, which fosters global collaboration by supporting fellows to attend APAN meetings, was highlighted. It was heartening to see all the APAN56 fellows share their objectives for participating in this event.
+
+![Liana Jacinta presenting “Introduction to APAN”](intro.png){width="600"}
+
+In the following sessions, I had the opportunity to learn about the Cloud working group's efforts to facilitate science communities' effective use of high-performance cloud services. At the open and sharing data group session, Markus Buchhorn painted a vision of the Asia-Pacific Open (research) Data Commons and discussed the apprehensions researchers have about working openly. Markus emphasised the importance of demonstrating change rather than merely talking about it, a crucial takeaway for all attendees.
+
+![Presentations at the Cloud Working Group and the Open and Sharing Data Group sessions](cloud.png){width="600"}
+
+## Keynotes, Magazine Launch, and More
+
+As the day progressed, I attended the keynote speeches and witnessed the launch of "Nexus," the official magazine of the APAN community. The magazine promises to be a valuable resource, providing insights and updates on the latest advancements in the field.
+
+![Nexus, the Magazine of the APAN community (APAN56 Edition)](magazine.png.png){width="600"}
+
+I also joined the Asia Pacific Research Platform (APRP) session, where I delved into the history of APRP. During this session, I had the opportunity to present my talk on "Navigating the Research Software Engineering Community Landscape in Asia," which was chaired by Andrew Howard.
+
+![My presentation at APAN56](mypresentation.png){width="600"}
+
+The industry session was particularly interesting, featuring engaging presentations by industry representatives who shared their visions for the next generation of NRENs. It was fascinating to envision the future of network research and education.
+
+![Presentations at the Asia Pacific Research Platform session and those by the Industry representatives](industry.png){width="600"}
+
+## Conference Tracks
+
+Throughout the conference, I explored a variety of tracks, with a particular focus on those related to artificial intelligence (AI). The diverse range of topics and presentations provided new perspectives.
+
+## Conclusion
+
+APAN56 was a truly unique experience. I was privileged to witness the introduction of new conference tracks, the launch of "Nexus'' magazine, and the emergence of countless opportunities and friendships. This meeting deepened my understanding of network research and education and reinforced the significance of collaboration and community in advancing our collective goals. I'm excited to take these newfound insights and connections forward and look forward to what the future holds for APAN and its vibrant community.
+
+![APAN57 in Thailand!](apan57.png){width="600"}
