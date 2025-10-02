@@ -47,6 +47,7 @@
 
 - title: Nested Sampling in Julia
   path: https://gist.github.com/SaranjeetKaur/37086fea06076bd3ec76d052cc166378
+  image: images/gsoc.jpeg
   description: >
     An open-source project that implements Nested Sampling in the Julia
     programming language. This project was done as a part of Google Summer
