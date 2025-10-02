@@ -20,6 +20,24 @@
   categories: [Research Software Engineering, Community Building, Asia]
   date: 2021-11-10
 
+- title: Building Community around the R Development Guide
+  path: https://www.codeforsociety.org/incubator/projects/building-community-around-the-r-development-guide
+  image: images/css.png
+  description: >
+    A 'Digital Incubator Infrastructure' cohort project funded
+    by the 'Code for Science and Society' to build a community around
+    the R Development Guide. As a part of this project, I co-organised
+    Collaboration Campfires for the R community.
+  categories: [R, Community Building, Collaboration]
+  date: 2022-02-22
+
+- title: Subject Matter Expert, NASA-TOPS
+  description: >
+    As a Subject Matter Expert, co-developed and contributed educational
+    content for the 'Open Science Tools and Resources' module of the NASA
+    Transform to Open Science (TOPS) initiative.
+  categories: [Open Science, Education]
+
 - title: R-Ladies Pune
   path: https://www.meetup.com/rladies-pune/
   image: images/rladies.png
@@ -51,7 +69,7 @@
   description: >
     An open-source project that implements Nested Sampling in the Julia
     programming language. This project was done as a part of Google Summer
-    of Code 2020.
+    of Code 2020 with the Turing team of the Julia language organisation.
   categories: [Julia, Bayesian Statistics, Open Source]
   date: 2020-11-10
 
