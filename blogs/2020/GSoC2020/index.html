@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Saranjeet Kaur Bhogal">
+<meta name="dcterms.date" content="2020-08-30">
+<meta name="description" content="Blog post about the work done during Google Summer of Code 2020">
+
+<title>Extending NestedSamplers.jl – Saranjeet Kaur Bhogal</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-1db3f541d99483cdc7a0d9cf38862b2c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Saranjeet Kaur Bhogal</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../talks/index.html"> 
+<span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blogs/index.html"> 
+<span class="menu-text">Blogs</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/SaranjeetKaur"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/saranjeet-kaur-b-48ab769b/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://orcid.org/0000-0002-7038-1457"> <i class="bi bi-globe" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:kaur.saranjeet3@gmail.com"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#contributions" id="toc-contributions" class="nav-link active" data-scroll-target="#contributions">Contributions</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#random-staggering" id="toc-random-staggering" class="nav-link" data-scroll-target="#random-staggering">Random Staggering</a></li>
+  <li><a href="#slicing" id="toc-slicing" class="nav-link" data-scroll-target="#slicing">Slicing</a></li>
+  <li><a href="#random-slicing" id="toc-random-slicing" class="nav-link" data-scroll-target="#random-slicing">Random Slicing</a></li>
+  <li><a href="#further-work" id="toc-further-work" class="nav-link" data-scroll-target="#further-work">Further work</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Extending NestedSamplers.jl</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Open Source</div>
+    <div class="quarto-category">Julia</div>
+    <div class="quarto-category">GSoC</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Blog post about the work done during Google Summer of Code 2020
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Saranjeet Kaur Bhogal </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 30, 2020</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>*_Originally published on <a href="https://nextjournal.com/Saranjeet-Kaur/extending-nestedsamplersjl">Nextjournal</a>*.</p>
+<p>This blog post describes the work done in Google Summer of Code 2020 for the <a href="https://summerofcode.withgoogle.com/projects/#6567464390885376">Polychord Nested Sampling Algorithm Building and Integration with Turing in Julia</a>.</p>
+<section id="contributions" class="level2">
+<h2 class="anchored" data-anchor-id="contributions">Contributions</h2>
+<ul>
+<li><a href="https://github.com/TuringLang/NestedSamplers.jl/pull/38">Proposals.RStagger#38</a></li>
+<li><a href="https://github.com/TuringLang/NestedSamplers.jl/pull/41">Proposals.Slice#41</a></li>
+<li><a href="https://github.com/TuringLang/NestedSamplers.jl/pull/44">Proposals.RSlice#44</a></li>
+</ul>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Bayesian inference methods are mainly used for parameter estimation and model comparison. Parameter estimation is generally performed using Markov chain Monte Carlo (MCMC) methods, such as the Metropolis–Hastings (MH) algorithm and its variants. Whereas, for performing model comparison, the evidence (a high-dimensional integration of the likelihood over the prior density) is computed. The issue with using MH methods is that they cannot compute this on a usable time-scale which further hinders the use of Bayesian model comparison. As such, a contemporary methodology for computing evidence and posteriors simultaneously is provided by nested sampling (Skilling, 2004 and 2006).</p>
+<p>The nested sampling algorithm can be used to estimate the evidence integral. The basic algorithm is stated here:</p>
+<p><strong>Step 1.</strong> Draw <span class="math inline">\(n\)</span> <em>live points</em> uniformly from the prior.</p>
+<p><strong>Step 2.</strong> At iteration <em><span class="math inline">\(i\)</span></em>, replace the point with the lowest likelihood <span class="math inline">\(L_i\)</span> by a new live point drawn (as in <strong>Step 1</strong>) with the constraint that its likelihood <span class="math inline">\(L &gt; L_i\)</span>.</p>
+<p><strong>Step 3.</strong> Estimate the fraction of the prior <span class="math inline">\(X_i\)</span> enclosed by the iso-likelihood contour <span class="math inline">\(L_i\)</span>. It is the lowest volume of <span class="math inline">\(n\)</span> volumes drawn uniformly from <span class="math inline">\([0, X_{i-1
+}]\)</span>.</p>
+<p><strong>Step 4.</strong> Calculate the evidence by quadrature, <span class="math inline">\(Z \approx \sum_{i = 1} L_i (X_{i-1} - X_i)\)</span>.</p>
+<p><strong>Step 5.</strong> <span class="math inline">\(X_i\)</span> satisfies, <span class="math inline">\(X_i = t_i X_{i-1}\)</span>, <span class="math inline">\(P(t_i) = n t_i^{n-1}\)</span>, and <span class="math inline">\(X_0 = 1\)</span>.</p>
+<p><strong>Step 6.</strong> Using <strong>Step 4</strong> and <strong>Step 5</strong>, the mean and variance of the random variable <span class="math inline">\(Z\)</span> can be found.</p>
+<p><strong>Step 7.</strong> The posterior mass contained within the live points is estimated as, <span class="math inline">\(Z_{live} \approx &lt;L&gt;_{live} X_{live}\)</span>.</p>
+<p><strong>Step 8.</strong> Convergence is reached when <span class="math inline">\(Z_{live}\)</span> is some small fraction of <span class="math inline">\(Z\)</span>.</p>
+<p><strong>Step 9.</strong> The <em>dead points</em> may be used to construct a set of posterior samples for use in parameter estimation.</p>
+<p>The difficult step in nested sampling is sampling from the prior subject to the hard likelihood constraint <span class="math inline">\(L &gt; L_i\)</span>. Numerous variants of nested sampling have been constructed to deal with the likelihood constraint. The prior may be sampled using inverse transform sampling, so that sampling occurs in a unit hypercube. How one samples in this space under the hard likelihood constraint is where variations of the algorithm differ.</p>
+<p>The <a href="https://github.com/TuringLang/NestedSamplers.jl">NestedSamplers.jl</a> Julia package is now enabled to have the random staggering (<a href="https://github.com/TuringLang/NestedSamplers.jl/releases/tag/v0.4.0">v0.4.0</a>), slicing and random slicing (<a href="https://github.com/TuringLang/NestedSamplers.jl/releases/tag/v0.5.0">v0.5.0</a>) algorithms to propose new live points within a bounding volume in unit space. Uniform and random walk algorithms were released in <a href="https://github.com/TuringLang/NestedSamplers.jl/releases/tag/v0.3.0">v0.3.0</a> of NestedSamplers.jl. Depending on the number of parameters to fit, the proposal algorithm is selected (this not a rule of thumb, rather it is used to acheive optimal algorithm performance). The number of parameters to fit defines the dimensionality of the prior volume used in evidence sampling. These parameters are denoted by <code>ndims</code> . The <a href="https://github.com/TuringLang/NestedSamplers.jl/blob/master/src/staticsampler.jl#L67">conditional statement</a> that helps select amongst the proposals is:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> proposal <span class="op">===</span> <span class="op">:</span>auto</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  proposal <span class="op">=</span> <span class="cf">if</span> ndims <span class="op">&lt;</span> <span class="fl">10</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    Proposals.<span class="fu">Uniform</span>()</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">elseif</span> <span class="fl">10</span> <span class="op">≤</span> ndims <span class="op">≤</span> <span class="fl">20</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    Proposals.<span class="fu">RWalk</span>()</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    Proposals.<span class="fu">Slice</span>()</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">end</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Although the algorithms can be used for any dimensionality (the value of <code>ndims</code>), their performance will be best when they are selected according to the value of <code>ndims</code> as stated above. Random staggering, slicing and random slicing algorithms are discussed in the further sections.</p>
+</section>
+<section id="random-staggering" class="level2">
+<h2 class="anchored" data-anchor-id="random-staggering">Random Staggering</h2>
+<p>Random staggering can be used as an alternative to the random walk proposal when the number of parameters to fit lie in <code>[10, 20]</code> . However, it differs from the random walk proposal in that the step size here is exponentially adjusted to reach a target acceptance rate <em>during</em> each proposal, in addition to <em>between</em> proposals. In this algorithm, a new live point is proposed by random staggering away from an existing live point. The parameters for this proposal are:</p>
+<ul>
+<li><em>ratio</em>: the target acceptance ratio (must be in <code>[1/walks, 1]</code>)</li>
+<li><em>walks</em>: the minimum number of steps to take (must be greater than 1)</li>
+<li><em>scale</em>: the proposal distribution scale, which will update <em>between</em> proposals (must be non-negative)</li>
+</ul>
+<p>A mutable struct <code>RStagger</code> is constructed with default values <code>ratio = 0.5</code>, <code>walks = 25</code>, and <code>scale = 1.0</code>.</p>
+<p>While the number of function calls used to generate the sample is less than the <code>walks</code> (default <code>walks</code> are 25) or the acceptance value is zero, a proposed point is obtained.</p>
+<p>The position of the initial sample (or the existing live point) is transformed to the proposal distribution, for which the <code>scale</code> and the <code>stagger</code> values (default <code>stagger = 1</code>) are utilized. Whether this transformed value lies inside the unit-cube is verified using the <code>unitcheck</code> function. Checks are also applied on the scale factor to avoid over-shrinking and, on the walks to avoid getting stuck in inefficient random number generation.</p>
+<p>A <code>prior_transform</code> function is applied to the sample which lies within the unit-cube. This function transforms the sample from a unit cube to the parameter space of interest according to the prior. The log-likelihood of this value is returned using the function <code>loglike</code> and stored in <code>logl_prop</code> . The log-likelihood <code>logl_prop</code> of the proposed point is compared with the log-likelihood bound <code>logl_star</code> and the log-likelihood of the final proposed point is stored in <code>logl</code>.</p>
+<p>The <code>stagger</code> value is then adjusted to target an acceptance ratio.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ratio <span class="op">=</span> accept <span class="op">/</span> (accept <span class="op">+</span> reject)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> ratio <span class="op">&gt;</span> prop.ratio</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  stagger <span class="op">*=</span> <span class="fu">exp</span>(<span class="fl">1</span> <span class="op">/</span> accept)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cf">elseif</span> ratio <span class="op">&lt;</span> prop.ratio</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  stagger <span class="op">/=</span> <span class="fu">exp</span>(<span class="fl">1</span> <span class="op">/</span> reject)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Finally the proposal scale is updated using the target acceptance ratio, similar to that in the random walk proposal.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">update_scale!</span>(prop, accept, reject, n)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    ratio <span class="op">=</span> accept <span class="op">/</span> (accept <span class="op">+</span> reject)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    norm <span class="op">=</span> <span class="fu">max</span>(prop.ratio, <span class="fl">1</span> <span class="op">-</span> prop.ratio) <span class="op">*</span> n</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    scale <span class="op">=</span> prop.scale <span class="op">*</span> <span class="fu">exp</span>((ratio <span class="op">-</span> prop.ratio) <span class="op">/</span> norm)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    prop.scale <span class="op">=</span> <span class="fu">min</span>(scale, <span class="fu">sqrt</span>(n))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> prop</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="slicing" class="level2">
+<h2 class="anchored" data-anchor-id="slicing">Slicing</h2>
+<p>When the number of parameters to fit are greater than <code>20</code>, the slice proposal algorithm can be used. A new live point is proposed by a series of slices away from an existing live point. This is a standard&nbsp;<em>Gibbs-like</em>&nbsp;implementation where a single multivariate slice is a combination of univariate slices through each axis. The parameters for this proposal are:</p>
+<ul>
+<li><em>slices</em>: the minimum number of slices (must be greater than or equal to 1)</li>
+<li><em>scale</em>: the proposal distribution scale, which will update <em>between</em> proposals (must be non-negative)</li>
+</ul>
+<p>A mutable struct <code>Slice</code> is constructed with default values <code>slices = 5</code> and <code>scale = 1.0</code>.</p>
+<p>A matrix is stored in <code>axes</code> which is used to propose new points. New positions for slices are proposed along the orthogonal basis defined by <code>axes</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>axes <span class="op">=</span> Bounds.<span class="fu">axes</span>(bounds)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>axes <span class="op">=</span> prop.scale <span class="op">.*</span> axes<span class="op">'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The axis order is shuffled and these shuffled indices are used to select <code>axis</code> for slice sampling:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>idxs <span class="op">=</span> <span class="fu">shuffle!</span>(rng, <span class="fu">collect</span>(<span class="bu">Base</span>.<span class="fu">axes</span>(axes, <span class="fl">1</span>)))</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> idx <span class="kw">in</span> idxs<span class="op">:</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  axis <span class="op">=</span> axes[idx, <span class="op">:</span>]    <span class="co"># axis selection</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># sample_slice function here</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The procedure for slice sampling is stored in the function <code>sample_slice</code>. To define a starting window, a left bound <code>u_l</code> and a right bound <code>u_r</code> is computed as:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>u_l <span class="op">=</span> @. u <span class="op">-</span> r <span class="op">*</span> axis  <span class="co"># left bound</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>u_r <span class="op">=</span> u_l <span class="op">.+</span> axis <span class="co"># right bound</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Here, <code>u</code> is the position of the final proposed point within the unit cube and <code>r</code> is the initial offset. Unitchecks are performed on both <code>u_l</code> and <code>u_r</code>, on passing which the <code>prior_transform</code> function is applied to transform them to the target parameter space, stored in <code>v_l</code> and <code>v_r</code>, respectively. The log-likelihood of these are stored in <code>logl_l</code> and <code>logl_r</code>, respectively. If these log-likelihoods exceed the log-likelihood bound <code>logl_star</code>, the values of <code>u_l</code>and <code>u_r</code> are modified as:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>u_l <span class="op">.-=</span> axis</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>u_r <span class="op">.+=</span> axis</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then the same steps of unitchecks, prior transforms and log-likelihood computations are repeated as earlier.</p>
+<p>The values of <code>u_l</code> and <code>u_r</code> are used to compute a sample within limits. If the sample is not valid, the limits are shrunk until the <code>logl_star</code> bound is hit. The window size is defined as:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>window_init <span class="op">=</span> <span class="fu">norm</span>(u_r <span class="op">-</span> u_l)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The difference in <code>u_r</code> and <code>u_l</code> is stored in <code>u_hat</code> and a new position is proposed as:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>u_prop <span class="op">=</span> @. u_l <span class="op">+</span> r <span class="op">*</span> u_hat</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This is passed through the unitchecks, prior transformations and log-likelihood computations and if the log-likelihood boundary condition is met then then move is made to the new position. Otherwise, the new point is subjected to further checks. A variable <code>s</code> is calculated to check the signs as:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="fu">dot</span>(u_prop <span class="op">-</span> u, u_hat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Checking the sign of <code>s</code> essentially means to check if the new point is to the left or right of the original point along the proposal axis and update the bounds accordingly:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> s <span class="op">&lt;</span> <span class="fl">0</span>    <span class="co"># left</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  u_l <span class="op">=</span> u_prop</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="cf">elseif</span> s <span class="op">&gt;</span> <span class="fl">0</span>    <span class="co"># right</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  u_r <span class="op">=</span> u_prop</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">error</span>(<span class="st">"Slice sampler has failed to find a valid point."</span>)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Finally the proposal scale is updated based on the relative size of the slices compared to the initial guess.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>prop.scale <span class="op">=</span> prop.scale <span class="op">*</span> nexpand <span class="op">/</span> (<span class="fl">2.0</span> <span class="op">*</span> ncontract)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="random-slicing" class="level2">
+<h2 class="anchored" data-anchor-id="random-slicing">Random Slicing</h2>
+<p>Random slicing can be used as an alternative to the slicing algorithm. The Polychord nested sampling algorithm is roughly equivalent to this algorithm. Here, a new live point is proposed by a series of random slices away from an existing live point. This is a standard <em>random</em> implementation where each slice is along a random direction based on the provided axes. The parameters for this proposal are:</p>
+<ul>
+<li><em>slices</em>: the minimum number of slices (must be greater than or equal to 1)</li>
+<li><em>scale</em>: the proposal distribution scale, which will update <em>between</em> proposals (must be non-negative)</li>
+</ul>
+<p>A mutable struct <code>RSlice</code> is constructed with default values <code>slices = 5</code> and <code>scale = 1.0</code>.</p>
+<p>The algorithm for random slicing is similar to slicing except that a direction <code>drhat</code> is proposed on the unit n-sphere, which is used to tranform and scale into the parameter space. Thus, using <code>drhat</code>, <code>axis</code> in this case is computed as:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>drhat <span class="op">=</span> <span class="fu">randn</span>(rng, n)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>drhat <span class="op">/=</span> <span class="fu">norm</span>(drhat)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>axis <span class="op">=</span> prop.scale <span class="op">.*</span> (Bounds.<span class="fu">axes</span>(bounds) <span class="op">*</span> drhat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The remaining algoritm is similar to the slicing algorithm.</p>
+<p>Illustrations to use NestedSamplers.jl are provided in <a href="https://nextjournal.com/Saranjeet-Kaur/illustrations-of-use-of-nestedsamplersjl">this</a> blog.</p>
+</section>
+<section id="further-work" class="level2">
+<h2 class="anchored" data-anchor-id="further-work">Further work</h2>
+<p>Including another proposal for Hamiltonian slice sampling in NestedSamplers.jl. In Hamiltonian slice sampling a new live point is proposed by using a series of random trajectories away from an existing live point. Each trajectory is based on the provided axes and samples are determined by moving forwards or backwards in time until the trajectory hits an edge and approximately reflecting off the boundaries. After a series of reflections is established, a new live point is proposed by slice sampling across the entire path. As another task, NestedSamplers.jl will be integrated with <a href="https://github.com/TuringLang/Turing.jl">Turing.jl</a>.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ol type="1">
+<li><a href="https://github.com/joshspeagle/dynesty" class="uri">https://github.com/joshspeagle/dynesty</a></li>
+<li>Handley, W. J., Hobson, M. P., &amp; Lasenby, A. N. (2015a). PolyChord: nested sampling for cosmology. <em>Monthly Notices of the Royal Astronomical Society: Letters</em>, <em>450</em>(1), L61-L65.</li>
+<li>Miles Lucas, Saranjeet Kaur, Hong Ge, &amp; Cameron Pfiffer. (2020, July 22). TuringLang/NestedSamplers.jl: v0.5.0 (Version v0.5.0). Zenodo. http://doi.org/10.5281/zenodo.3955218</li>
+<li>Skilling, J. (2004). Nested sampling. In <em>AIP Conference Proceedings</em> (Vol. 735, No.&nbsp;1, pp.&nbsp;395-405). American Institute of Physics.</li>
+<li>Skilling, J. (2006). Nested sampling for general Bayesian computation. <em>Bayesian analysis</em>, <em>1</em>(4), 833-859</li>
+<li>Speagle, J. S. (2020). dynesty: A dynamic nested sampling package for estimating Bayesian posteriors and evidences.&nbsp;<em>Monthly Notices of the Royal Astronomical Society</em>,&nbsp;<em>493</em>(3), 3132-3158.</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/SaranjeetKaur\.github\.io\/About-Me\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
