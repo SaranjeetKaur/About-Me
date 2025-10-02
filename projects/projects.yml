@@ -53,3 +53,12 @@
     of Code 2020.
   categories: [Julia, Bayesian Statistics, Open Source]
   date: 2020-11-10
+
+- title: SORTÆD - Software Role Taxonomy and Authorship Definition
+  path: https://github.com/researchsoft/software-authorship-contribution
+  image: images/software.jpeg
+  description: >
+    A task force collaboration to provide recommendations on software
+    authorship definition and contribution roles aggregation.
+  categories: [Research Software Engineering, Community Building, Authorship]
+  date: 2023-07-15
