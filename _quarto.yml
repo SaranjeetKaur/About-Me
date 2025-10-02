@@ -11,6 +11,8 @@ website:
         file: talks/index.qmd
       - text: "Blogs"
         file: blogs/index.qmd
+      - text: "Projects"
+        file: projects/index.qmd
 
     right:
       - icon: github

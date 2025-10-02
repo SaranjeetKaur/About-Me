@@ -1,0 +1,21 @@
+- title: R Development Guide
+  path: https://contributor.r-project.org/rdevguide/
+  image: images/r-development-guide.jpg
+  description: >
+    This guide is a comprehensive resource for contributing to
+    base R – for both new and experienced contributors. The initial
+    work on this guide was funded by the R Foundation and then
+    later on by the Google Season of Docs.
+  categories: [R, Technical Writing, Documentation]
+  date: 2022-01-01
+
+- title: RSE Asia Association
+  path: https://rse-asia.github.io/RSE_Asia/
+  image: images/rseasia.png
+  description: >
+    A community to promote and raise awareness of the role of Research
+    Software Engineers (RSEs) in Asia. The RSE Asia Association was
+    launched in 2021, on the first international RSE Day, as a project
+    during the Open Life Science cohort 4.
+  categories: [Research Software Engineering, Community Building, Asia]
+  date: 2021-11-10
