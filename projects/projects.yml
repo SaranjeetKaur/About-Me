@@ -25,7 +25,7 @@
   image: images/rladies.png
   description: >
     R-Ladies Pune is a local chapter of the global R-Ladies organization,
-    which promotes gender diversity in the R programming community.
+    which promotes gender diversity in the R programming community. (This commuity is not actively maintained anymore.)
   categories: [R, Community Building, India]
   date: 2020-01-01
 
@@ -37,3 +37,12 @@
     Life Science (OLS) community, created as a project during OLS-6.
   categories: [Community Building, Open Science, Visualisation]
   date: 2023-02-20
+
+- title: glossary - R Data Package
+  path: https://github.com/r-devel/glossary
+  image: images/glossary.png
+  description: >
+    An R data package containing a glossary of terms used in
+    translations across the R community.
+  categories: [R, Data Package, Community Building]
+  date: 2025-08-01
