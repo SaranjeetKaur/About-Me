@@ -31,7 +31,6 @@
 
 - title: OLS Community Map
   path: https://github.com/open-life-science/ols_community_map
-  image: images/ols_community_map.png
   description: >
     An interactive map of the geographical distribution of the Open
     Life Science (OLS) community, created as a project during OLS-6.
@@ -40,9 +39,17 @@
 
 - title: glossary - R Data Package
   path: https://github.com/r-devel/glossary
-  image: images/glossary.png
   description: >
     An R data package containing a glossary of terms used in
     translations across the R community.
   categories: [R, Data Package, Community Building]
   date: 2025-08-01
+
+- title: Nested Sampling in Julia
+  path: https://gist.github.com/SaranjeetKaur/37086fea06076bd3ec76d052cc166378
+  description: >
+    An open-source project that implements Nested Sampling in the Julia
+    programming language. This project was done as a part of Google Summer
+    of Code 2020.
+  categories: [Julia, Bayesian Statistics, Open Source]
+  date: 2020-11-10
