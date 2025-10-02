@@ -33,6 +33,10 @@
     ]
   },
   {
+    "listing": "/projects/index.html",
+    "items": []
+  },
+  {
     "listing": "/blogs/index.html",
     "items": [
       "/blogs/2024/RDevGuide/index.html",
