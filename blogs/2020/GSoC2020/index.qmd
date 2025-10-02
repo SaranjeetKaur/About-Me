@@ -1,0 +1,218 @@
+---
+title: "Extending NestedSamplers.jl"
+image: preview.jpeg
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2020-08-30"
+categories: [Open Source, Julia, GSoC]
+description: "Blog post about the work done during Google Summer of Code 2020"
+draft: false
+---
+
+*_Originally published on [Nextjournal](https://nextjournal.com/Saranjeet-Kaur/extending-nestedsamplersjl)*.
+
+This blog post describes the work done in Google Summer of Code 2020 for the [Polychord Nested Sampling Algorithm Building and Integration with Turing in Julia](https://summerofcode.withgoogle.com/projects/#6567464390885376).
+
+## Contributions
+
+* [Proposals.RStagger#38](https://github.com/TuringLang/NestedSamplers.jl/pull/38)
+* [Proposals.Slice#41](https://github.com/TuringLang/NestedSamplers.jl/pull/41)
+* [Proposals.RSlice#44](https://github.com/TuringLang/NestedSamplers.jl/pull/44)
+
+## Introduction
+
+Bayesian inference methods are mainly used for parameter estimation and model comparison. Parameter estimation is generally performed using Markov chain Monte Carlo (MCMC) methods, such as the Metropolis–Hastings (MH) algorithm and its variants. Whereas, for performing model comparison, the evidence (a high-dimensional integration of the likelihood over the prior density) is computed. The issue with using MH methods is that they cannot compute this on a usable time-scale which further hinders the use of Bayesian model comparison. As such, a contemporary methodology for computing evidence and posteriors simultaneously is provided by nested sampling (Skilling, 2004 and 2006).
+
+The nested sampling algorithm can be used to estimate the evidence integral. The basic algorithm is stated here:
+
+**Step 1.** Draw $n$ *live points* uniformly from the prior.
+
+**Step 2.** At iteration *$i
+$*, replace the point with the lowest likelihood $L_i$ by a new live point drawn (as in **Step 1**) with the constraint that its likelihood $L > L_i
+$.
+
+**Step 3.** Estimate the fraction of the prior $X_i$ enclosed by the iso-likelihood contour $L_i
+$. It is the lowest volume of $n$ volumes drawn uniformly from $[0, X_{i-1
+}]$.
+
+**Step 4.** Calculate the evidence by quadrature, $Z \approx \sum_{i = 1} L_i (X_{i-1} - X_i)$.
+
+**Step 5.** $X_i$ satisfies,  $X_i = t_i X_{i-1}$,  $P(t_i) = n t_i^{n-1}$, and  $X_0 = 1$.
+
+**Step 6.** Using **Step 4** and **Step 5**, the mean and variance of the random variable  $Z$ can be found.
+
+**Step 7.** The posterior mass contained within the live points is estimated as,  $Z_{live} \approx <L>_{live} X_{live}$.
+
+**Step 8.** Convergence is reached when $Z_{live}$ is some small fraction of  $Z$.
+
+**Step 9.** The *dead points* may be used to construct a set of posterior samples for use in parameter estimation.
+
+The difficult step in nested sampling is sampling from the prior subject to the hard likelihood constraint  $L > L_i$. Numerous variants of nested sampling have been constructed to deal with the likelihood constraint. The prior may be sampled using inverse transform sampling, so that sampling occurs in a unit hypercube. How one samples in this space under the hard likelihood constraint is where variations of the algorithm differ.
+
+The [NestedSamplers.jl](https://github.com/TuringLang/NestedSamplers.jl) Julia package is now enabled to have the random staggering ([v0.4.0](https://github.com/TuringLang/NestedSamplers.jl/releases/tag/v0.4.0)), slicing and random slicing ([v0.5.0](https://github.com/TuringLang/NestedSamplers.jl/releases/tag/v0.5.0)) algorithms to propose new live points within a bounding volume in unit space. Uniform and random walk algorithms were released in [v0.3.0](https://github.com/TuringLang/NestedSamplers.jl/releases/tag/v0.3.0) of NestedSamplers.jl. Depending on the number of parameters to fit, the proposal algorithm is selected (this not a rule of thumb, rather it is used to acheive optimal algorithm performance). The number of parameters to fit defines the dimensionality of the prior volume used in evidence sampling. These parameters are denoted by `ndims` . The [conditional statement](https://github.com/TuringLang/NestedSamplers.jl/blob/master/src/staticsampler.jl#L67) that helps select amongst the proposals is:
+
+```julia
+if proposal === :auto
+  proposal = if ndims < 10
+    Proposals.Uniform()
+  elseif 10 ≤ ndims ≤ 20
+    Proposals.RWalk()
+  else
+    Proposals.Slice()
+  end
+end
+```
+
+Although the algorithms can be used for any dimensionality (the value of `ndims`), their performance will be best when they are selected according to the value of `ndims` as stated above. Random staggering, slicing and random slicing algorithms are discussed in the further sections.
+
+## Random Staggering
+
+Random staggering can be used as an alternative to the random walk proposal when the number of parameters to fit lie in `[10, 20]` . However, it differs from the random walk proposal in that the step size here is exponentially adjusted to reach a target acceptance rate *during* each proposal, in addition to *between* proposals. In this algorithm, a new live point is proposed by random staggering away from an existing live point. The parameters for this proposal are:
+
+* *ratio*:  the target acceptance ratio (must be in `[1/walks, 1]`)
+* *walks*:  the minimum number of steps to take (must be greater than 1)
+* *scale*:  the proposal distribution scale, which will update *between* proposals (must be non-negative)
+
+A mutable struct `RStagger` is constructed with default values `ratio = 0.5`, `walks = 25`, and `scale = 1.0`.
+
+While the number of function calls used to generate the sample is less than the `walks` (default `walks` are 25) or the acceptance value is zero, a proposed point is obtained.
+
+The position of the initial sample (or the existing live point) is transformed to the proposal distribution, for which the `scale` and the `stagger` values (default `stagger = 1`) are utilized. Whether this transformed value lies inside the unit-cube is verified using the `unitcheck` function. Checks are also applied on the scale factor to avoid over-shrinking and, on the walks to avoid getting stuck in inefficient random number generation.
+
+A `prior_transform` function is applied to the sample which lies within the unit-cube. This function transforms the sample from a unit cube to the parameter space of interest according to the prior. The log-likelihood of this value is returned using the function `loglike` and stored in `logl_prop` . The log-likelihood `logl_prop` of the proposed point is compared with the log-likelihood bound `logl_star` and the log-likelihood of the final proposed point is stored in `logl`.
+
+The `stagger` value is then adjusted to target an acceptance ratio.
+
+```julia
+ratio = accept / (accept + reject)
+if ratio > prop.ratio
+  stagger *= exp(1 / accept)
+elseif ratio < prop.ratio
+  stagger /= exp(1 / reject)
+end
+```
+
+Finally the proposal scale is updated using the target acceptance ratio, similar to that in the random walk proposal.
+
+```julia
+function update_scale!(prop, accept, reject, n)
+    ratio = accept / (accept + reject)
+    norm = max(prop.ratio, 1 - prop.ratio) * n
+    scale = prop.scale * exp((ratio - prop.ratio) / norm)
+    prop.scale = min(scale, sqrt(n))
+    return prop
+end
+```
+
+## Slicing
+
+When the number of parameters to fit are greater than `20`, the slice proposal algorithm can be used. A new live point is proposed by a series of slices away from an existing live point. This is a standard *Gibbs-like* implementation where a single multivariate slice is a combination of univariate slices through each axis. The parameters for this proposal are:
+
+* *slices*:  the minimum number of slices (must be greater than or equal to 1)
+* *scale*:  the proposal distribution scale, which will update *between* proposals (must be non-negative)
+
+A mutable struct `Slice` is constructed with default values `slices = 5` and `scale = 1.0`.
+
+A matrix is stored in `axes` which is used to propose new points. New positions for slices are proposed along the orthogonal basis defined by `axes`:
+
+```julia
+axes = Bounds.axes(bounds)
+axes = prop.scale .* axes'
+```
+
+The axis order is shuffled and these shuffled indices are used to select `axis` for slice sampling:
+
+```julia
+idxs = shuffle!(rng, collect(Base.axes(axes, 1)))
+for idx in idxs:
+  axis = axes[idx, :]    # axis selection
+  # sample_slice function here
+end
+```
+
+The procedure for slice sampling is stored in the function `sample_slice`. To define a starting window, a left bound `u_l` and a right bound `u_r` is computed as:
+
+```julia
+u_l = @. u - r * axis  # left bound
+u_r = u_l .+ axis # right bound
+```
+
+Here, `u` is the position of the final proposed point within the unit cube and `r` is the initial offset. Unitchecks are performed on both `u_l` and `u_r`, on passing which the `prior_transform` function is applied to transform them to the target parameter space, stored in `v_l` and `v_r`, respectively. The log-likelihood of these are stored in `logl_l` and `logl_r`, respectively. If these log-likelihoods exceed the log-likelihood bound `logl_star`, the values of `u_l `and `u_r` are modified as:
+
+```julia
+u_l .-= axis
+u_r .+= axis
+```
+
+Then the same steps of unitchecks, prior transforms and log-likelihood computations are repeated as earlier.
+
+The values of `u_l` and `u_r` are used to compute a sample within limits. If the sample is not valid, the limits are shrunk until the `logl_star` bound is hit. The window size is defined as:
+
+```julia
+window_init = norm(u_r - u_l)
+```
+
+The difference in `u_r` and `u_l` is stored in `u_hat` and a new position is proposed as:
+
+```julia
+u_prop = @. u_l + r * u_hat
+```
+
+This is passed through the unitchecks, prior transformations and log-likelihood computations and if the log-likelihood boundary condition is met then then move is made to the new position. Otherwise, the new point is subjected to further checks. A variable `s` is calculated to check the signs as:
+
+```julia
+s = dot(u_prop - u, u_hat)
+```
+
+Checking the sign of `s` essentially means to check if the new point is to the left or right of the original point along the proposal axis and update the bounds accordingly:
+
+```julia
+if s < 0    # left
+  u_l = u_prop
+elseif s > 0    # right
+  u_r = u_prop
+else
+  error("Slice sampler has failed to find a valid point.")
+end
+```
+
+Finally the proposal scale is updated based on the relative size of the slices compared to the initial guess.
+
+```julia
+prop.scale = prop.scale * nexpand / (2.0 * ncontract)
+```
+
+## Random Slicing
+
+Random slicing can be used as an alternative to the slicing algorithm. The Polychord nested sampling algorithm is roughly equivalent to this algorithm. Here, a new live point is proposed by a series of random slices away from an existing live point. This is a standard *random* implementation where each slice is along a random direction based on the provided axes. The parameters for this proposal are:
+
+* *slices*:  the minimum number of slices (must be greater than or equal to 1)
+* *scale*:  the proposal distribution scale, which will update *between* proposals (must be non-negative)
+
+A mutable struct `RSlice` is constructed with default values `slices = 5` and `scale = 1.0`.
+
+The algorithm for random slicing is similar to slicing except that a direction `drhat` is proposed on the unit n-sphere, which is used to tranform and scale into the parameter space. Thus, using `drhat`,  `axis` in this case is computed as:
+
+```julia
+drhat = randn(rng, n)
+drhat /= norm(drhat)
+axis = prop.scale .* (Bounds.axes(bounds) * drhat)
+```
+
+The remaining algoritm is similar to the slicing algorithm.
+
+Illustrations to use NestedSamplers.jl are provided in [this](https://nextjournal.com/Saranjeet-Kaur/illustrations-of-use-of-nestedsamplersjl) blog.
+
+## Further work
+
+Including another proposal for Hamiltonian slice sampling in NestedSamplers.jl. In Hamiltonian slice sampling a new live point is proposed by using a series of random trajectories away from an existing live point. Each trajectory is based on the provided axes and samples are determined by moving forwards or backwards in time until the trajectory hits an edge and approximately reflecting off the boundaries. After a series of reflections is established, a new live point is proposed by slice sampling across the entire path. As another task, NestedSamplers.jl will be integrated with [Turing.jl](https://github.com/TuringLang/Turing.jl).
+
+## References
+
+1. <https://github.com/joshspeagle/dynesty>
+2. Handley, W. J., Hobson, M. P., & Lasenby, A. N. (2015a). PolyChord: nested sampling for cosmology. *Monthly Notices of the Royal Astronomical Society: Letters*, *450*(1), L61-L65.
+3. Miles Lucas, Saranjeet Kaur, Hong Ge, & Cameron Pfiffer. (2020, July 22). TuringLang/NestedSamplers.jl: v0.5.0 (Version v0.5.0). Zenodo. http://doi.org/10.5281/zenodo.3955218
+4. Skilling, J. (2004). Nested sampling. In *AIP Conference Proceedings* (Vol. 735, No. 1, pp. 395-405). American Institute of Physics.
+5. Skilling, J. (2006). Nested sampling for general Bayesian computation. *Bayesian analysis*, *1*(4), 833-859
+6. Speagle, J. S. (2020). dynesty: A dynamic nested sampling package for estimating Bayesian posteriors and evidences. *Monthly Notices of the Royal Astronomical Society*, *493*(3), 3132-3158.
