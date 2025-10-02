@@ -19,3 +19,14 @@
     during the Open Life Science cohort 4.
   categories: [Research Software Engineering, Community Building, Asia]
   date: 2021-11-10
+
+- title: R-Ladies Pune
+  path: https://www.meetup.com/rladies-pune/
+  image: images/rladies.png
+  description: >
+    R-Ladies Pune is a local chapter of the global R-Ladies organization,
+    which promotes gender diversity in the R programming community.
+  categories: [R, Community Building, India]
+  date: 2020-01-01
+
+
