@@ -5,7 +5,7 @@
     This guide is a comprehensive resource for contributing to
     base R – for both new and experienced contributors. The initial
     work on this guide was funded by the R Foundation and then
-    later on by the Google Season of Docs.
+    later on by the Google Season of Docs. **Role: Technical Writer**
   categories: [R, Technical Writing, Documentation]
   date: 2022-01-01
 
@@ -14,20 +14,21 @@
   image: images/rseasia.png
   description: >
     A community to promote and raise awareness of the role of Research
-    Software Engineers (RSEs) in Asia. The RSE Asia Association was
-    launched in 2021, on the first international RSE Day, as a project
-    during the Open Life Science cohort 4.
+    Software Engineers (RSEs) in Asia. It was launched in 2021, on the
+    first international RSE Day, as a project during the Open Life
+    Science cohort 4. **Role: Co-Founder and Co-Lead**
   categories: [Research Software Engineering, Community Building, Asia]
   date: 2021-11-10
 
-- title: Building Community around the R Development Guide
+- title: Building Community around the R Dev Guide
   path: https://www.codeforsociety.org/incubator/projects/building-community-around-the-r-development-guide
   image: images/css.png
   description: >
-    A 'Digital Incubator Infrastructure' cohort project funded
+    'Digital Incubator Infrastructure' cohort project funded
     by the 'Code for Science and Society' to build a community around
-    the R Development Guide. As a part of this project, I co-organised
-    Collaboration Campfires for the R community.
+    the R Dev Guide. During this project, I co-organised
+    Collaboration Campfires for the R community. **Role: Project
+    Co-Lead**
   categories: [R, Community Building, Collaboration]
   date: 2022-02-22
 
@@ -35,15 +36,18 @@
   description: >
     As a Subject Matter Expert, co-developed and contributed educational
     content for the 'Open Science Tools and Resources' module of the NASA
-    Transform to Open Science (TOPS) initiative.
+    Transform to Open Science (TOPS) initiative. **Role: Subject Matter
+    Expert**
   categories: [Open Science, Education]
 
 - title: R-Ladies Pune
   path: https://www.meetup.com/rladies-pune/
   image: images/rladies.png
   description: >
-    R-Ladies Pune is a local chapter of the global R-Ladies organization,
-    which promotes gender diversity in the R programming community. (This commuity is not actively maintained anymore.)
+    R-Ladies Pune is a local chapter of the global R-Ladies organisation,
+    which promotes gender diversity in the R programming community. (This
+    commuity is not actively maintained anymore.) **Role: Co-Founder
+    and Co-Organiser**
   categories: [R, Community Building, India]
   date: 2020-01-01
 
@@ -52,6 +56,7 @@
   description: >
     An interactive map of the geographical distribution of the Open
     Life Science (OLS) community, created as a project during OLS-6.
+    **Role: Project Lead**
   categories: [Community Building, Open Science, Visualisation]
   date: 2023-02-20
 
@@ -59,7 +64,7 @@
   path: https://github.com/r-devel/glossary
   description: >
     An R data package containing a glossary of terms used in
-    translations across the R community.
+    translations across the R community. **Role: Project Lead**
   categories: [R, Data Package, Community Building]
   date: 2025-08-01
 
@@ -70,6 +75,7 @@
     An open-source project that implements Nested Sampling in the Julia
     programming language. This project was done as a part of Google Summer
     of Code 2020 with the Turing team of the Julia language organisation.
+    **Role: Open Source Contributor**
   categories: [Julia, Bayesian Statistics, Open Source]
   date: 2020-11-10
 
@@ -78,6 +84,7 @@
   image: images/software.jpeg
   description: >
     A task force collaboration to provide recommendations on software
-    authorship definition and contribution roles aggregation.
+    authorship definition and contribution roles aggregation. **Role:
+    Contributor**
   categories: [Research Software Engineering, Community Building, Authorship]
   date: 2023-07-15
