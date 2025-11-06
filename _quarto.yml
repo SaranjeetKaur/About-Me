@@ -7,7 +7,7 @@ website:
     left:
       - text: "About"
         file: about.qmd
-      - text: "Talks"
+      - text: "Talks & Podcasts"
         file: talks/index.qmd
       - text: "Blogs"
         file: blogs/index.qmd
