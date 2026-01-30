@@ -1,0 +1,21 @@
+---
+title: "Community Management - the GitHub Way"
+image: slides.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2025-11-29"
+categories: [Community Management, GitHub]
+description: "Talk at CSCCE's Quarterly Skills Share (QSS) session, December 2025"
+draft: false
+---
+
+[Slides](https://zenodo.org/records/18436389)
+
+[![](slides.png){width="478"}](https://zenodo.org/records/18436389)
+
+This talk was presented at [CSCCE's Quarterly Skills Share (QSS) session](https://www.cscce.org/trainings/cscce-community-manager-certification-program/quarterly-skills-share-sessions/) in December 2025.
+
+## Abstract
+
+In this talk, I demonstrate how GitHub can make community management tasks smoother and more efficient. I share practical examples of templates that help track and manage repetitive tasks, such as planning an event, creating a checklist for a community newsletter. Furthermore, I showcase an example of how to use GitHub Project Boards to organize your workflows. These approaches are useful for managing a small local group as well as a large online community. This session shows how GitHub can help save time, stay organized, and focus more on building meaningful connections.

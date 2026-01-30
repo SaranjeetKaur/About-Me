@@ -10,12 +10,8 @@ description: "rOpenSci's Social Coworking and Office Hours, July 2025"
 draft: false
 ---
 
-[Slides]()
+[Slides](https://ropensci.org/events/coworking-2025-07/)
 
-[![](slides.png){width="478"}]()
-
-[GitHub repository]()
+![](slides.png){width="478"}
 
 Invited as a community host at [rOpenSci's Social Coworking and Office Hours](https://ropensci.org/events/coworking-2025-07/) in July 2025. The theme for the month was **Research Software Engineering and R**.
-
-## Abstract
