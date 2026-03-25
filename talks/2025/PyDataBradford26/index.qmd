@@ -1,0 +1,27 @@
+---
+title: "But, it worked on my laptop!"
+image: slides.png
+image-alt: Opening page
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2026-03-23"
+categories: [Reproducible research]
+description: "Talk at PyData Bradford, March 2026"
+draft: false
+---
+
+[Slides](https://zenodo.org/records/18433833)
+
+[![](slides.png){width="478"}](https://zenodo.org/records/18433833)
+
+This session was presented at the one year anniversary celebration meetup of [PyData Bradford](https://www.meetup.com/pydata-bradford/events/313833547/) in Bradford, UK, March 2026.
+
+## Abstract
+
+Imagine two researchers (A and B) collaborating together to create an analysis workflow. Researcher A writes an initial data preprocessing script on their laptop and gets the expected output. They then share this script with Researcher B. However, when Researcher B tries to run the script on their own laptop, using the same dataset, they start seeing errors such as “module not found”. Researcher A is surprised and exclaims, “but, it worked on my laptop!”. This situation is an example of a non-reproducible workflow.
+
+In this talk, we will explore practical ways to avoid ending up in such situations. We will discuss good software engineering practices that make research code easier to reproduce, share, and maintain.
+
+## Who is this talk for?
+
+This talk is intended for data science professionals and researchers who write code as a part of their work. Basic familiarity with programming languages such as Python and R is expected.
