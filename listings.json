@@ -1,7 +1,21 @@
 [
   {
+    "listing": "/blogs/index.html",
+    "items": [
+      "/blogs/2024/RDevGuide/index.html",
+      "/blogs/2023/APAN56/index.html",
+      "/blogs/2023/RSECon23/index.html",
+      "/blogs/2023/FAB23software/index.html",
+      "/blogs/2023/MOSP23/index.html",
+      "/blogs/2023/FAB23intro/index.html",
+      "/blogs/2023/APAN55/index.html",
+      "/blogs/2020/GSoC2020/index.html"
+    ]
+  },
+  {
     "listing": "/talks/index.html",
     "items": [
+      "/talks/2025/PyDataBradford26/index.html",
       "/talks/2025/WHPC_CIUK25/index.html",
       "/talks/2025/QSS3CSCCE25/index.html",
       "/talks/2025/KolkataRUG25/index.html",
@@ -37,18 +51,5 @@
   {
     "listing": "/projects/index.html",
     "items": []
-  },
-  {
-    "listing": "/blogs/index.html",
-    "items": [
-      "/blogs/2024/RDevGuide/index.html",
-      "/blogs/2023/APAN56/index.html",
-      "/blogs/2023/RSECon23/index.html",
-      "/blogs/2023/FAB23software/index.html",
-      "/blogs/2023/MOSP23/index.html",
-      "/blogs/2023/FAB23intro/index.html",
-      "/blogs/2023/APAN55/index.html",
-      "/blogs/2020/GSoC2020/index.html"
-    ]
   }
 ]
