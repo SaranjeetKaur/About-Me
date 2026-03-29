@@ -10,11 +10,11 @@ description: "Talk at PyData Bradford, March 2026"
 draft: false
 ---
 
-[Slides](https://zenodo.org/records/18433833)
+[Slides](https://zenodo.org/records/19312383)
 
-[![](slides.png){width="478"}](https://zenodo.org/records/18433833)
+[![](slides.png){width="478"}](https://zenodo.org/records/19312383)
 
-This session was presented at the one year anniversary celebration meetup of [PyData Bradford](https://www.meetup.com/pydata-bradford/events/313833547/) in Bradford, UK, March 2026.
+This session was presented at the one year (in-person) anniversary celebration meetup of [PyData Bradford](https://www.meetup.com/pydata-bradford/events/313833547/) in Bradford, UK, March 2026.
 
 ## Abstract
 
