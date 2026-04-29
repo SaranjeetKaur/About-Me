@@ -4,6 +4,7 @@ image: preview.jpg
 image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
+  - name: Diego Alonso Álvarez
 date: "2025-08-15"
 categories: [Roundtable, Documentation]
 description: "Blog post on documentation in research software"
