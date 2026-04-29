@@ -7,10 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Saranjeet Kaur Bhogal">
-<meta name="dcterms.date" content="2025-12-01">
-<meta name="description" content="Lightning talk at WHPC breakfast session, CIUK 2025">
+<meta name="author" content="Diego Alonso Álvarez">
+<meta name="dcterms.date" content="2025-08-15">
+<meta name="description" content="Blog post on documentation in research software">
 
-<title>A Seat at the Table – Saranjeet Kaur Bhogal</title>
+<title>Research software documentation – Saranjeet Kaur Bhogal</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -149,7 +150,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#planning-documentation" id="toc-planning-documentation" class="nav-link active" data-scroll-target="#planning-documentation">Planning documentation</a></li>
+  <li><a href="#how-to-know-if-the-documentation-is-being-used" id="toc-how-to-know-if-the-documentation-is-being-used" class="nav-link" data-scroll-target="#how-to-know-if-the-documentation-is-being-used">How to know if the documentation is being used?</a></li>
+  <li><a href="#the-technical-writer" id="toc-the-technical-writer" class="nav-link" data-scroll-target="#the-technical-writer">The Technical Writer</a></li>
+  <li><a href="#motivations-for-writing-documentation" id="toc-motivations-for-writing-documentation" class="nav-link" data-scroll-target="#motivations-for-writing-documentation">Motivations for writing documentation</a></li>
+  <li><a href="#some-tips-for-learning-how-to-document-research-software-better" id="toc-some-tips-for-learning-how-to-document-research-software-better" class="nav-link" data-scroll-target="#some-tips-for-learning-how-to-document-research-software-better">Some tips for learning how to document research software better</a></li>
+  <li><a href="#what-the-panellists-wish-they-knew-about-research-software-documentation-when-they-were-just-starting-out" id="toc-what-the-panellists-wish-they-knew-about-research-software-documentation-when-they-were-just-starting-out" class="nav-link" data-scroll-target="#what-the-panellists-wish-they-knew-about-research-software-documentation-when-they-were-just-starting-out">What the panellists wish they knew about research software documentation when they were just starting out?</a></li>
   </ul>
 </nav>
     </div>
@@ -158,16 +164,16 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">A Seat at the Table</h1>
+<h1 class="title">Research software documentation</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">dRTPs</div>
-    <div class="quarto-category">community building</div>
+    <div class="quarto-category">Roundtable</div>
+    <div class="quarto-category">Documentation</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Lightning talk at WHPC breakfast session, CIUK 2025
+    Blog post on documentation in research software
   </div>
 </div>
 
@@ -175,16 +181,17 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
              <p>Saranjeet Kaur Bhogal </p>
+             <p>Diego Alonso Álvarez </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 1, 2025</p>
+      <p class="date">August 15, 2025</p>
     </div>
   </div>
   
@@ -196,12 +203,60 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://zenodo.org/records/18433833">Slides</a></p>
-<p><a href="https://zenodo.org/records/18433833"><img src="slides.png" class="img-fluid" width="478"></a></p>
-<p>This session was presented at the <a href="https://womeninhpc.org/events/ciuk-2025-whpc-breakfast">WHPC breakfast session</a> at <a href="https://www.sc.stfc.ac.uk/ciuk-2025/">CIUK 2025</a> in Manchester, UK, December 2025.</p>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>In research computing, what does “getting a seat at the table” really mean? For women in digital research technical professional (dRTPs) roles, that table can sometimes feel out of reach. In this short talk, I’ll share some reflections from my own journey in research computing and community building.</p>
+<p><em>Originally posted on Imperial’s Research Software Engineering team <a href="https://imperialcollegelondon.github.io/RSEBlog/2025/08/15/research-software-documentation/">blog</a></em>.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="preview.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+<p>On Thursday 14th of August, the Imperial College London Research Software Engineering community hosted the third session of the “<a href="https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/research-engagement/rcs-events/rscs/" title="https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/research-engagement/rcs-events/rscs/">Research Software Conversation Series: Tools and techniques for modern research in different domains</a>” titled “Research Software Documentation”. This meetup explored the importance of documentation in research software, the challenges faced in writing it, and the best practices to follow.</p>
+<p>The event involved a roundtable panel discussion with <a href="https://profiles.imperial.ac.uk/e.russell">Emma Russell</a> (Senior Web Application Developer), <a href="https://profiles.imperial.ac.uk/giovanni.charles10">Dr Giovanni Charles</a> (Senior Research Software Engineer), <a href="https://profiles.imperial.ac.uk/k.gaythorpe">Dr Katy Gaythorpe</a> (Assistant Professor in Epidemiology of VPD), and <a href="https://profiles.imperial.ac.uk/r.fitzjohn">Dr Richard Fitzjohn</a> (Principal Architect, Research Software Engineering Group) and was facilitated by <a href="https://profiles.imperial.ac.uk/s.bhogal">Saranjeet Kaur Bhogal</a> (Research Software Engineer).</p>
+<p>The event was very interactive, with attendees online and in person engaging in discussions and asking questions. The panellists shared their experiences on the topic, which included talking about the types of documentation that can be written for research software (<code>README</code>, Getting Started guides, developer guides, reference documentation, etc.), the challenges faced in writing documentation, and the best practices to follow. They also discussed about the factors that contribute to a good user experience when reading/referring to software documentation (the aesthetics, layout, how easy on the eye the documentation is), the importance of planning documentation, and the potential of embedding a “Technical Writer” role within Research Software Engineering teams. Here are some of the key points discussed during the event.</p>
+<section id="planning-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="planning-documentation">Planning documentation</h2>
+<p>The panellists suggested a few key steps to consider when planning documentation for research software:</p>
+<ul>
+<li>Follow “<a href="https://dev.to/this-is-learning/a-better-way-to-code-documentation-driven-development-1kem">Documentation Driven Development</a>” approach. The article “<a href="https://gds.blog.gov.uk/2022/05/09/using-documentation-driven-development-for-gov-uk-sign-in/">Using documentation-driven development for GOV.UK Sign In</a>” discusses how instead of documenting your code, you code your documentation, as a low-cost way of prototyping your code. An earlier blog post on our series of blogs also discusses a <a href="https://imperialcollegelondon.github.io/RSEBlog/2025/02/10/building-an-r-package-using-fusen/">documentation first approach to building an R package</a>.</li>
+<li>Provide a high-level narrative of the software, including its purpose, features, and how it can be used. This can be an entry point for users to understand the software. Include a “Getting Started” section that provides a quick overview of how to use the software along with examples.</li>
+</ul>
+</section>
+<section id="how-to-know-if-the-documentation-is-being-used" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-know-if-the-documentation-is-being-used">How to know if the documentation is being used?</h2>
+<p>To know if your documentation is being used by the community, you can try sharing your work with them and ask for feedback, conduct workshops or training sessions based on your software and note any questions or issues raised by the users. You can even present your work at conferences, events, or meetups and ask for feedback from the audience. If your software is hosted on a platform like GitHub (with appropriate license), you can ask your users to create issues or pull requests to report bugs or suggest improvements.</p>
+<p>If you would like to know whether your co-developers are using your documentation, then one way is to avoid re-stating how to use the software in the pull requests where you are requesting their feedback/reviews. Instead, you can refer them to the documentation, say, by including a link to the relevant documentation section, in the pull request description. If they are able to use the software without any issues, then it is usually a good indication that not only was the documentation used but it is clear and effective as well. Otherwise, if they raise questions or issues related to things that you think were provided in the documentation, then it can be an indication that either the documentation was not referred to or it needs improvement to be clearer.</p>
+</section>
+<section id="the-technical-writer" class="level2">
+<h2 class="anchored" data-anchor-id="the-technical-writer">The Technical Writer</h2>
+<p>There was also a discussion about the potential of embedding a “Technical Writer” role within Research Software Engineering teams. Having a professional technical writer who has experience explaining complex concepts in simple terms can be beneficial for creating high-quality documentation.</p>
+</section>
+<section id="motivations-for-writing-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="motivations-for-writing-documentation">Motivations for writing documentation</h2>
+<p>The panellists discussed why to put in the effort in writing documentation for research software and shared some of the positive experiences they gained from doing so:</p>
+<ul>
+<li>Helping your own self: Writing documentation helps you understand your own code better. It forces you to think about the design and functionality of your software, leading to better code quality. It saves you time as a maintainer/developer in the long run, as you won’t have to spend time figuring out how your code works.</li>
+<li>Software is written to be used, hence, users need to understand how to use it. Good documentation helps users understand the software, leading to better user experience.</li>
+<li>Research can be complex and writing software can be challenging. Combining the two and building “research software” becomes an even more complex task, and documentation helps in making it easier for others.</li>
+<li>Documentation is a form of communication. It helps in providing context and how the software can be used appropriately.</li>
+<li>Software papers can be a way to showcase the “why” of the software and also to share the journey of building it.</li>
+</ul>
+</section>
+<section id="some-tips-for-learning-how-to-document-research-software-better" class="level2">
+<h2 class="anchored" data-anchor-id="some-tips-for-learning-how-to-document-research-software-better">Some tips for learning how to document research software better</h2>
+<p>Find some established documentation and read it. Look for documentation that is well-structured and easy to follow. This will give you an idea of what good documentation looks like. Depending on the programming language, you can refer to documentations of packages that are up to date and popular within the community, for example, <a href="https://www.tidyverse.org/packages/">Tidyverse packages</a>, <a href="https://docs.scipy.org/doc/scipy/">SciPy documentation</a>, <a href="https://docs.sciml.ai/Overview/stable/">SciML documentation</a>, etc. Another great way to learn is to start contributing to open-source project documentation. This is a great way to not only learn how to write good documentation but also to get feedback from experienced developers.</p>
+</section>
+<section id="what-the-panellists-wish-they-knew-about-research-software-documentation-when-they-were-just-starting-out" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-panellists-wish-they-knew-about-research-software-documentation-when-they-were-just-starting-out">What the panellists wish they knew about research software documentation when they were just starting out?</h2>
+<ul>
+<li>People writing the documentation are also trying to figure it out during the process. It is important to remember that documentation is a process, and there is no such thing as a “perfect documentation”. It is always a work in progress and should evolve with the software.</li>
+<li>Use badges and logos to make documentation visually appealing and engaging.</li>
+<li>PDF is not the best format for documentation. It is better to use formats that are more accessible and easier to update.</li>
+<li>Promotion of documentation is key. It is important to make sure that the documentation can be easily discovered and accessed by users. For example:
+<ul>
+<li><a href="https://ropensci.org/blog/">rOpenSci’s monthly News Digest</a> regularly features a section on “Software” that features new packages that became a part of their software suite and also new versions of existing packages.</li>
+<li><a href="https://github.com/pyOpenSci/software-submission?tab=readme-ov-file">pyOpenSci’s Software Peer Review</a> is an open peer review process for scientific Python packages. In addition to getting your software reviewed, it also provides a platform to showcase your work and get feedback from the community (reference: <a href="https://www.pyopensci.org/software-peer-review/about/benefits.html">The Benefits of Submitting a Package to pyOpenSci</a>)</li>
+</ul></li>
+</ul>
+<p>Overall, the session was a great opportunity to learn about the importance of documentation in research software, the challenges faced in writing it, and the best practices to follow. With that we conclude this season of the Research Software Conversation Series. We hope to see you at the next one!</p>
 
 
 </section>
