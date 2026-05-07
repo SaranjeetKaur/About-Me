@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2023-03-15"
-categories: [Asia, Community building, National Research and Education Network, open science, RSE Asia, Research Software Engineering, Kathmandu, Nepal, Research Community Management, dRTP]
+categories: [Asia, Community building, National Research and Education Network, Open science, RSE Asia, Research Software Engineering, Kathmandu, Nepal, Research Community Management, dRTP]
 description: "Talk at APAN55, Kathmandu, Nepal"
 draft: false
 ---
