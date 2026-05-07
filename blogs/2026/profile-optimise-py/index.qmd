@@ -50,7 +50,7 @@ snakeviz profile_output.prof
 
 **Line-level profiling**: Often, looking at the code of a slow function already makes it obvious what’s taking so much time. However, if it’s not obvious and you would like to get more granular information about which lines of code are taking the most time to execute, you can use line-level profiling. This type of profiling records the time taken to execute individual lines of code. Tools like `line_profiler` can be used for line-level profiling. The `line_profiler` must be attached to specific functions and cannot attach to a full Python file or project. If your Python file has significant code in the global scope it will be necessary to move it into a new function which can then instead be called from global scope.
 
-To use `line_profiler`, you need to decorate the functions you want to profile with `\@profile`, and then run your script with the `kernprof` command:
+To use `line_profiler`, you need to decorate the functions you want to profile with `@profile`, and then run your script with the `kernprof` command:
 
 ```python
 from line_profiler import LineProfiler
@@ -91,7 +91,7 @@ Below are some general tips for optimising your Python code:
 
 7. Avoid destroying and recreating objects. For example, if you need to modify a list, it is often faster to modify the list in place rather than creating a new list with the modified values.
 
-![Image: Cheat sheet for “Profiling and Optimising in Python” inspired from the cheatsheets project. Online version of the cheatsheet is available on the cheatsheets repository.](cheatsheet.png)
+![Image: Cheat sheet for “Profiling and Optimising in Python” inspired from the [Posit cheat sheets](https://opensource.posit.co/resources/cheatsheets/) project. [Online version of the cheatsheet](https://github.com/rstudio/cheatsheets/pull/603) is available on the cheatsheets repository.](cheatsheet.png)
 
 In conclusion, profiling and optimisation are important techniques for improving the performance of your Python code. Profiling allows you to identify which parts of your code are taking the most time to run, and optimisation allows you to make changes to your code to improve its performance. By using the tips and techniques described in this blog post, you can make your Python code run, maybe even fly, faster and more efficiently!
 
