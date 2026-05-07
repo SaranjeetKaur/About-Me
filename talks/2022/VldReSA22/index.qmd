@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2022-04-19"
-categories: [Asia, community building, Research Software Engineering, RSE Asia, workshop session]
+categories: [Asia, Community building, Research Software Engineering, RSE Asia, Workshop session, Research Community Management, dRTP]
 description: "Invited Talk at workshop on 'Vive la différence - research software engineers'"
 draft: false
 ---

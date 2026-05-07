@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2025-07-01"
-categories: [R, community building, RSE, rOpenSci]
+categories: [R, Community building, Research Community Management, Research Software Engineering, rOpenSci, dRTP]
 description: "rOpenSci's Social Coworking and Office Hours, July 2025"
 draft: false
 ---

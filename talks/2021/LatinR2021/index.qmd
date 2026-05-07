@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2021-11-12"
-categories: [R, community building, open source]
+categories: [R, Community building, Open source, Research Community Management, dRTP]
 description: "Invited talk at LatinR 2021"
 draft: false
 ---

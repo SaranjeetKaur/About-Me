@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2022-07-11"
-categories: [Asia, community building, open science, Research Software Engineering, RSE Asia]
+categories: [Asia, Community building, Open science, Research Software Engineering, RSE Asia, Research Community Management, dRTP]
 description: "Experience talk at JuliaCon 2022"
 draft: false
 ---

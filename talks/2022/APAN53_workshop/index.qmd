@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2022-03-11"
-categories: [Asia, community building, open science, Research Software Engineering, RSE Asia, workshop session]
+categories: [Asia, Community building, Open science, Research Software Engineering, RSE Asia, Workshop session, Research Community Management, dRTP]
 description: "Workshop session at APAN53"
 draft: false
 ---

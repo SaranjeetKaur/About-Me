@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2022-09-05"
-categories: [Asia, community building, lightning talk, open science, panel discussion, poster presentation, Research Software Engineering, RSE Asia]
+categories: [Asia, Community building, Lightning talk, Open science, Panel discussion, Poster presentation, Research Software Engineering, RSE Asia, Research Community Management, dRTP, Newcastle, UK]
 description: "Poster Presentation, Lightning talk, RSE Worldwide Panel, Coding Confessions Panel at RSECon 2022"
 draft: false
 ---

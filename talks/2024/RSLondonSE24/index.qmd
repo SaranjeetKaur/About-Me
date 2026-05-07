@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2024-07-16"
-categories: [R, community building, open science, open source, poster presentation, technical writing]
+categories: [R, Community building, Open science, Open source, Poster presentation, Technical writing, London, UK, Research Community Management, dRTP]
 description: "Talk and poster presentation at RSLondonSouthEast 2024, Imperial College London, South Kensington Campus"
 draft: false
 ---

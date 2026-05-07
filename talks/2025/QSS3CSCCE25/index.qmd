@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2025-11-29"
-categories: [Community Management, GitHub]
+categories: [Research Community Management, GitHub, Version control]
 description: "Talk at CSCCE's Quarterly Skills Share (QSS) session, December 2025"
 draft: false
 ---

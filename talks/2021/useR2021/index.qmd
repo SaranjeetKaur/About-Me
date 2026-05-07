@@ -5,7 +5,7 @@ image-alt: Opening slide
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2021-08-07"
-categories: [community building, R, technical writing]
+categories: [Community building, R, Technical writing, Research Community Management, dRTP]
 description: "Regular talk presented during useR! 2021 - The R Conference"
 draft: false
 ---

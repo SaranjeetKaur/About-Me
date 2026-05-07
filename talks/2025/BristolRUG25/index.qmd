@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2025-07-15"
-categories: [R, community building, Quarto, R User Group]
+categories: [R, Community building, Quarto, R User Group, Bristol, UK]
 description: "Session at the Bristol R User Group meetup, July 2025"
 draft: false
 ---

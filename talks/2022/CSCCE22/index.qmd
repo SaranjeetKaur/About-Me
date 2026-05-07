@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2022-11-22"
-categories: [community building, open source software, panel discussion, volunteering]
+categories: [Community building, Open source software, Panel discussion, Volunteering, Research Community Management, dRTP]
 description: "CSCCE Community Call November 2022"
 draft: false
 ---

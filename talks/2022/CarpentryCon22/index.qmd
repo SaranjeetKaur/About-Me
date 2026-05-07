@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2022-08-07"
-categories: [R, Carpentries, open science, open source]
+categories: [R, Carpentries, Open science, Open source, Research Community Management, dRTP]
 description: "Lightning talk at CarpentryCon 2022"
 draft: false
 ---
@@ -14,7 +14,7 @@ Slides
 
 ## Abstract
 
-This talk will provide a dive into how reusable R Markdown lessons can be created using the [Carpentries Workbench template](https://github.com/carpentries/workbench-template-rmd). Lessons on [R’s bug tracking process](https://github.com/r-devel/r-bug-tracking-lesson)) and [R’s translations process](https://github.com/r-devel/r-translations-lesson)), created using the Workbench template will be demonstrated during this talk. Both these lessons are inspired from the materials of the [Collaboration Campfires](https://contributor.r-project.org/events/collaboration-campfires). \
+This talk will provide a dive into how reusable R Markdown lessons can be created using the [Carpentries Workbench template](https://github.com/carpentries/workbench-template-rmd). Lessons on [R’s bug tracking process](https://github.com/r-devel/r-bug-tracking-lesson)) and [R’s translations process](https://github.com/r-devel/r-translations-lesson)), created using the Workbench template will be demonstrated during this talk. Both these lessons are inspired from the materials of the [Collaboration Campfires](https://contributor.r-project.org/events/collaboration-campfires).\
 \
 The intended audience for this talk would include Instructors and Learners who are interested in using the Carpentries Workbench template for teaching and/or learning purposes. Those who are interested in learning about beginner-level resources for “contributing to R” would also benefit from this talk.
 

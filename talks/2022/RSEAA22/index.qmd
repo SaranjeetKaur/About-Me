@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2022-09-14"
-categories: [Asia, community building, panel discussion, Research Software Engineering, RSE Asia]
+categories: [Asia, Community building, Panel discussion, Research Software Engineering, RSE Asia, Research Community Management, dRTP]
 description: "Strategy and Policy Panel at RSE Asia Australia Unconference 2022"
 draft: false
 ---

@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2026-03-23"
-categories: [Reproducible research]
+categories: [Reproducible research, Python, R, Community building, Research Software Engineering, Bradford, UK]
 description: "Talk at PyData Bradford, March 2026"
 draft: false
 ---

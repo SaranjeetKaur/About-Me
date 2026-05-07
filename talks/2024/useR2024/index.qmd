@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal, Lluís Revilla Sancho
 date: "2024-07-02"
-categories: [R, community building, open science, open source, technical writing]
+categories: [R, Community building, Open science, Open source, Technical writing, dRTP]
 description: "Talk at useR! 2024"
 draft: false
 ---

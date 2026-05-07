@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2025-08-27"
-categories: [R, community building, IDE, R User Group]
+categories: [R, Community building, IDE, Research Software Engineering, R User Group, Kolkata, India]
 description: "Session at the Kolkata R User Group meetup, August 2025"
 draft: false
 ---
@@ -18,7 +18,9 @@ draft: false
 
 ## Talk Recording
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6ZSSuaMvU6Q?si=DoiMiMA3heQj5NYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6ZSSuaMvU6Q?si=DoiMiMA3heQj5NYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
 
 This session was presented at the [Kolkata R User Group meetup](https://www.meetup.com/kolkata-r-user-group/events/310539980/?utm_medium=email&utm_campaign=one_day_v7&dispatch_id=68ad6abe48e13847e371353a5b5db71c) in August 2025.
 

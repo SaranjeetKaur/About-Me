@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2022-04-04"
-categories: [Asia, community building, Research Software Engineering, RSE Asia, lightning talk]
+categories: [Asia, Community building, Research Software Engineering, RSE Asia, Lightning talk, Research Community Management, dRTP]
 description: "Lightning talk & Hack Day participation at CollabW22"
 draft: false
 ---

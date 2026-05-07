@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2023-07-16"
-categories: [open science, RSE Asia, Research Software Engineering]
+categories: [Open science, RSE Asia, Research Software Engineering, Research Community Management, dRTP, Reproducible research, Thimphu, Bhutan]
 description: "Talk at the FAB23 Conference, Jigme Namgyel Wangchuck Super FabLab, Thimphu, Bhutan"
 draft: false
 ---

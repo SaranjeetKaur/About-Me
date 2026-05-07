@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2023-09-13"
-categories: [Asia, community building, open science, panel discussion, RSE Asia, Research Software Engineering]
+categories: [Asia, Community building, Open science, Panel discussion, RSE Asia, Research Software Engineering, Research Community Management, dRTP]
 description: "Strategy and Policy Panel at RSE Asia Australia Unconference 2023"
 draft: false
 ---

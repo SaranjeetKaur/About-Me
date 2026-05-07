@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2024-12-04"
-categories: [R, community building, open science, open source, technical writing]
+categories: [R, Community building, Open science, Open source, Technical writing, Global]
 description: "Talk at PyData Global 2024"
 draft: false
 ---

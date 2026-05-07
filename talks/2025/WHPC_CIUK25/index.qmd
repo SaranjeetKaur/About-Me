@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2025-12-01"
-categories: [dRTPs, community building]
+categories: [dRTP, Community building, Research Community Management, Manchester, UK]
 description: "Lightning talk at WHPC breakfast session, CIUK 2025"
 draft: false
 ---

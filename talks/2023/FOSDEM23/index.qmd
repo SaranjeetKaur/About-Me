@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2023-02-04"
-categories: [Asia, community building, open science, RSE Asia, Research Software Engineering]
+categories: [Asia, Community building, Open science, RSE Asia, Research Software Engineering, Research Community Management, dRTP]
 description: "Talk at FOSDEM 2023"
 draft: false
 ---

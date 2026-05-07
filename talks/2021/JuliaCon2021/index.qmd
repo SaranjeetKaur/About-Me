@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2021-08-09"
-categories: [Julia, open source, poster presentation]
+categories: [Julia, Open source, Poster presentation, Research Community Management, dRTP]
 description: "Virtual poster presentation at JuliaCon 2021"
 draft: false
 ---

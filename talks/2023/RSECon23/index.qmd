@@ -5,7 +5,7 @@ image-alt: Opening page
 author:
   - name: Saranjeet Kaur Bhogal
 date: "2023-09-05"
-categories: [Asia, community building, lightning talk, open science, poster presentation, RSE Asia, Research Software Engineering]
+categories: [Asia, Community building, Lightning talk, Open science, Poster presentation, RSE Asia, Research Software Engineering, Research Community Management, dRTP, Swansea, UK]
 description: "Lightning talk and poster presentation at RSECon23, Swansea University"
 draft: false
 ---
