@@ -265,7 +265,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> cProfile <span class="at">-o</span> profile_output.prof my_script.py</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">snakeviz</span> profile_output.prof</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Line-level profiling</strong>: Often, looking at the code of a slow function already makes it obvious what’s taking so much time. However, if it’s not obvious and you would like to get more granular information about which lines of code are taking the most time to execute, you can use line-level profiling. This type of profiling records the time taken to execute individual lines of code. Tools like <code>line_profiler</code> can be used for line-level profiling. The <code>line_profiler</code> must be attached to specific functions and cannot attach to a full Python file or project. If your Python file has significant code in the global scope it will be necessary to move it into a new function which can then instead be called from global scope.</p>
-<p>To use <code>line_profiler</code>, you need to decorate the functions you want to profile with <code>\@profile</code>, and then run your script with the <code>kernprof</code> command:</p>
+<p>To use <code>line_profiler</code>, you need to decorate the functions you want to profile with <code>@profile</code>, and then run your script with the <code>kernprof</code> command:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> line_profiler <span class="im">import</span> LineProfiler</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">@profile</span></span>
@@ -294,7 +294,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="cheatsheet.png" class="img-fluid figure-img"></p>
-<figcaption>Image: Cheat sheet for “Profiling and Optimising in Python” inspired from the cheatsheets project. Online version of the cheatsheet is available on the cheatsheets repository.</figcaption>
+<figcaption>Image: Cheat sheet for “Profiling and Optimising in Python” inspired from the <a href="https://opensource.posit.co/resources/cheatsheets/">Posit cheat sheets</a> project. <a href="https://github.com/rstudio/cheatsheets/pull/603">Online version of the cheatsheet</a> is available on the cheatsheets repository.</figcaption>
 </figure>
 </div>
 <p>In conclusion, profiling and optimisation are important techniques for improving the performance of your Python code. Profiling allows you to identify which parts of your code are taking the most time to run, and optimisation allows you to make changes to your code to improve its performance. By using the tips and techniques described in this blog post, you can make your Python code run, maybe even fly, faster and more efficiently!</p>
