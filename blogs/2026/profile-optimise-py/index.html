@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Saranjeet Kaur Bhogal">
+<meta name="author" content="Jost Migenda">
+<meta name="dcterms.date" content="2026-03-31">
+<meta name="description" content="Blog post on profiling and optimisation in Python">
+
+<title>Want to make your Python code fly? Try Profiling and Optimisation in Python! – Saranjeet Kaur Bhogal</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-05d32ca5d2a80177188d3e3b798b9a1a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Saranjeet Kaur Bhogal</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../talks/index.html"> 
+<span class="menu-text">Talks &amp; Podcasts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blogs/index.html"> 
+<span class="menu-text">Blogs</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/SaranjeetKaur"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/saranjeet-kaur-b-48ab769b/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://orcid.org/0000-0002-7038-1457"> <i class="bi bi-globe" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:kaur.saranjeet3@gmail.com"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-profiling-and-when-to-profile-your-code" id="toc-what-is-profiling-and-when-to-profile-your-code" class="nav-link active" data-scroll-target="#what-is-profiling-and-when-to-profile-your-code">What is profiling and when to profile your code</a></li>
+  <li><a href="#different-types-of-profiling" id="toc-different-types-of-profiling" class="nav-link" data-scroll-target="#different-types-of-profiling">Different types of profiling</a></li>
+  <li><a href="#now-that-you-have-profiled-your-code-what-next" id="toc-now-that-you-have-profiled-your-code-what-next" class="nav-link" data-scroll-target="#now-that-you-have-profiled-your-code-what-next">Now that you have profiled your code, what next?</a></li>
+  <li><a href="#get-involved" id="toc-get-involved" class="nav-link" data-scroll-target="#get-involved">Get involved</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Want to make your Python code fly? Try Profiling and Optimisation in Python!</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Profiling</div>
+    <div class="quarto-category">Optimisation</div>
+    <div class="quarto-category">Python</div>
+    <div class="quarto-category">Carpentries</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Blog post on profiling and optimisation in Python
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Saranjeet Kaur Bhogal </p>
+             <p>Jost Migenda </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 31, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>Originally posted on STEP-UP’s <a href="https://step-up.ac.uk/blog/2026-03-31-profile-optimise-py/">blog</a> page</em>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="preview.png" class="img-fluid figure-img"></p>
+<figcaption>Image source:&nbsp;<a href="https://xkcd.com/353/" class="uri">https://xkcd.com/353/</a>&nbsp;(adapted under original content’s&nbsp;<a href="https://creativecommons.org/licenses/by-nc/2.5/">CC BY-NC 2.5</a>&nbsp;licence)</figcaption>
+</figure>
+</div>
+<p>Is your Python code running slower than you would like? Do you want to make it run faster, but you’re not sure where to start? This blog post by <a href="https://profiles.imperial.ac.uk/s.bhogal">Saranjeet Kaur Bhogal</a> (Imperial College London) and <a href="https://www.kcl.ac.uk/people/jost-migenda">Jost Migenda</a> (King’s College London) summarises key learnings from the STEP-UP workshops on “Performance profiling and optimisation for Python”.</p>
+<p>You might have come across the scenario where as the code you write grows in complexity, it starts taking longer to execute. In such situations, you might wonder whether the code you have written is efficient or not. Improving your code’s performance will not only make your work easier, it will also save energy and benefit the environment.</p>
+<p>As a part of the STEP-UP project, we organised a couple of Carpentries Incubator course workshops on “<a href="https://carpentries-incubator.github.io/pando-python/index.html">Performance profiling and optimisation for Python</a>”. This blog post highlights key learnings from these workshops.</p>
+<section id="what-is-profiling-and-when-to-profile-your-code" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-profiling-and-when-to-profile-your-code">What is profiling and when to profile your code</h2>
+<p>Profiling is the process of measuring the performance of your code, and identifying which parts of your code are taking the most time to run. This is important because it allows you to focus your optimisation efforts on the parts of your code that will have the biggest impact on performance. There are many tools available for profiling Python code, such as <code>cProfile</code> and <code>line_profiler</code>. These tools can help you identify which functions or lines of code are taking the most time to run, and can also provide information about memory usage.</p>
+<p>However, not every script needs profiling. For example, if you have a one-off script that runs quickly, then profiling will not be necessary. On the other hand, if you have a long-running script that is expected to be run multiple times, then profiling can be very useful.</p>
+</section>
+<section id="different-types-of-profiling" class="level2">
+<h2 class="anchored" data-anchor-id="different-types-of-profiling">Different types of profiling</h2>
+<p>There are different types of profiling that you can use to measure the performance of your code. Some of the most common types of profiling are described below:</p>
+<p><strong>Manual profiling</strong>: This approaches the problem of profiling by manually inserting code to measure the time taken by different sections of the code. This can be done using the <code>time</code> module in Python, which provides functions for measuring time. For example, you can use <code>time.time()</code> to get the current time in seconds since the epoch, and then calculate the duration of a section of code by taking the difference between the start and end times.</p>
+<p>This approach is sometimes useful to get a first rough idea of how long different parts of code take to execute. However, trying to get more detailed information quickly becomes a lot of work, so it’s usually preferable to start with the next approach right away:</p>
+<p><strong>Function-level profiling</strong>: This measures the time taken by individual functions in your code. It can help you identify which functions are taking the most time to execute. Commonly used tools for function-level profiling include <code>cProfile</code>, which is part of the Python standard library.</p>
+<p>To use <code>cProfile</code>, you can run your script with profiling enabled by using the command <code>python -m cProfile my_script.py</code>. This will give you a report of the time taken by each function in your code, as well as the number of times each function was called.Expand commentComment on line R37Resolved</p>
+<p>Furthermore, the output of <code>cProfile</code> can be visualised using tools like <code>snakeviz</code>, which provides an interactive visualization of the profiling results, making it easier to identify bottlenecks in your code.</p>
+<p>Store the output of <code>cProfile</code> in a file using the <code>-o</code> option, and then visualise it with <code>snakeviz</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> cProfile <span class="at">-o</span> profile_output.prof my_script.py</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">snakeviz</span> profile_output.prof</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Line-level profiling</strong>: Often, looking at the code of a slow function already makes it obvious what’s taking so much time. However, if it’s not obvious and you would like to get more granular information about which lines of code are taking the most time to execute, you can use line-level profiling. This type of profiling records the time taken to execute individual lines of code. Tools like <code>line_profiler</code> can be used for line-level profiling. The <code>line_profiler</code> must be attached to specific functions and cannot attach to a full Python file or project. If your Python file has significant code in the global scope it will be necessary to move it into a new function which can then instead be called from global scope.</p>
+<p>To use <code>line_profiler</code>, you need to decorate the functions you want to profile with <code>\@profile</code>, and then run your script with the <code>kernprof</code> command:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> line_profiler <span class="im">import</span> LineProfiler</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">@profile</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> my_function(arg):</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(my_function(arg<span class="op">=</span>arg_value))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> kernprof <span class="at">-lvr</span> my_script.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Timeline profiling</strong>: To get a visual representation of the execution of your code over time, you can use timeline profiling. This type of profiling provides an idea of how different parts of your code interact with each other and can help identify bottlenecks.</p>
+<p><strong>Hardware metric profiling</strong>: This type of profiling measures hardware-related metrics such as CPU usage, memory usage, and I/O operations. It can help you understand how your code interacts with the underlying hardware and identify opportunities for optimisation.</p>
+</section>
+<section id="now-that-you-have-profiled-your-code-what-next" class="level2">
+<h2 class="anchored" data-anchor-id="now-that-you-have-profiled-your-code-what-next">Now that you have profiled your code, what next?</h2>
+<p>Once you have profiled your code and identified the bottlenecks, you can start “optimising” your code to improve its performance. Optimising is the process of improving the performance of your code by making changes to it. Optimisation can be a complex process, and it is important to remember that it is not always necessary or desirable to optimise your code. In some cases, it may be more important to focus on writing clear and maintainable code, rather than trying to optimise for performance. As Donald Knuth taught us, “Premature optimisation is the root of all evil”, there are potential risks associated with “how” and “when” you are trying to optimise your code. Some of these potential risks include: performing optimisations in a way that make code harder to understand, changing the code with a potential to introduce new bugs, if you are trying to optimise code that only takes up a minuscule fraction of the total runtime, you might end up spending more time on the optimisation than you actually gain from it.</p>
+<p>Below are some general tips for optimising your Python code:</p>
+<ol type="1">
+<li><p>Many <a href="https://docs.python.org/3/library/functions.html">built-in functions</a> in Python, and some other parts of the standard library, are implemented in C and optimised for performance, so using them can often be much faster than writing your own implementation in Python. For example, if you want to calculate the sum of a list of numbers, using the built-in <code>sum()</code> function is likely to be 3 - 8 times faster (based on benchmarking) than writing your own for loop to calculate the sum.</p></li>
+<li><p>When creating lists, using list comprehension can often be faster than using a for loop to create a list. For example, if you want to create a list of squares of numbers, using a list comprehension like <code>[x**2 for x in range(100_000)]</code> is likely to be twice as fast as using a for loop to append the squares to a list.</p></li>
+<li><p>When appropriate, using tuples, dictionaries, and sets can often be faster than using lists. For example, if you need to store a collection of unique items, sets (which are implemented as hash tables) can check in constant time whether an object is already a member of the set. In contrast, checking whether an object is already in a list, requires comparing it with every other entry in the list. For large collections, using a set can be several orders of magnitude faster than using a list.</p></li>
+<li><p>Whenever possible, using scientific Python packages like NumPy and Pandas can often be faster than writing your own implementations in pure Python. These packages are optimised for performance and often use underlying C or Fortran code to achieve high performance. Moreover, NumPy arrays support broadcasting many mathematical operations or functions - this means that the operation/function is applied to each element of the array in parallel. For large arrays, this can be orders of magnitude faster than looping over entries in the array explicitly.</p></li>
+<li><p>Newer is often faster: When possible, use the latest versions of Python and packages. Newer versions of Python often include performance improvements and optimisations, and newer versions of packages may also include optimisations that can improve performance.</p></li>
+<li><p>Reading or writing one large file is faster than many small files. For example, if you have a large dataset that is split into multiple small files, it may be faster to read the entire dataset into memory at once rather than reading each file separately.</p></li>
+<li><p>Avoid destroying and recreating objects. For example, if you need to modify a list, it is often faster to modify the list in place rather than creating a new list with the modified values.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cheatsheet.png" class="img-fluid figure-img"></p>
+<figcaption>Image: Cheat sheet for “Profiling and Optimising in Python” inspired from the cheatsheets project. Online version of the cheatsheet is available on the cheatsheets repository.</figcaption>
+</figure>
+</div>
+<p>In conclusion, profiling and optimisation are important techniques for improving the performance of your Python code. Profiling allows you to identify which parts of your code are taking the most time to run, and optimisation allows you to make changes to your code to improve its performance. By using the tips and techniques described in this blog post, you can make your Python code run, maybe even fly, faster and more efficiently!</p>
+</section>
+<section id="get-involved" class="level2">
+<h2 class="anchored" data-anchor-id="get-involved">Get involved</h2>
+<p>The “<a href="https://carpentries-incubator.github.io/pando-python/">Performance profiling and optimisation for Python</a>” course is available on the <a href="https://github.com/carpentries-incubator/pando-python">Carpentries Incubator</a>. If you have any feedback or suggestions, please feel free to <a href="https://github.com/carpentries-incubator/pando-python/issues">open an issue</a> on the repository. You are also welcome to use the materials to run the course at your institution and share your experiences with the community. By getting involved, you can help to improve the course and make it more useful for others who are interested in learning about profiling and optimisation in Python.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/SaranjeetKaur\.github\.io\/About-Me\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -2,6 +2,7 @@
   {
     "listing": "/blogs/index.html",
     "items": [
+      "/blogs/2026/profile-optimise-py/index.html",
       "/blogs/2025/RS_doc/index.html",
       "/blogs/2024/RDevGuide/index.html",
       "/blogs/2023/APAN56/index.html",
@@ -12,10 +13,6 @@
       "/blogs/2023/APAN55/index.html",
       "/blogs/2020/GSoC2020/index.html"
     ]
-  },
-  {
-    "listing": "/projects/index.html",
-    "items": []
   },
   {
     "listing": "/talks/index.html",
@@ -53,5 +50,9 @@
       "/talks/2021/JuliaCon2021/index.html",
       "/talks/2021/useR2021/index.html"
     ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": []
   }
 ]
