@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Saranjeet Kaur Bhogal">
+<meta name="dcterms.date" content="2025-02-10">
+<meta name="description" content="Blog post on building an R package using {fusen}">
+
+<title>Building an R package using {fusen} – Saranjeet Kaur Bhogal</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-05d32ca5d2a80177188d3e3b798b9a1a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Saranjeet Kaur Bhogal</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../talks/index.html"> 
+<span class="menu-text">Talks &amp; Podcasts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blogs/index.html"> 
+<span class="menu-text">Blogs</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/SaranjeetKaur"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/saranjeet-kaur-b-48ab769b/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://orcid.org/0000-0002-7038-1457"> <i class="bi bi-globe" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:kaur.saranjeet3@gmail.com"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#pre-requisites" id="toc-pre-requisites" class="nav-link active" data-scroll-target="#pre-requisites">Pre-requisites</a></li>
+  <li><a href="#installation-and-initial-setup" id="toc-installation-and-initial-setup" class="nav-link" data-scroll-target="#installation-and-initial-setup">Installation and initial setup</a></li>
+  <li><a href="#convert-a-.rmd-file-into-a-package" id="toc-convert-a-.rmd-file-into-a-package" class="nav-link" data-scroll-target="#convert-a-.rmd-file-into-a-package">Convert a <code>.Rmd</code> file into a package</a></li>
+  <li><a href="#clean-fusen-related-files-and-tags" id="toc-clean-fusen-related-files-and-tags" class="nav-link" data-scroll-target="#clean-fusen-related-files-and-tags">Clean fusen related files and tags</a></li>
+  <li><a href="#share-package-on-github" id="toc-share-package-on-github" class="nav-link" data-scroll-target="#share-package-on-github">Share package on GitHub</a></li>
+  <li><a href="#takeaways" id="toc-takeaways" class="nav-link" data-scroll-target="#takeaways">Takeaways</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Building an R package using {fusen}</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Research Software Engineering</div>
+    <div class="quarto-category">Package Development</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Blog post on building an R package using {fusen}
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Saranjeet Kaur Bhogal </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 10, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>Originally posted on Imperial’s Research Software Engineering team <a href="https://imperialcollegelondon.github.io/RSEBlog/2025/02/10/building-an-r-package-using-fusen/">blog</a></em>.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="preview.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>“Origami” by Andy Atzert is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.</figcaption>
+</figure>
+</div>
+<p>Writing your first full R package can feel overwhelming, but {fusen} can help support at this stage (Even if you are an experienced developer, there is something for you too in this blog. Please read on!). “Fusen” is a type of <a href="https://en.wikipedia.org/wiki/Kamif%C5%ABsen">Japanese origami</a> in which a flat piece of paper, when folded in a specific way and inflated, turns into a nice paper box/balloon. Similarly, the {fusen} package inflates a flat <code>.Rmd</code> template (which is filled in a specific way) and returns a nice package. In this blog post, I am sharing my experience of exploring {fusen} for the first time.</p>
+<section id="pre-requisites" class="level2">
+<h2 class="anchored" data-anchor-id="pre-requisites">Pre-requisites</h2>
+<ul>
+<li><a href="https://posit.co/download/rstudio-desktop/">RStudio installed</a></li>
+<li><a href="https://happygitwithr.com/rstudio-git-github.html">Connect RStudio to Git and GitHub</a> (<em>Optional, but recommended</em>)</li>
+</ul>
+</section>
+<section id="installation-and-initial-setup" class="level2">
+<h2 class="anchored" data-anchor-id="installation-and-initial-setup">Installation and initial setup</h2>
+<p>The CRAN released version of {fusen} can be installed using:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"fusen"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then we will have to create a new project in RStudio by following: <code>File &gt; New Project &gt; New directory &gt; Package using {fusen}</code>. This will open a <code>Create Package using {fusen}</code> wizard. Specify the directory name and choose a {fusen} template to work with. If you want to see how {fusen} works then select the <code>teaching</code> template (recommended when using for the first time), otherwise select the <code>full</code> template. You can also provide a name for the flat file that is to be generated. Check <code>Create a git repository</code>, <code>Open in new session</code> and finally click on <code>Create Project</code> to create the initial structure.</p>
+</section>
+<section id="convert-a-.rmd-file-into-a-package" class="level2">
+<h2 class="anchored" data-anchor-id="convert-a-.rmd-file-into-a-package">Convert a <code>.Rmd</code> file into a package</h2>
+<p>Following the installation and initial setup mentioned above (Select the <code>teaching</code> template and default name (<code>first</code>) for the flat filename. For the directory name, I am using <code>my.teaching.fusen.package</code>) will open a new RStudio session with an initial structure as seen in the image below:</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="initial_structure.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Initial structure of a {fusen} project</figcaption>
+</figure>
+</div>
+<p>Since a new RStudio session is open, you will have to install {fusen} again (using <code>install.packages("fusen")</code>) in this session to be able to use its functionalities in the new session. Navigate to <code>dev/flat_first.Rmd</code> flat file and observe the different chunks present in it. The chunks in the flat file help to set up your package:</p>
+<ul>
+<li><code>description</code>: In this chunk, you will add metadata about your package (for example, package author, package license, etc.).</li>
+<li><code>development</code>: This chunk can be used to write code for development purposes (we will not be using this for now).</li>
+<li><code>function</code>: In this chunk, you will write code for a function in your package.</li>
+<li><code>examples</code>: Here you would add examples of using the function which will become a part of the <code>@examples</code> field in the corresponding vignette.</li>
+<li><code>tests</code>: In this chunk, you can add unit tests for your function.</li>
+</ul>
+<p>Add the appropriate information (title, description, author(s), email(s), license) in the <code>description</code> chunk and run it. It will generate the <code>DESCRIPTION</code> and <code>LICENSE</code> files for your package.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="description_license.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>DESCRIPTION and LICENSE files generated after the <code>description</code> chunk in the flat file is run</figcaption>
+</figure>
+</div>
+<p>There is a default <code>function</code> chunk, named <code>add_one</code> (along with its <code>examples</code> and <code>tests</code> chunk) present in the flat file. This flat file has the minimal structure required to be transformed into a package using the function <code>fusen::inflate()</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>fusen<span class="sc">::</span><span class="fu">inflate</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">flat_file =</span> <span class="st">"dev/flat_first.Rmd"</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">vignette_name =</span> <span class="st">"Get started"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">check =</span> <span class="cn">TRUE</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>After running the above function, if you explore the <code>Files</code> pane on RStudio, you will notice that it looks very similar to a package structure. Notice the new directories and files that have been generated:</p>
+<ul>
+<li><code>R</code> directory: It has the <code>add_one.R</code> function file, which is generated from <code>function-add_one</code> chunk of the flat file.</li>
+<li><code>man</code> directory: It has the <code>add_one.Rd</code> file generated from the <code>roxygen2</code> comments in the <code>function-add_one</code> chunk.</li>
+<li><code>tests</code> directory: It has the <code>testthat/test-add_one.R</code> generated by the <code>tests-add_one</code> chunk of the the flat file.</li>
+<li><code>vignettes</code> directory: It has the <code>get-started.Rmd</code> file which is generated by the <code>fusen::inflate()</code> command.</li>
+<li><code>NAMESPACE</code> file: It exports the <code>add_one</code> function (provided the <code>@export</code> field is mentioned in the <code>roxygen2</code> comments in the <code>function-add_one</code> chunk of the flat file).</li>
+</ul>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="first_inflate.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Structure after inflating the flat file</figcaption>
+</figure>
+</div>
+<p>At this stage, we have a proper R package structure - if you want to you can <a href="#clean-fusen-related-files-and-tags">clean up any fusen related files and tags</a> from it and can also <a href="#share-package-on-github">publish it on GitHub</a>!</p>
+<p>You can also add new family of functions to your package using new flat template files. I will add two more functions (<code>squared</code> and <code>is_even</code>) using:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fusen<span class="sc">::</span><span class="fu">add_flat_template</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">template =</span> <span class="st">"additional"</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">dev_dir =</span> <span class="st">"dev"</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">flat_name =</span> <span class="st">"squared"</span>, <span class="co"># and later on replace this with "is_even"</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This will create a new flat file template named <code>dev/flat_squared.Rmd</code> (and <code>dev/flat_is_even.Rmd</code> when the corresponding <code>flat_name</code> is used) with the various (empty) chunks that can be populated. The chunks that I used for the respective flat files are given below:</p>
+<p>“Square of a number” :::{.callout-note} <code>function</code> chunk to square a number: <!-- markdownlint-disable-line MD046 --></p>
+<pre><code>````default
+```r
+#' Compute squared value
+#'
+#' @param value A numeric value
+#'
+#' @return Numeric.
+#' @export
+
+squared &lt;- function(value) {
+  result &lt;- value^2
+  return(result)
+}
+```
+````
+
+`examples` chunk to square a number:
+
+````default
+```r
+squared(10)
+squared(73)
+```
+````
+
+`tests` chunk to test the function:
+
+````default
+```r
+test_that("squared works", {
+  expect_equal(squared(10), 100)
+  expect_equal(squared(73), 5329)
+})
+```
+````</code></pre>
+<p>:::</p>
+<p>“Is a number even?” :::{.callout-note} <code>function</code> chunk to check if a number is even: <!-- markdownlint-disable-line MD046 --></p>
+<pre><code>````default
+```r
+#' Check if a value is even
+#'
+#' @param value A numeric value
+#'
+#' @return Logical. TRUE if value is even, FALSE otherwise
+#' @export
+#'
+
+is_even &lt;- function(value) {
+  result &lt;- value %% 2 == 0
+  return(result)
+}
+```
+````
+
+`examples` chunk to check if a number is even:
+
+````default
+```r
+is_even(20)
+is_even(47)
+```
+````
+
+`tests` chunk to test the function:
+
+````default
+```r
+test_that("is_even works", {
+  expect_true(is_even(20))
+  expect_false(is_even(47))
+})
+```
+````</code></pre>
+<p>:::</p>
+<p>Inflate each of the two new flat files individually using:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fusen<span class="sc">::</span><span class="fu">inflate</span>(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">flat_file =</span> <span class="st">"dev/flat_squared.Rmd"</span>,  <span class="co"># and "dev/flat_is_even.Rmd"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">vignette_name =</span> <span class="st">"Square of a number"</span>, <span class="co"># and "Check if even number"</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">check =</span> <span class="cn">TRUE</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This will update the package to include the two new functions, their unit tests, corresponding vignettes and <code>.Rd</code> files, and the <code>NAMESPACE</code> (if the functions are exported) in the appropriate locations.</p>
+</section>
+<section id="clean-fusen-related-files-and-tags" class="level2">
+<h2 class="anchored" data-anchor-id="clean-fusen-related-files-and-tags">Clean fusen related files and tags</h2>
+<p>Now that I have included all the functions that I want in this package, I will clean the package to remove any fusen related files and tags. This step is optional. It can be done using the function <code>fusen::sepuku()</code>. It will delete all files starting with <code>flat</code> in the <code>dev/</code> folder and also remove any fusen configuration file, if present.</p>
+</section>
+<section id="share-package-on-github" class="level2">
+<h2 class="anchored" data-anchor-id="share-package-on-github">Share package on GitHub</h2>
+<p>Finally, I will share the package on GitHub using <code>fusen::init_share_on_github()</code>. Running this command will start the process of committing the package to GitHub. Follow along the prompts to publish the various files - it will ask you to commit the current state. Eventually, you will be redirected to GitHub where your package will appear (don’t forget to return to back to RStudio as the function is still running and there are more prompts waiting for you!). Keep following the prompts and the <code>gh-pages</code> branch will be created for you on the GitHub repository. Once the <code>gh-pages</code> branch is created, you need to tell GitHub to follow it, by going to <code>settings &gt; pages</code> and in the <code>Branch</code> drop-down menu selecting <code>gh-pages</code> instead of <code>None</code> and then clicking <code>Save</code>. Wait for a few seconds and refresh the page to see the website link deployed for your package.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will notice a <code>README.Rmd</code> (and the corresponding rendered <code>README.md</code>) on GitHub with boilerplate content. Please feel free to update the <code>README.Rmd</code> file, <code>knit()</code> it, and share the updated version on GitHub.</p>
+</div>
+</div>
+<p>If you want to add more functionality to your package, you can continue working on the it locally, inflate any flat files that you generate, and push to GitHub.</p>
+<p><a href="https://github.com/SaranjeetKaur/my.teaching.fusen.package">View my.teaching.fusen.package</a> (generated by following the above instructions and hosted on GitHub)</p>
+</section>
+<section id="takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="takeaways">Takeaways</h2>
+<ul>
+<li>{fusen} ensures that you are writing the documentation as well as any associated tests at the same time as writing your code (the best research software engineering practice to begin with!).</li>
+<li>It is not only useful for first time R package developers, but also for more experienced developers, in the sense that they don’t have to switch between R files, tests files, and vignettes while they are prototyping their functions.</li>
+<li>Since all the related chunks are located in the same flat file, it avoids the risks of forgetting any crucial step.</li>
+<li>If you retain the flat file(s), then it is also easier to review the code, because everything related to a particular function is available in the same file.</li>
+<li>It is possible to <a href="https://thinkr-open.github.io/fusen/articles/switch-from-a-package-developed-with-fusen-to-a-classical-package.html">switch from a package developed with {fusen} to a classical package</a> and continue building the package using the classical approach.</li>
+</ul>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><a href="https://thinkr-open.github.io/fusen/">Official documentation of {fusen}</a></li>
+<li><a href="https://thinkr-open.github.io/fusen/articles/Maintain-packages-with-fusen.html?q=add_flat_template#compare-a-classical-way-of-building-packages-with-the-fusen-way">Comparison: the classical way of building packages v/s the {fusen} way</a></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/SaranjeetKaur\.github\.io\/About-Me\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
