@@ -43,7 +43,7 @@ Furthermore, the output of `cProfile` can be visualised using tools like `snakev
 
 Store the output of `cProfile` in a file using the `-o` option, and then visualise it with `snakeviz`:
 
-```bash
+``` bash
 python -m cProfile -o profile_output.prof my_script.py
 snakeviz profile_output.prof
 ```
@@ -52,7 +52,7 @@ snakeviz profile_output.prof
 
 To use `line_profiler`, you need to decorate the functions you want to profile with `@profile`, and then run your script with the `kernprof` command:
 
-```python
+``` python
 from line_profiler import LineProfiler
 
 @profile
@@ -63,7 +63,7 @@ return
 print(my_function(arg=arg_value))
 ```
 
-```bash
+``` bash
 python -m kernprof -lvr my_script.py
 ```
 
@@ -77,19 +77,19 @@ Once you have profiled your code and identified the bottlenecks, you can start "
 
 Below are some general tips for optimising your Python code:
 
-1. Many [built-in functions](https://docs.python.org/3/library/functions.html) in Python, and some other parts of the standard library, are implemented in C and optimised for performance, so using them can often be much faster than writing your own implementation in Python. For example, if you want to calculate the sum of a list of numbers, using the built-in `sum()` function is likely to be 3 - 8 times faster (based on benchmarking) than writing your own for loop to calculate the sum.
+1.  Many [built-in functions](https://docs.python.org/3/library/functions.html) in Python, and some other parts of the standard library, are implemented in C and optimised for performance, so using them can often be much faster than writing your own implementation in Python. For example, if you want to calculate the sum of a list of numbers, using the built-in `sum()` function is likely to be 3 - 8 times faster (based on benchmarking) than writing your own for loop to calculate the sum.
 
-2. When creating lists, using list comprehension can often be faster than using a for loop to create a list. For example, if you want to create a list of squares of numbers, using a list comprehension like `[x**2 for x in range(100_000)]` is likely to be twice as fast as using a for loop to append the squares to a list.
+2.  When creating lists, using list comprehension can often be faster than using a for loop to create a list. For example, if you want to create a list of squares of numbers, using a list comprehension like `[x**2 for x in range(100_000)]` is likely to be twice as fast as using a for loop to append the squares to a list.
 
-3. When appropriate, using tuples, dictionaries, and sets can often be faster than using lists. For example, if you need to store a collection of unique items, sets (which are implemented as hash tables) can check in constant time whether an object is already a member of the set. In contrast, checking whether an object is already in a list, requires comparing it with every other entry in the list. For large collections, using a set can be several orders of magnitude faster than using a list.
+3.  When appropriate, using tuples, dictionaries, and sets can often be faster than using lists. For example, if you need to store a collection of unique items, sets (which are implemented as hash tables) can check in constant time whether an object is already a member of the set. In contrast, checking whether an object is already in a list, requires comparing it with every other entry in the list. For large collections, using a set can be several orders of magnitude faster than using a list.
 
-4. Whenever possible, using scientific Python packages like NumPy and Pandas can often be faster than writing your own implementations in pure Python. These packages are optimised for performance and often use underlying C or Fortran code to achieve high performance. Moreover, NumPy arrays support broadcasting many mathematical operations or functions - this means that the operation/function is applied to each element of the array in parallel. For large arrays, this can be orders of magnitude faster than looping over entries in the array explicitly.
+4.  Whenever possible, using scientific Python packages like NumPy and Pandas can often be faster than writing your own implementations in pure Python. These packages are optimised for performance and often use underlying C or Fortran code to achieve high performance. Moreover, NumPy arrays support broadcasting many mathematical operations or functions - this means that the operation/function is applied to each element of the array in parallel. For large arrays, this can be orders of magnitude faster than looping over entries in the array explicitly.
 
-5. Newer is often faster: When possible, use the latest versions of Python and packages. Newer versions of Python often include performance improvements and optimisations, and newer versions of packages may also include optimisations that can improve performance.
+5.  Newer is often faster: When possible, use the latest versions of Python and packages. Newer versions of Python often include performance improvements and optimisations, and newer versions of packages may also include optimisations that can improve performance.
 
-6. Reading or writing one large file is faster than many small files. For example, if you have a large dataset that is split into multiple small files, it may be faster to read the entire dataset into memory at once rather than reading each file separately.
+6.  Reading or writing one large file is faster than many small files. For example, if you have a large dataset that is split into multiple small files, it may be faster to read the entire dataset into memory at once rather than reading each file separately.
 
-7. Avoid destroying and recreating objects. For example, if you need to modify a list, it is often faster to modify the list in place rather than creating a new list with the modified values.
+7.  Avoid destroying and recreating objects. For example, if you need to modify a list, it is often faster to modify the list in place rather than creating a new list with the modified values.
 
 ![Image: Cheat sheet for “Profiling and Optimising in Python” inspired from the [Posit cheat sheets](https://opensource.posit.co/resources/cheatsheets/) project. [Online version of the cheatsheet](https://github.com/rstudio/cheatsheets/pull/603) is available on the cheatsheets repository.](cheatsheet.png)
 
