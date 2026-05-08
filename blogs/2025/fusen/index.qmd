@@ -104,87 +104,91 @@ fusen::add_flat_template(
 
 This will create a new flat file template named `dev/flat_squared.Rmd` (and `dev/flat_is_even.Rmd` when the corresponding `flat_name` is used) with the various (empty) chunks that can be populated. The chunks that I used for the respective flat files are given below:
 
-"Square of a number"
 :::{.callout-note}
-    `function` chunk to square a number:  <!-- markdownlint-disable-line MD046 -->
 
-    ````default
-    ```r
-    #' Compute squared value
-    #'
-    #' @param value A numeric value
-    #'
-    #' @return Numeric.
-    #' @export
+## Square of a number
 
-    squared <- function(value) {
-      result <- value^2
-      return(result)
-    }
-    ```
-    ````
+`function` chunk to square a number:
 
-    `examples` chunk to square a number:
+````default
+```r
+#' Compute squared value
+#'
+#' @param value A numeric value
+#'
+#' @return Numeric.
+#' @export
 
-    ````default
-    ```r
-    squared(10)
-    squared(73)
-    ```
-    ````
+squared <- function(value) {
+  result <- value^2
+  return(result)
+}
+```
+````
 
-    `tests` chunk to test the function:
+`examples` chunk to square a number:
 
-    ````default
-    ```r
-    test_that("squared works", {
-      expect_equal(squared(10), 100)
-      expect_equal(squared(73), 5329)
-    })
-    ```
-    ````
+````default
+```r
+squared(10)
+squared(73)
+```
+````
+
+`tests` chunk to test the function:
+
+````default
+```r
+test_that("squared works", {
+  expect_equal(squared(10), 100)
+  expect_equal(squared(73), 5329)
+})
+```
+````
 :::
 
-"Is a number even?"
 :::{.callout-note}
-    `function` chunk to check if a number is even: <!-- markdownlint-disable-line MD046 -->
 
-    ````default
-    ```r
-    #' Check if a value is even
-    #'
-    #' @param value A numeric value
-    #'
-    #' @return Logical. TRUE if value is even, FALSE otherwise
-    #' @export
-    #'
+## Is a number even?
 
-    is_even <- function(value) {
-      result <- value %% 2 == 0
-      return(result)
-    }
-    ```
-    ````
+`function` chunk to check if a number is even: <!-- markdownlint-disable-line MD046 -->
 
-    `examples` chunk to check if a number is even:
+````default
+```r
+#' Check if a value is even
+#'
+#' @param value A numeric value
+#'
+#' @return Logical. TRUE if value is even, FALSE otherwise
+#' @export
+#'
 
-    ````default
-    ```r
-    is_even(20)
-    is_even(47)
-    ```
-    ````
+is_even <- function(value) {
+  result <- value %% 2 == 0
+  return(result)
+}
+```
+````
 
-    `tests` chunk to test the function:
+`examples` chunk to check if a number is even:
 
-    ````default
-    ```r
-    test_that("is_even works", {
-      expect_true(is_even(20))
-      expect_false(is_even(47))
-    })
-    ```
-    ````
+````default
+```r
+is_even(20)
+is_even(47)
+```
+````
+
+`tests` chunk to test the function:
+
+````default
+```r
+test_that("is_even works", {
+  expect_true(is_even(20))
+  expect_false(is_even(47))
+})
+```
+````
 :::
 
 Inflate each of the two new flat files individually using:
