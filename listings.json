@@ -11,13 +11,10 @@
       "/blogs/2023/FAB23software/index.html",
       "/blogs/2023/MOSP23/index.html",
       "/blogs/2023/FAB23intro/index.html",
+      "/blogs/2023/NRENs_RSEAsia/index.html",
       "/blogs/2023/APAN55/index.html",
       "/blogs/2020/GSoC2020/index.html"
     ]
-  },
-  {
-    "listing": "/projects/index.html",
-    "items": []
   },
   {
     "listing": "/talks/index.html",
@@ -55,5 +52,9 @@
       "/talks/2021/JuliaCon2021/index.html",
       "/talks/2021/useR2021/index.html"
     ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": []
   }
 ]
