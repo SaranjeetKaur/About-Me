@@ -1,211 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/about.html</loc>
-    <lastmod>2026-09-22T19:24:17.796Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2023/FOSDEM23/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.906Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2023/APAN56/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.898Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2023/FAB23/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.901Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2025/rOpenSciCowork25/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.926Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2025/WHPC_CIUK25/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.923Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2026/PyDataBradford26/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.928Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2024/useR2024/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.915Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2024/PyDataGlobal2024/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.911Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/APAN53_panel/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.868Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/CarpentryCon22/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.872Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/APAN53_workshop/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.870Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/CW22/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.872Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/JuliaCon22/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.873Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/CSCCE22/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.871Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2021/PackagingCon2021/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.862Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2021/JuliaCon2021/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.861Z</lastmod>
-  </url>
-  <url>
     <loc>https://SaranjeetKaur.github.io/About-Me/projects/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.859Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/MOSP23/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.827Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/RSEAsia_review/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.834Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/APAN56/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.810Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/FAB23intro/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.816Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2025/RS_doc/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.852Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2026/profile-optimise-py/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.855Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2022/Hybrid_work_CW22/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.797Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.856Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.856Z</lastmod>
+    <lastmod>2026-09-22T19:45:24.341Z</lastmod>
   </url>
   <url>
     <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2020/GSoC2020/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.796Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2024/RDevGuide/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.852Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2026/scrollytelling/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.856Z</lastmod>
+    <lastmod>2026-09-22T19:45:24.288Z</lastmod>
   </url>
   <url>
     <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2025/fusen/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.853Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/RSECon23/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.847Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/NRENs_RSEAsia/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.828Z</lastmod>
+    <lastmod>2026-09-22T19:45:24.336Z</lastmod>
   </url>
   <url>
     <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/FAB23software/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.822Z</lastmod>
+    <lastmod>2026-09-22T19:45:24.310Z</lastmod>
   </url>
   <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/APAN55/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.801Z</lastmod>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/APAN56/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.300Z</lastmod>
   </url>
   <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.933Z</lastmod>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/RSECon23/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.331Z</lastmod>
   </url>
   <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2021/LatinR2021/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.861Z</lastmod>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/FAB23intro/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.305Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.338Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2026/scrollytelling/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.338Z</lastmod>
   </url>
   <url>
     <loc>https://SaranjeetKaur.github.io/About-Me/talks/2021/useR2021/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.865Z</lastmod>
+    <lastmod>2026-09-22T19:45:24.346Z</lastmod>
   </url>
   <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/RSECon22/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.877Z</lastmod>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2021/PackagingCon2021/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.344Z</lastmod>
   </url>
   <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/OLS4/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.874Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/DII2022/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.873Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/RSEAA22/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.874Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/VldReSA22/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.878Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2024/RSLondonSE24/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.911Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2024/WarwickRUG24/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.914Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2026/BelfastLUG26/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.928Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2025/KolkataRUG25/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.921Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2025/BristolRUG25/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.918Z</lastmod>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2025/rOpenSciCowork25/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.397Z</lastmod>
   </url>
   <url>
     <loc>https://SaranjeetKaur.github.io/About-Me/talks/2025/QSS3CSCCE25/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.922Z</lastmod>
+    <lastmod>2026-09-22T19:45:24.394Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2025/WHPC_CIUK25/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.395Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2024/PyDataGlobal2024/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2024/useR2024/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.388Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2023/APAN56/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.374Z</lastmod>
   </url>
   <url>
     <loc>https://SaranjeetKaur.github.io/About-Me/talks/2023/RSECon23/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.909Z</lastmod>
+    <lastmod>2026-09-22T19:45:24.383Z</lastmod>
   </url>
   <url>
     <loc>https://SaranjeetKaur.github.io/About-Me/talks/2023/RSEAA23/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.906Z</lastmod>
+    <lastmod>2026-09-22T19:45:24.380Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2026/RSEData26/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.403Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2026/BelfastLUG26/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.399Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/RSECon22/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.356Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/RSEAA22/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.354Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/VldReSA22/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.357Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/JuliaCon22/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.353Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/CW22/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.352Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.339Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/CarpentryCon22/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.352Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/OLS4/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.354Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/APAN53_panel/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.350Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/APAN53_workshop/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.350Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/DII2022/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.353Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2022/CSCCE22/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.351Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2026/PyDataBradford26/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.399Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.406Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2023/FAB23/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.376Z</lastmod>
   </url>
   <url>
     <loc>https://SaranjeetKaur.github.io/About-Me/talks/2023/APAN55/index.html</loc>
-    <lastmod>2026-09-22T19:24:17.893Z</lastmod>
+    <lastmod>2026-09-22T19:45:24.370Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2023/FOSDEM23/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.380Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2024/RSLondonSE24/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2024/WarwickRUG24/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.387Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2025/KolkataRUG25/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.393Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2025/BristolRUG25/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.391Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2021/JuliaCon2021/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.343Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/talks/2021/LatinR2021/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.343Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2022/Hybrid_work_CW22/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.289Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2026/profile-optimise-py/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.337Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/NRENs_RSEAsia/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.315Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/RSEAsia_review/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.320Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/APAN55/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.292Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2023/MOSP23/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.314Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2024/RDevGuide/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.335Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/blogs/2025/RS_doc/index.html</loc>
+    <lastmod>2026-09-22T19:45:24.336Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SaranjeetKaur.github.io/About-Me/about.html</loc>
+    <lastmod>2026-09-22T19:45:24.288Z</lastmod>
   </url>
 </urlset>
