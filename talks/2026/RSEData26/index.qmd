@@ -7,7 +7,6 @@ author:
 date: "2026-09-09"
 categories: [Survey, Data analysis, R, Community building, Research Software Engineering, Sheffield, UK]
 description: "Invited plenary lightning talk at the tenth annual RSECon in Sheffield, UK, September 2026."
-"
 draft: false
 ---
 
