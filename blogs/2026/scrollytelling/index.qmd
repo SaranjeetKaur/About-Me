@@ -1,0 +1,30 @@
+---
+title: Advent calendars to scrollytelling
+image: "r-development-guide.jpg"
+author:
+  - name: Saranjeet Kaur Bhogal
+date: "2026-01-27"
+categories: [Scrollytelling, Open Science]
+description: 'Experiments to convert advent calendars into scrollytelling format'
+draft: false
+---
+
+Around the Christmas period last year, two advent calendar series caught my attention: Athanasia Monika Mowinckel's ["Modern R Package Development"](https://www.linkedin.com/posts/drmowinckels_rpackageadvent2025-rstats-rpackageadvent2025-activity-7400837138604290048-dOt4/) and Digtial Research Academy's [Open Science Bird](https://www.linkedin.com/posts/digital-research-academy_were-launching-our-dradvent-calendar-featuring-activity-7399800562126352385-UTAj/). Inspired by these, I made an attempt to convert the content of these advent calendars into a scrollytelling format using Quarto.
+
+## What is Scrollytelling?
+
+Scrollytelling is a storytelling technique that combines narrative text with interactive visual elements, allowing readers to engage with the content as they scroll through a webpage. I used the [Closeread extension for Quarto](https://closeread.dev) to create the scrollytelling experience.
+
+## The experiments
+
+The scrollytelling versions of the advent calendars can be found here (best viewed on a laptop):
+
+- [Modern R Package Development - Scrollytelling Version](https://saranjeetkaur.github.io/modern_r_pkg_dev/)
+- [Open Science Bird - Scrollytelling Version](https://saranjeetkaur.github.io/opensci_bird/)
+
+## Source code
+
+The source code for these scrollytelling versions is available on GitHub:
+
+- [Modern R Package Development - Source Code](https://github.com/SaranjeetKaur/modern_r_pkg_dev)
+- [Open Science Bird - Source Code](https://github.com/SaranjeetKaur/opensci_bird)
